@@ -1,0 +1,168 @@
+---
+
+---
+
+<header
+      class="sticky top-0 z-50 w-full border-b border-gray-200 bg-white/80 backdrop-blur-lg transition-all dark:border-gray-800 dark:bg-gray-950/80"
+      data-header
+    >
+      <div
+        class="container mx-auto flex h-16 items-center justify-between px-4 lg:h-20 lg:px-8"
+      >
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center gap-2">
+          <img
+            src="assets/img/logo.svg"
+            alt="SparkleClean Pro"
+            class="h-8 w-auto lg:h-10 dark:hidden"
+          />
+          <img
+            src="assets/img/logo-light.svg"
+            alt="SparkleClean Pro"
+            class="hidden h-8 w-auto lg:h-10 dark:block"
+          />
+        </a>
+        <!-- Desktop Navigation -->
+        <nav 
+          class="hidden lg:flex lg:items-center lg:gap-8"
+          aria-label="Main navigation"
+        >
+          <a
+            href="/"
+            data-nav-link="/about"
+            class="text-sm font-medium text-gray-600 transition-colors hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+          >
+            Beranda </a
+          ><a
+            href="/tentang"
+            data-nav-link="/services"
+            class="text-sm font-medium text-gray-600 transition-colors hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+          >
+            Tentang Kami </a
+          ><a
+            href="/program"
+            data-nav-link="/pricing"
+            class="text-sm font-medium text-gray-600 transition-colors hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+          >
+            Program Kerja </a
+          ><a
+            href="/donasi"
+            data-nav-link="/blog"
+            class="text-sm font-medium text-gray-600 transition-colors hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+          >
+            Donasi </a
+          ><a
+            href="/kontak"
+            data-nav-link="/contact"
+            class="text-sm font-medium text-gray-600 transition-colors hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+          >
+            Kontak
+          </a>
+        </nav>
+        <!-- Actions -->
+        <div class="flex items-center gap-4">
+          <button
+            type="button"
+            data-dark-toggle
+            class="rounded-lg p-2 text-gray-600 transition-colors hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-white"
+            aria-label="Toggle dark mode"
+          >
+            <svg
+              class="h-5 w-5 dark:hidden"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+              ></path>
+            </svg>
+            <svg
+              class="hidden h-5 w-5 dark:block"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
+              ></path>
+            </svg>
+          </button>
+          <a
+            href="index.html#quote"
+            class="hidden rounded-lg bg-primary-600 px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-primary-700 sm:inline-flex"
+          >
+            Get Free Quote
+          </a>
+          <!-- Mobile Menu Button -->
+          <button
+            type="button"
+            data-mobile-toggle
+            class="rounded-lg p-2 text-gray-600 transition-colors hover:bg-gray-100 lg:hidden dark:text-gray-400 dark:hover:bg-gray-800"
+            aria-label="Open menu"
+            aria-expanded="false"
+          >
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <!-- Mobile Navigation -->
+      <div class="hidden lg:hidden" data-mobile-menu>
+        <nav
+          class="border-t border-gray-200 bg-white px-4 py-4 dark:border-gray-800 dark:bg-gray-950"
+        >
+          <a
+            href="about/index.html"
+            class="block py-3 text-base font-medium text-gray-900 dark:text-white"
+          >
+            About </a
+          ><a
+            href="services/index.html"
+            class="block py-3 text-base font-medium text-gray-900 dark:text-white"
+          >
+            Services </a
+          ><a
+            href="pricing/index.html"
+            class="block py-3 text-base font-medium text-gray-900 dark:text-white"
+          >
+            Pricing </a
+          ><a
+            href="blog/index.html"
+            class="block py-3 text-base font-medium text-gray-900 dark:text-white"
+          >
+            Blog </a
+          ><a
+            href="contact/index.html"
+            class="block py-3 text-base font-medium text-gray-900 dark:text-white"
+          >
+            Contact
+          </a>
+          <div class="mt-4 border-t border-gray-200 pt-4 dark:border-gray-800">
+            <a
+              href="index.html#quote"
+              class="block w-full rounded-lg bg-primary-600 px-5 py-3 text-center text-sm font-medium text-white transition-colors hover:bg-primary-700"
+            >
+              Get Free Quote
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
