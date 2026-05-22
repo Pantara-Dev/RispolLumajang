@@ -1,5 +1,6 @@
 ---
-
+import logo_light from '../assets/img/logo-light.svg'
+import logo from '../assets/img/logo.svg'
 ---
 
 <header
@@ -12,13 +13,13 @@
         <!-- Logo -->
         <a href="index.html" class="flex items-center gap-2">
           <img
-            src="assets/img/logo.svg"
-            alt="Rohis PSDKU Lumajang"
+            src={logo.src}
+            alt="Rispol Polinema Lumajang - Dark"
             class="h-8 w-auto lg:h-10 dark:hidden"
           />
           <img
-            src="assets/img/logo-light.svg"
-            alt="SparkleClean Pro"
+            src={logo_light.src}
+            alt="Rispol Polinema Lumajang - Light"
             class="hidden h-8 w-auto lg:h-10 dark:block"
           />
         </a>
@@ -95,10 +96,10 @@
             </svg>
           </button>
           <a
-            href="index.html#quote"
+            href="/"
             class="hidden rounded-lg bg-primary-600 px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-primary-700 sm:inline-flex"
           >
-            Get Free Quote
+            Login Admin
           </a>
           <!-- Mobile Menu Button -->
           <button
@@ -130,37 +131,37 @@
           class="border-t border-gray-200 bg-white px-4 py-4 dark:border-gray-800 dark:bg-gray-950"
         >
           <a
-            href="about/index.html"
+            href="/"
             class="block py-3 text-base font-medium text-gray-900 dark:text-white"
           >
-            About </a
+            Beranda </a
           ><a
-            href="services/index.html"
+            href="/tentang"
             class="block py-3 text-base font-medium text-gray-900 dark:text-white"
           >
-            Services </a
+            Tentang Kami </a
           ><a
-            href="pricing/index.html"
+            href="/program"
             class="block py-3 text-base font-medium text-gray-900 dark:text-white"
           >
-            Pricing </a
+            Program Kerja </a
           ><a
-            href="blog/index.html"
+            href="/donasi"
             class="block py-3 text-base font-medium text-gray-900 dark:text-white"
           >
-            Blog </a
+            Donasi </a
           ><a
-            href="contact/index.html"
+            href="/kontak"
             class="block py-3 text-base font-medium text-gray-900 dark:text-white"
           >
-            Contact
+            Kontak
           </a>
           <div class="mt-4 border-t border-gray-200 pt-4 dark:border-gray-800">
             <a
               href="index.html#quote"
               class="block w-full rounded-lg bg-primary-600 px-5 py-3 text-center text-sm font-medium text-white transition-colors hover:bg-primary-700"
             >
-              Get Free Quote
+              Login Admin
             </a>
           </div>
         </nav>
