@@ -1,8 +1,9 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import heroImage from '../assets/img/polpol.jpeg';
-
-
+import dokumentasi1 from "../assets/img/pol1.jpeg";
+import dokumentasi2 from "../assets/img/pol2.jpeg";
+import dokumentasi3 from "../assets/img/pol3.jpeg";
+import dokumentasi4 from "../assets/img/pol4.jpeg";
 ---
 
 <!doctype html>
@@ -74,7 +75,7 @@ import heroImage from '../assets/img/polpol.jpeg';
               <div class="relative overflow-hidden rounded-3xl border-8 border-white bg-white shadow-2xl transition-all duration-500 ease-out group-hover:-translate-y-2 group-hover:-rotate-2 group-hover:shadow-3xl dark:border-gray-800 dark:bg-gray-800">
                 
                 <img
-                  src="/src/assets/img/pol1.jpeg"
+                  src={dokumentasi1.src}
                   alt="Kegiatan Ukhuwah RISPOL"
                   class="h-auto w-full object-cover aspect-[4/3] sm:aspect-[4/4] lg:aspect-[4/4]"
                   loading="lazy"
@@ -109,13 +110,13 @@ import heroImage from '../assets/img/polpol.jpeg';
           <div class="grid grid-cols-2 gap-6 sm:grid-cols-4">
             <div class="text-center" data-animate="fade-in-up" data-delay="0">
               <div class="text-4xl font-bold text-primary-600 lg:text-5xl dark:text-primary-400">
-                <span data-counter="21+">0</span>
+                <span data-counter="21">0</span>
               </div>
               <div class="mt-2 text-sm font-medium text-gray-600 dark:text-gray-400">Anggota Aktif</div>
             </div>
             <div class="text-center" data-animate="fade-in-up" data-delay="100">
               <div class="text-4xl font-bold text-primary-600 lg:text-5xl dark:text-primary-400">
-                <span data-counter="7+">0</span>
+                <span data-counter="7">0</span>
               </div>
               <div class="mt-2 text-sm font-medium text-gray-600 dark:text-gray-400">Program Kerja</div>
             </div>
@@ -127,7 +128,7 @@ import heroImage from '../assets/img/polpol.jpeg';
             </div>
             <div class="text-center" data-animate="fade-in-up" data-delay="300">
               <div class="text-4xl font-bold text-primary-600 lg:text-5xl dark:text-primary-400">
-                <span data-counter="0+">0</span>
+                <span data-counter="0">0</span>
               </div>
               <div class="mt-2 text-sm font-medium text-gray-600 dark:text-gray-400">Jaringan Alumni</div>
             </div>
@@ -200,21 +201,21 @@ import heroImage from '../assets/img/polpol.jpeg';
           </div>
           <div class="mx-auto mt-10 grid max-w-6xl gap-4 sm:grid-cols-2 lg:grid-cols-3" data-animate="fade-in-up" data-delay="300">
             <div class="group relative aspect-square overflow-hidden rounded-2xl bg-gray-100 dark:bg-gray-800">
-              <img src="/src/assets/img/pol2.jpeg" alt="Kajian Akbar" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
+              <img src={dokumentasi2.src} alt="Kajian Akbar" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
               <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
               <div class="absolute bottom-0 left-0 p-6 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                 <h3 class="text-lg font-bold text-white">Kajian Akbar Semester</h3>
               </div>
             </div>
             <div class="group relative aspect-square overflow-hidden rounded-2xl bg-gray-100 dark:bg-gray-800">
-              <img src="/src/assets/img/pol3.jpeg" alt="Bakti Sosial" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
+              <img src={dokumentasi3.src} alt="Bakti Sosial" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
               <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
               <div class="absolute bottom-0 left-0 p-6 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                 <h3 class="text-lg font-bold text-white">Bakti Sosial Ramadhan</h3>
               </div>
             </div>
             <div class="group relative aspect-square overflow-hidden rounded-2xl bg-gray-100 dark:bg-gray-800">
-              <img src="/src/assets/img/polpol.jpeg" alt="LDK" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
+              <img src={dokumentasi4.src} alt="LDK" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
               <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
               <div class="absolute bottom-0 left-0 p-6 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                 <h3 class="text-lg font-bold text-white">Latihan Dasar Kepemimpinan</h3>
@@ -273,7 +274,7 @@ import heroImage from '../assets/img/polpol.jpeg';
               <div class="py-6" data-animate="fade-in-up" data-delay="100">
                 <button type="button" data-faq-toggle class="flex w-full items-center justify-between text-left">
                   <span class="text-lg font-semibold text-gray-900 dark:text-white">
-                    Siapa saja yang bisa bergabung dengan RISPOL?
+                    Siapa saja yang bisa bergabung dengan RISPOL Polinema Lumajang?
                   </span>
                   <span class="ml-4 flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-gray-100 text-gray-600 transition-transform duration-200 dark:bg-gray-800 dark:text-gray-400" data-faq-icon>
                     <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12M6 12h12"></path></svg>
@@ -281,7 +282,7 @@ import heroImage from '../assets/img/polpol.jpeg';
                 </button>
                 <div class="overflow-hidden transition-all duration-300" style="max-height: 0px; opacity: 0">
                   <p class="pt-4 text-gray-600 dark:text-gray-400">
-                    Seluruh mahasiswa aktif beragama Islam di Polinema PSDKU Lumajang dari berbagai program studi dan angkatan dipersilakan untuk bergabung, baik sebagai anggota biasa maupun pengurus aktif.
+                    RISPOL terbuka untuk seluruh mahasiswa Polinema PSDKU Lumajang yang memiliki minat dan komitmen untuk belajar agama serta berkontribusi dalam kegiatan organisasi. Kami menyambut baik mahasiswa dari berbagai latar belakang jurusan dan tingkat pendidikan, asalkan memiliki niat yang tulus untuk aktif dalam kegiatan organisasi.
                   </p>
                 </div>
               </div>
@@ -289,7 +290,7 @@ import heroImage from '../assets/img/polpol.jpeg';
               <div class="py-6" data-animate="fade-in-up" data-delay="150">
                 <button type="button" data-faq-toggle class="flex w-full items-center justify-between text-left">
                   <span class="text-lg font-semibold text-gray-900 dark:text-white">
-                    Kapan jadwal penerimaan pendaftaran anggota (Open Recruitment)?
+                    Kapan biasanya penerimaan anggota baru dilaksanakan?
                   </span>
                   <span class="ml-4 flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-gray-100 text-gray-600 transition-transform duration-200 dark:bg-gray-800 dark:text-gray-400" data-faq-icon>
                     <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12M6 12h12"></path></svg>
@@ -297,7 +298,7 @@ import heroImage from '../assets/img/polpol.jpeg';
                 </button>
                 <div class="overflow-hidden transition-all duration-300" style="max-height: 0px; opacity: 0">
                   <p class="pt-4 text-gray-600 dark:text-gray-400">
-                    Penerimaan anggota dan pengurus biasanya dilaksanakan pada awal semester ganjil (setelah kegiatan Pengenalan Kehidupan Kampus). Namun, mahasiswa tetap dapat mengikuti kajian terbuka kami kapan saja.
+                    Penerimaan anggota dan pengurus biasanya dilaksanakan pada awal semester ganjil setelah kegiatan Pengenalan Kehidupan Kampus. Namun, kami juga membuka kesempatan bergabung di luar periode tersebut bagi mahasiswa yang memiliki motivasi tinggi untuk berkontribusi dalam organisasi.
                   </p>
                 </div>
               </div>
@@ -305,7 +306,7 @@ import heroImage from '../assets/img/polpol.jpeg';
               <div class="py-6" data-animate="fade-in-up" data-delay="200">
                 <button type="button" data-faq-toggle class="flex w-full items-center justify-between text-left">
                   <span class="text-lg font-semibold text-gray-900 dark:text-white">
-                    Apakah ada persyaratan khusus yang harus dimiliki?
+                    Apakah ada persyaratan khusus untuk menjadi anggota RISPOL?
                   </span>
                   <span class="ml-4 flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-gray-100 text-gray-600 transition-transform duration-200 dark:bg-gray-800 dark:text-gray-400" data-faq-icon>
                     <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12M6 12h12"></path></svg>
@@ -313,7 +314,7 @@ import heroImage from '../assets/img/polpol.jpeg';
                 </button>
                 <div class="overflow-hidden transition-all duration-300" style="max-height: 0px; opacity: 0">
                   <p class="pt-4 text-gray-600 dark:text-gray-400">
-                    Syarat utama adalah kemauan untuk belajar agama dan berorganisasi. Tidak diwajibkan memiliki hafalan Al-Qur'an tertentu atau lulusan pesantren. Kami percaya RISPOL adalah tempat untuk belajar bersama.
+                    Syarat utama adalah kemauan untuk belajar agama dan berorganisasi. Tidak diwajibkan memiliki hafalan Al-Qur'an tertentu atau lulusan pesantren. Kami percaya bahwa setiap mahasiswa memiliki potensi untuk berkembang dan berkontribusi, asalkan memiliki niat yang tulus dan komitmen untuk aktif dalam kegiatan organisasi.
                   </p>
                 </div>
               </div>

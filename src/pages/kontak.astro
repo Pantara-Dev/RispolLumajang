@@ -10,7 +10,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
               Hubungi Kami
             </h1>
             <p class="mx-auto mt-4 max-w-2xl text-lg text-primary-100">
-              Silakan hubungi kami melalui saluran resmi di bawah ini untuk pertanyaan, kerja sama, atau informasi lebih lanjut mengenai organisasi kami
+              Apakah Anda memiliki pertanyaan, saran, atau ingin berkolaborasi dengan kami? Jangan ragu untuk menghubungi kami melalui formulir di bawah ini atau menggunakan informasi kontak yang tersedia. Kami siap membantu Anda dengan segala kebutuhan yang Anda miliki.
             </p>
             <nav
               class="mt-6 flex items-center justify-center gap-2 text-sm text-primary-200"
@@ -20,7 +20,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
                 href="../index.html"
                 class="transition-colors hover:text-white"
               >
-                Home
+                Beranda
               </a>
               <span>/</span> <span class="text-white">Kontak</span>
             </nav>
@@ -31,10 +31,10 @@ import BaseLayout from "../layouts/BaseLayout.astro";
             <div class="grid gap-12 lg:grid-cols-5">
               <div class="lg:col-span-3">
                 <h2 class="text-2xl font-bold text-gray-900 dark:text-white">
-                  Kirim pesan kepada Kami
+                  Kirim Pesan Kepada Kami
                 </h2>
                 <p class="mt-2 text-gray-600 dark:text-gray-400">
-                  Isilah formulir di bawah ini dan tim kami akan segera merespons.                
+                  Jika Anda memiliki pertanyaan, saran, atau ingin berkolaborasi dengan kami, jangan ragu untuk mengirim pesan melalui formulir di bawah ini. Kami akan berusaha untuk merespons secepat mungkin.           
                 </p>
                 <form class="mt-8 space-y-6" data-validate data-contact-form>
                   <div class="grid gap-6 sm:grid-cols-2">
@@ -51,7 +51,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
                         name="Nama"
                         required
                         class="mt-1 block w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-900 transition-colors focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 dark:border-gray-700 dark:bg-gray-800 dark:text-white"
-                        placeholder="nama anda"
+                        placeholder="Nama Lengkap Anda"
                       />
                     </div>
                     <div>
@@ -67,23 +67,24 @@ import BaseLayout from "../layouts/BaseLayout.astro";
                         name="email"
                         required
                         class="mt-1 block w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-900 transition-colors focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 dark:border-gray-700 dark:bg-gray-800 dark:text-white"
-                        placeholder="namagmailanda@gmail.com"
+                        placeholder="Email Anda"
                       />
                     </div>
                   </div>
                   <div>
                     <label
-                      for=""
+                      for="subjek"
                       class="block text-sm font-medium text-gray-700 dark:text-gray-300"
                     >
-                      subjek
+                      Subjek
                     </label>
                     <input
                       type="text"
                       id="subjek"
+                      required
                       name="subjek"
                       class="mt-1 block w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-900 transition-colors focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 dark:border-gray-700 dark:bg-gray-800 dark:text-white"
-                      placeholder="kajian islami, mentoring, pertnyaan lainnya...."
+                      placeholder="Subjek Pesan Anda"
                     />
                   </div>
                   <div>
@@ -94,16 +95,16 @@ import BaseLayout from "../layouts/BaseLayout.astro";
                       Pesan
                     </label>
                     <textarea
-                      id="pesan"
-                      name="pesan"
-                      rows="5"
+                      id="Pesan"
+                      name="Pesan"
+                      rows="4"
                       required
                       class="mt-1 block w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-900 transition-colors focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 dark:border-gray-700 dark:bg-gray-800 dark:text-white"
-                       placeholder="Apa saja tantangan yang dialami oleh Rispol PSDKU Lumajang?" -->
-                    </textarea>
+                      placeholder="Tulis pesan Anda di sini..."
+                    ></textarea>
                   </div>
                   <button
-                    type="Kirim"
+                    type="submit"
                     class="inline-flex items-center justify-center rounded-lg bg-primary-600 px-6 py-3 text-sm font-medium text-white shadow-lg shadow-primary-600/25 transition-all hover:bg-primary-700 hover:shadow-xl hover:shadow-primary-600/30"
                   >
                     Kirim Pesan
@@ -126,10 +127,10 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
               <div class="lg:col-span-2">
                 <h2 class="text-2xl font-bold text-gray-900 dark:text-white">
-                  Menghubungi
+                  Informasi Kontak
                 </h2>
                 <p class="mt-2 text-gray-600 dark:text-gray-400">
-                  Apakah kalian ingin bekerja sama dengan kami?
+                  Anda juga dapat menghubungi kami melalui informasi kontak berikut ini. Kami siap membantu Anda dengan pertanyaan atau kebutuhan yang Anda miliki.
                 </p>
                 <div class="mt-8 space-y-6">
                   <div class="flex items-start gap-4">
@@ -178,13 +179,13 @@ import BaseLayout from "../layouts/BaseLayout.astro";
                     </div>
                     <div>
                       <h3 class="font-semibold text-gray-900 dark:text-white">
-                        Telepon
+                        Nomor Telepon
                       </h3>
                       <a
-                        href="tel:+62 81459101209"
+                        href="tel:081459101209"
                         class="text-gray-600 transition-colors hover:text-primary-600 dark:text-gray-400 dark:hover:text-primary-400"
                       >
-                        +62 81459101209
+                        0814-5910-1209
                       </a>
                     </div>
                   </div>
@@ -240,13 +241,13 @@ import BaseLayout from "../layouts/BaseLayout.astro";
                         Jam Kerja
                       </h3>
                       <p class="text-gray-600 dark:text-gray-400">
-                        Senin - Jum'at: 07:00 Pagi - 00.00 Malam
+                        Senin - Jum'at  : 08:00 - 16:00 WIB
                       </p>
                       <p class="text-gray-600 dark:text-gray-400">
-                        Sabtu: 09:00 Pagi - 16:00 Sore
+                        Sabtu : 10:00 - 14:00 WIB
                       </p>
                       <p class="text-gray-600 dark:text-gray-400">
-                        Minggu: 10:00 Pagi - 16:00 Sore
+                        Minggu  : Tutup
                       </p>
                     </div>
                   </div>
