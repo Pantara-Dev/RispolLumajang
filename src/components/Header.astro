@@ -1,6 +1,12 @@
 ---
 import logo_light from '../assets/img/logo-light.svg'
 import logo from '../assets/img/logo.svg'
+
+const currentPath = Astro.url.pathname;
+const activeClassDesktop = "text-primary-600 font-bold dark:text-primary-400";
+const inactiveClassDesktop = "text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white";
+const activeClassMobile = "text-primary-600 font-bold dark:text-primary-400 bg-primary-50 dark:bg-primary-900/20 rounded-lg";
+const inactiveClassMobile = "text-gray-900 dark:text-white hover:bg-gray-50 dark:hover:bg-gray-800 rounded-lg";
 ---
 
 <header
@@ -24,43 +30,42 @@ import logo from '../assets/img/logo.svg'
           />
         </a>
         <!-- Desktop Navigation -->
-        <nav 
+<nav 
           class="hidden lg:flex lg:items-center lg:gap-8"
           aria-label="Main navigation"
         >
           <a
             href="/"
-            data-nav-link="/about"
-            class="text-sm font-medium text-gray-600 transition-colors hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+            class={`text-sm transition-colors ${currentPath === '/' ? activeClassDesktop : inactiveClassDesktop}`}
           >
-            Beranda </a
-          ><a
+            Beranda
+          </a>
+          <a
             href="/tentang"
-            data-nav-link="/services"
-            class="text-sm font-medium text-gray-600 transition-colors hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+            class={`text-sm transition-colors ${currentPath.startsWith('/tentang') ? activeClassDesktop : inactiveClassDesktop}`}
           >
-            Tentang Kami </a
-          ><a
+            Tentang Kami
+          </a>
+          <a
             href="/program"
-            data-nav-link="/pricing"
-            class="text-sm font-medium text-gray-600 transition-colors hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+            class={`text-sm transition-colors ${currentPath.startsWith('/program') ? activeClassDesktop : inactiveClassDesktop}`}
           >
-            Program Kerja </a
-          ><a
+            Program Kerja
+          </a>
+          <a
             href="/donasi"
-            data-nav-link="/blog"
-            class="text-sm font-medium text-gray-600 transition-colors hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+            class={`text-sm transition-colors ${currentPath.startsWith('/donasi') ? activeClassDesktop : inactiveClassDesktop}`}
           >
-            Donasi </a
-          ><a
+            Donasi
+          </a>
+          <a
             href="/kontak"
-            data-nav-link="/contact"
-            class="text-sm font-medium text-gray-600 transition-colors hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+            class={`text-sm transition-colors ${currentPath.startsWith('/kontak') ? activeClassDesktop : inactiveClassDesktop}`}
           >
             Kontak
           </a>
         </nav>
-        <!-- Actions -->
+
         <div class="flex items-center gap-4">
           <button
             type="button"
@@ -68,40 +73,20 @@ import logo from '../assets/img/logo.svg'
             class="rounded-lg p-2 text-gray-600 transition-colors hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-white"
             aria-label="Toggle dark mode"
           >
-            <svg
-              class="h-5 w-5 dark:hidden"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
-              ></path>
+            <svg class="h-5 w-5 dark:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
             </svg>
-            <svg
-              class="hidden h-5 w-5 dark:block"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
-              ></path>
+            <svg class="hidden h-5 w-5 dark:block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
             </svg>
           </button>
           <a
-            href="/"
+            href="/login"
             class="hidden rounded-lg bg-primary-600 px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-primary-700 sm:inline-flex"
           >
             Login Admin
           </a>
-          <!-- Mobile Menu Button -->
+          
           <button
             type="button"
             data-mobile-toggle
@@ -109,21 +94,55 @@ import logo from '../assets/img/logo.svg'
             aria-label="Open menu"
             aria-expanded="false"
           >
-            <svg
-              class="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h16"
-              ></path>
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
             </svg>
           </button>
         </div>
+      </div>
+
+      <div class="hidden lg:hidden" data-mobile-menu>
+        <nav class="border-t border-gray-200 bg-white px-4 py-4 dark:border-gray-800 dark:bg-gray-950 flex flex-col gap-1">
+          <a
+            href="/"
+            class={`block px-4 py-3 text-base ${currentPath === '/' ? activeClassMobile : inactiveClassMobile}`}
+          >
+            Beranda
+          </a>
+          <a
+            href="/tentang"
+            class={`block px-4 py-3 text-base ${currentPath.startsWith('/tentang') ? activeClassMobile : inactiveClassMobile}`}
+          >
+            Tentang Kami
+          </a>
+          <a
+            href="/program"
+            class={`block px-4 py-3 text-base ${currentPath.startsWith('/program') ? activeClassMobile : inactiveClassMobile}`}
+          >
+            Program Kerja
+          </a>
+          <a
+            href="/donasi"
+            class={`block px-4 py-3 text-base ${currentPath.startsWith('/donasi') ? activeClassMobile : inactiveClassMobile}`}
+          >
+            Donasi
+          </a>
+          <a
+            href="/kontak"
+            class={`block px-4 py-3 text-base ${currentPath.startsWith('/kontak') ? activeClassMobile : inactiveClassMobile}`}
+          >
+            Kontak
+          </a>
+          
+          <div class="mt-4 border-t border-gray-200 pt-4 dark:border-gray-800">
+            <a
+              href="/login"
+              class="block w-full rounded-lg bg-primary-600 px-5 py-3 text-center text-sm font-medium text-white transition-colors hover:bg-primary-700"
+            >
+              Login Admin
+            </a>
+          </div>
+        </nav>
       </div>
       <!-- Mobile Navigation -->
       <div class="hidden lg:hidden" data-mobile-menu>
