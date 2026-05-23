@@ -20,11 +20,17 @@ import BaseLayout from "../layouts/BaseLayout.astro";
             Program Kerja & Agenda
           </h1>
           <p class="mt-4 text-lg text-primary-100">
+<<<<<<< HEAD
             Temukan berbagai program kerja dan agenda kegiatan yang kami
             jalankan untuk mendukung pengembangan diri anggota dan kontribusi
             positif bagi masyarakat. Dari kajian rutin hingga kegiatan sosial,
             kami berkomitmen untuk memberikan pengalaman yang bermanfaat dan
             bermakna bagi seluruh anggota RISPOL Polinema Lumajang.
+=======
+            Rispol menghadirkan berbagai Program Kerja yang berfokus pada
+            Keagamaan, Pendidikan, Kebersihan, Rutinan, Penugasan untuk
+            perubahan mahasiswa yang lebih baik.
+>>>>>>> 68cd934 (Perubahan program kerja astro)
           </p>
           <nav
             class="mt-6 flex items-center justify-center gap-2 text-sm text-primary-200"
@@ -34,434 +40,1247 @@ import BaseLayout from "../layouts/BaseLayout.astro";
               Beranda
             </a>
             <span>/</span>
+<<<<<<< HEAD
             <span class="text-white">Program Kerja</span>
+=======
+            <span class="text-white">Tentang Kami</span>
+>>>>>>> 68cd934 (Perubahan program kerja astro)
           </nav>
         </div>
       </div>
     </section>
-    <section class="bg-gray-50 py-20 lg:py-28 dark:bg-gray-950">
-      <div class="container mx-auto px-4 lg:px-8">
-        <div class="mb-8 mx-auto max-w-xl">
-          <div class="relative">
+    <section class="bg-gray-50 pt-6 pb-20 lg:pb-28 dark:bg-gray-950">
+      <div class="mb-0 mx-auto max-w-xl">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          class="h-6 w-6 text-white"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+        </svg>
+      </div>
+    </section>
+    <div
+      class="mb-10 flex flex-wrap items-center justify-center gap-2"
+      data-blog-filters
+    >
+      <button
+        type="button"
+        data-filter="all"
+        class="rounded-full bg-primary-600 px-4 py-2 text-sm font-medium text-white transition-colors dark:text-white"
+      >
+        Semua
+      </button>
+      <button
+        type="button"
+        data-filter="tips"
+        class="rounded-full bg-gray-200 px-4 py-2 text-sm font-medium text-gray-700 transition-colors dark:bg-gray-700 dark:text-gray-300"
+      >
+        Humas
+      </button>
+      <button
+        type="button"
+        data-filter="guide"
+        class="rounded-full bg-gray-200 px-4 py-2 text-sm font-medium text-gray-700 transition-colors dark:bg-gray-700 dark:text-gray-300"
+      >
+        Syiar
+      </button>
+      <button
+        type="button"
+        data-filter="lifestyle"
+        class="rounded-full bg-gray-200 px-4 py-2 text-sm font-medium text-gray-700 transition-colors dark:bg-gray-700 dark:text-gray-300"
+      >
+        Mentoring
+      </button>
+    </div>
+    <div class="mx-auto grid max-w-7xl gap-8 sm:grid-cols-2 lg:grid-cols-3">
+      <article
+        data-category="tips"
+        class="group flex flex-col h-full overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-gray-200 transition-all hover:shadow-lg dark:bg-gray-900 dark:ring-gray-800"
+      >
+        <a
+          href="organizing-tips-for-a-clutter-free-home/index.html"
+          class="block aspect-[3/2] overflow-hidden shrink-0"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1527515545081-5db817172677?w=1200&h=630&fit=crop"
+            alt="7 Organizing Tips for a Clutter-Free Home"
+            class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+            loading="lazy"
+          />
+        </a>
+
+        <div class="flex flex-col flex-grow p-6">
+          <div class="flex items-center gap-3">
+            <span
+              class="inline-flex items-center rounded-full bg-primary-100 px-2.5 py-0.5 text-xs font-medium text-primary-700 dark:bg-primary-900/50 dark:text-primary-300"
+            >
+              Humas
+            </span>
+            <span class="text-sm text-gray-500 dark:text-gray-400">
+              (Menyesuaikan)
+            </span>
+          </div>
+
+          <h3
+            class="mt-3 text-lg font-bold text-gray-900 transition-colors group-hover:text-primary-600 dark:text-white dark:group-hover:text-primary-400"
+          >
+            Lomba Fotografi dan Videografi Konten Islami
+          </h3>
+
+          <p
+            class="mt-2 mb-6 line-clamp-2 text-sm text-gray-600 dark:text-gray-400"
+          >
+            Wadah Pengembangan bakat dan Implementasi ukhuwah islamiyah
+          </p>
+
+          <button
+            class="openModalBtn mt-auto group/btn flex w-full items-center justify-center gap-2 rounded-2xl border border-gray-200 px-8 py-3 text-lg font-semibold text-slate-800 transition-all duration-300 hover:-translate-y-1 hover:bg-black hover:text-white hover:shadow-xl"
+            data-title="Lomba Fotografi dan Videografi Konten Islami"
+            data-date="(Menyesuaikan)"
+            data-sasaran="SMA/SMK/MA Sederajat"
+            data-description="Di tengah pesatnya perkembangan dunia digital, Lomba Fotografi dan Videografi Konten Islami hadir sebagai platform kreatif yang dirancang khusus bagi para mahasiswa. Ajang ini menjadi wadah strategis untuk mengembangkan bakat dan mengasah kreativitas visual mahasiswa dalam menghasilkan konten yang edukatif dan inspiratif."
+            data-image="https://images.unsplash.com/photo-1527515545081-5db817172677?w=1200"
+          >
+            <span>Detail Kegiatan</span>
             <svg
-              class="absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-gray-400"
+              xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
+              stroke-width="2"
               stroke="currentColor"
+              class="w-5 h-5 transition-transform duration-300 group-hover/btn:translate-x-1"
             >
               <path
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                stroke-width="2"
-                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
             </svg>
-            <input
-              type="text"
-              data-blog-search
-              placeholder="Cari Program Kerja..."
-              class="w-full rounded-full border border-gray-200 bg-white py-3 pl-12 pr-4 text-gray-900 shadow-sm placeholder:text-gray-400 focus:border-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-500/20 dark:border-gray-700 dark:bg-gray-900 dark:text-white dark:placeholder:text-gray-500"
+          </button>
+        </div>
+      </article>
+      <article
+        data-category="tips"
+        class="group flex flex-col h-full overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-gray-200 transition-all hover:shadow-lg dark:bg-gray-900 dark:ring-gray-800"
+      >
+        <a
+          href="organizing-tips-for-a-clutter-free-home/index.html"
+          class="block aspect-[3/2] overflow-hidden shrink-0"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1527515545081-5db817172677?w=1200&h=630&fit=crop"
+            alt="7 Organizing Tips for a Clutter-Free Home"
+            class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+            loading="lazy"
+          />
+        </a>
+
+        <div class="flex flex-col flex-grow p-6">
+          <div class="flex items-center gap-3">
+            <span
+              class="inline-flex items-center rounded-full bg-primary-100 px-2.5 py-0.5 text-xs font-medium text-primary-700 dark:bg-primary-900/50 dark:text-primary-300"
+            >
+              Humas
+            </span>
+            <span class="text-sm text-gray-500 dark:text-gray-400">
+              (Menyesuaikan)
+            </span>
+          </div>
+
+          <h3
+            class="mt-3 text-lg font-bold text-gray-900 transition-colors group-hover:text-primary-600 dark:text-white dark:group-hover:text-primary-400"
+          >
+            Manajemen Media Sosial
+          </h3>
+
+          <p
+            class="mt-2 mb-6 line-clamp-2 text-sm text-gray-600 dark:text-gray-400"
+          >
+            Melakukan Manajemen dalam penyebaran informasi ke media sosial
+          </p>
+
+          <button
+            class="openModalBtn mt-auto group/btn flex w-full items-center justify-center gap-2 rounded-2xl border border-gray-200 px-8 py-3 text-lg font-semibold text-slate-800 transition-all duration-300 hover:-translate-y-1 hover:bg-black hover:text-white hover:shadow-xl"
+            data-title="Manajemen Media Sosial"
+            data-date="(Menyesuaikan)"
+            data-sasaran="Mahasiswa Polinema"
+            data-description="Program kerja ini bertujuan untuk mengelola dan mendistribusikan informasi seputar kegiatan secara sistematis lewat media sosial."
+            data-image="https://images.unsplash.com/photo-1527515545081-5db817172677?w=1200&h=630&fit=crop"
+          >
+            <span>Detail Kegiatan</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              class="w-5 h-5 transition-transform duration-300 group-hover/btn:translate-x-1"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+            </svg>
+          </button>
+        </div>
+      </article>
+      <article
+        data-category="tips"
+        class="group flex flex-col h-full overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-gray-200 transition-all hover:shadow-lg dark:bg-gray-900 dark:ring-gray-800"
+      >
+        <a
+          href="organizing-tips-for-a-clutter-free-home/index.html"
+          class="block aspect-[3/2] overflow-hidden shrink-0"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1527515545081-5db817172677?w=1200&h=630&fit=crop"
+            alt="7 Organizing Tips for a Clutter-Free Home"
+            class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+            loading="lazy"
+          />
+        </a>
+
+        <div class="flex flex-col flex-grow p-6">
+          <div class="flex items-center gap-3">
+            <span
+              class="inline-flex items-center rounded-full bg-primary-100 px-2.5 py-0.5 text-xs font-medium text-primary-700 dark:bg-primary-900/50 dark:text-primary-300"
+            >
+              Humas
+            </span>
+            <span class="text-sm text-gray-500 dark:text-gray-400">
+              (Menyesuaikan)
+            </span>
+          </div>
+
+          <h3
+            class="mt-3 text-lg font-bold text-gray-900 transition-colors group-hover:text-primary-600 dark:text-white dark:group-hover:text-primary-400"
+          >
+            Manajemen Konten dakwah dan sehari-hari
+          </h3>
+
+          <p
+            class="mt-2 mb-6 line-clamp-2 text-sm text-gray-600 dark:text-gray-400"
+          >
+            Melakukan manajemen dan pembuatan konten dakwah yang dapat
+            membarikan informasi islami
+          </p>
+
+          <button
+            class="openModalBtn mt-auto group/btn flex w-full items-center justify-center gap-2 rounded-2xl border border-gray-200 px-8 py-3 text-lg font-semibold text-slate-800 transition-all duration-300 hover:-translate-y-1 hover:bg-black hover:text-white hover:shadow-xl"
+            data-title="Manajemen Konten dakwah dan sehari-hari"
+            data-date="(Menyesuaikan)"
+            data-sasaran="Mahasiswa Polinema"
+            data-description="Melakukan manajemen dan pembuatan konten dakwah yang dapat memberikan informasi dan edukasi islami kepada para mahasiswa dan mahasiswi Polinema PSDKU diKabupaten Lumajang."
+            data-image="https://images.unsplash.com/photo-1527515545081-5db817172677?w=1200&h=630&fit=crop"
+          >
+            <span>Detail Kegiatan</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              class="w-5 h-5 transition-transform duration-300 group-hover/btn:translate-x-1"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+            </svg>
+          </button>
+        </div>
+      </article>
+      <article
+        data-category="tips"
+        class="group flex flex-col h-full overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-gray-200 transition-all hover:shadow-lg dark:bg-gray-900 dark:ring-gray-800"
+      >
+        <a
+          href="organizing-tips-for-a-clutter-free-home/index.html"
+          class="block aspect-[3/2] overflow-hidden shrink-0"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1527515545081-5db817172677?w=1200&h=630&fit=crop"
+            alt="7 Organizing Tips for a Clutter-Free Home"
+            class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+            loading="lazy"
+          />
+        </a>
+
+        <div class="flex flex-col flex-grow p-6">
+          <div class="flex items-center gap-3">
+            <span
+              class="inline-flex items-center rounded-full bg-primary-100 px-2.5 py-0.5 text-xs font-medium text-primary-700 dark:bg-primary-900/50 dark:text-primary-300"
+            >
+              Humas
+            </span>
+            <span class="text-sm text-gray-500 dark:text-gray-400">
+              (Menyesuaikan)
+            </span>
+          </div>
+
+          <h3
+            class="mt-3 text-lg font-bold text-gray-900 transition-colors group-hover:text-primary-600 dark:text-white dark:group-hover:text-primary-400"
+          >
+            Podcast RISPOL
+          </h3>
+
+          <p
+            class="mt-2 mb-6 line-clamp-2 text-sm text-gray-600 dark:text-gray-400"
+          >
+            Menciptakan wadah komunikasi dan diskusi melalui visualisasi
+          </p>
+
+          <button
+            class="openModalBtn mt-auto group/btn flex w-full items-center justify-center gap-2 rounded-2xl border border-gray-200 px-8 py-3 text-lg font-semibold text-slate-800 transition-all duration-300 hover:-translate-y-1 hover:bg-black hover:text-white hover:shadow-xl"
+            data-title="Podcast RISPOL"
+            data-date="(Menyesuaikan)"
+            data-sasaran="Mahasiswa Polinema"
+            data-description="Menciptakan wadah komunikasi dan diskusi melalui visualisasi dan mendatangkan narasumber mengenai hal” keislaman."
+            data-image="https://images.unsplash.com/photo-1527515545081-5db817172677?w=1200&h=630&fit=crop"
+          >
+            <span>Detail Kegiatan</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              class="w-5 h-5 transition-transform duration-300 group-hover/btn:translate-x-1"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+            </svg>
+          </button>
+        </div>
+      </article>
+      <article
+        data-category="guide"
+        class="group flex h-full flex-col overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-gray-200 transition-all hover:shadow-lg dark:bg-gray-900 dark:ring-gray-800"
+      >
+        <a href="spring-cleaning-checklist/index.html" class="block">
+          <div class="aspect-[3/2] overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&h=500&fit=crop"
+              alt="The Ultimate Spring Cleaning Checklist for Every Room"
+              class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+              loading="lazy"
             />
           </div>
+        </a>
+        <div class="flex flex-grow flex-col p-6">
+          <div class="flex items-center gap-3">
+            <span
+              class="inline-flex items-center rounded-full bg-primary-100 px-2.5 py-0.5 text-xs font-medium text-primary-700 dark:bg-primary-900/50 dark:text-primary-300"
+            >
+              Syiar
+            </span>
+            <span class="text-sm text-gray-500 dark:text-gray-400">
+              January - , 2027
+            </span>
+          </div>
+          <h3
+            class="mt-3 text-lg font-bold text-gray-900 transition-colors group-hover:text-primary-600 dark:text-white dark:group-hover:text-primary-400"
+          >
+            Festival Al-banjari Polinema
+          </h3>
+          <p class="mt-2 line-clamp-2 text-sm text-gray-600 dark:text-gray-400">
+            Hadir sebagai bentuk apresiasi terhadap seni religius, Festival
+            Al-banjari Polinema sukses menjadi instrumen untuk mempromosikan
+            kampus sekaligus menjadi wadah syi’ar yang menyejukkan
+          </p>
+          <button
+            class="openModalBtn mt-auto group/btn flex w-full items-center justify-center gap-2 rounded-2xl border border-gray-200 px-8 py-3 text-lg font-semibold text-slate-800 transition-all duration-300 hover:-translate-y-1 hover:bg-black hover:text-white hover:shadow-xl"
+            data-title="Festival Al-banjari Polinema"
+            data-date="Januari 2027 (Menyesuaikan)"
+            data-sasaran="SMA/SMK/MA Sederajat"
+            data-description="Hadir sebagai bentuk apresiasi terhadap seni religius, Festival Al-banjari Polinema sukses menjadi instrumen untuk mempromosikan kampus sekaligus menjadi wadah syi’ar yang menyejukkan."
+            data-image="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&h=500&fit=crop"
+          >
+            <span>Detail Kegiatan</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              class="w-5 h-5 transition-transform duration-300 group-hover/btn:translate-x-1"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+            </svg>
+          </button>
         </div>
-        <div
-          class="mb-10 flex flex-wrap items-center justify-center gap-2"
-          data-blog-filters
+      </article>
+      <article
+        data-category="guide"
+        class="group flex h-full flex-col overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-gray-200 transition-all hover:shadow-lg dark:bg-gray-900 dark:ring-gray-800"
+      >
+        <a href="how-often-should-you-deep-clean/index.html" class="block">
+          <div class="aspect-[3/2] overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?w=800&h=500&fit=crop"
+              alt="How Often Should You Deep Clean Your Home?"
+              class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+              loading="lazy"
+            />
+          </div>
+        </a>
+        <div class="flex flex-grow flex-col p-6">
+          <div class="flex items-center gap-3">
+            <span
+              class="inline-flex items-center rounded-full bg-primary-100 px-2.5 py-0.5 text-xs font-medium text-primary-700 dark:bg-primary-900/50 dark:text-primary-300"
+            >
+              Syiar
+            </span>
+            <span class="text-sm text-gray-500 dark:text-gray-400">
+              Mei (Menyesuaikan)
+            </span>
+          </div>
+          <h3
+            class="mt-3 text-lg font-bold text-gray-900 transition-colors group-hover:text-primary-600 dark:text-white dark:group-hover:text-primary-400"
+          >
+            Pekan Dzulhijjah
+          </h3>
+          <p class="mt-2 line-clamp-2 text-sm text-gray-600 dark:text-gray-400">
+            Pertemuan berkala pengurus untuk mengevaluasi kegiatan menyampaikan
+            informasi
+          </p>
+          <button
+            class="openModalBtn mt-auto group/btn flex w-full items-center justify-center gap-2 rounded-2xl border border-gray-200 px-8 py-3 text-lg font-semibold text-slate-800 transition-all duration-300 hover:-translate-y-1 hover:bg-black hover:text-white hover:shadow-xl"
+            data-title="Pekan Dzulhijjah"
+            data-date="Mei (menyesuaikan)"
+            data-sasaran="Seluruh warga kampus Polinema PSDKU diKabupaten Lumajang."
+            data-description="Pertemuan berkala pengurus untuk mengevaluasi kegiatan, menyampaikan informasi, dan memastikan program kerja berjalan sesuai dengan rencana."
+            data-image="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?w=800&h=500&fit=crop"
+          >
+            <span>Detail Kegiatan</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              class="w-5 h-5 transition-transform duration-300 group-hover/btn:translate-x-1"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+            </svg>
+          </button>
+        </div>
+      </article>
+      <article
+        data-category="guide"
+        class="group flex flex-col h-full overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-gray-200 transition-all hover:shadow-lg dark:bg-gray-900 dark:ring-gray-800"
+      >
+        <a
+          href="organizing-tips-for-a-clutter-free-home/index.html"
+          class="block aspect-[3/2] overflow-hidden shrink-0"
         >
-          <button
-            type="button"
-            data-filter="all"
-            class="rounded-full bg-primary-600 px-4 py-2 text-sm font-medium text-white transition-colors dark:text-white"
+          <img
+            src="https://images.unsplash.com/photo-1527515545081-5db817172677?w=1200&h=630&fit=crop"
+            alt="7 Organizing Tips for a Clutter-Free Home"
+            class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+            loading="lazy"
+          />
+        </a>
+        <div class="flex flex-col flex-grow p-6">
+          <div class="flex items-center gap-3">
+            <span
+              class="inline-flex items-center rounded-full bg-primary-100 px-2.5 py-0.5 text-xs font-medium text-primary-700 dark:bg-primary-900/50 dark:text-primary-300"
+            >
+              Syiar
+            </span>
+            <span class="text-sm text-gray-500 dark:text-gray-400">
+              1 Bulan Sekali
+            </span>
+          </div>
+
+          <h3
+            class="mt-3 text-lg font-bold text-gray-900 transition-colors group-hover:text-primary-600 dark:text-white dark:group-hover:text-primary-400"
           >
-            Semua
-          </button>
-          <button
-            type="button"
-            data-filter="tips"
-            class="rounded-full bg-gray-200 px-4 py-2 text-sm font-medium text-gray-700 transition-colors dark:bg-gray-700 dark:text-gray-300"
+            Pengajian RISPOL
+          </h3>
+
+          <p
+            class="mt-2 mb-6 line-clamp-2 text-sm text-gray-600 dark:text-gray-400"
           >
-            Humas
-          </button>
+            Meningkatkan keimanan dan ketaqwaan mahasiswa dan membiasakan diri
+            dalam kegiatan islami
+          </p>
+
           <button
-            type="button"
-            data-filter="guide"
-            class="rounded-full bg-gray-200 px-4 py-2 text-sm font-medium text-gray-700 transition-colors dark:bg-gray-700 dark:text-gray-300"
+            class="openModalBtn mt-auto group/btn flex w-full items-center justify-center gap-2 rounded-2xl border border-gray-200 px-8 py-3 text-lg font-semibold text-slate-800 transition-all duration-300 hover:-translate-y-1 hover:bg-black hover:text-white hover:shadow-xl"
+            data-title="Pengajian RISPOL"
+            data-date="1 Bulan Sekali"
+            data-sasaran="Anggota RISPOL"
+            data-description="Membiasakan diri dalam kegiatan islami sehingga memiliki dampak dan kebiasaan positif kedepannya dan Sebagai bentuk istiqomah kita sebagai muslim dan muslima dalam terus menggaungkan Ukhuwah Islamiyah."
+            data-image="https://images.unsplash.com/photo-1527515545081-5db817172677?w=1200&h=630&fit=crop"
           >
-            Syiar
-          </button>
-          <button
-            type="button"
-            data-filter="lifestyle"
-            class="rounded-full bg-gray-200 px-4 py-2 text-sm font-medium text-gray-700 transition-colors dark:bg-gray-700 dark:text-gray-300"
-          >
-            Mentoring
+            <span>Detail Kegiatan</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              class="w-5 h-5 transition-transform duration-300 group-hover/btn:translate-x-1"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+            </svg>
           </button>
         </div>
-        <div class="mx-auto grid max-w-7xl gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          <article
-            data-category="lifestyle"
-            class="group flex flex-col h-full overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-gray-200 transition-all hover:shadow-lg dark:bg-gray-900 dark:ring-gray-800"
-          >
-            <a
-              href="organizing-tips-for-a-clutter-free-home/index.html"
-              class="block aspect-[3/2] overflow-hidden shrink-0"
+      </article>
+      <article
+        data-category="guide"
+        class="group flex flex-col h-full overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-gray-200 transition-all hover:shadow-lg dark:bg-gray-900 dark:ring-gray-800"
+      >
+        <a
+          href="organizing-tips-for-a-clutter-free-home/index.html"
+          class="block aspect-[3/2] overflow-hidden shrink-0"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1527515545081-5db817172677?w=1200&h=630&fit=crop"
+            alt="7 Organizing Tips for a Clutter-Free Home"
+            class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+            loading="lazy"
+          />
+        </a>
+        <div class="flex flex-col flex-grow p-6">
+          <div class="flex items-center gap-3">
+            <span
+              class="inline-flex items-center rounded-full bg-primary-100 px-2.5 py-0.5 text-xs font-medium text-primary-700 dark:bg-primary-900/50 dark:text-primary-300"
             >
-              <img
-                src="https://images.unsplash.com/photo-1527515545081-5db817172677?w=1200&h=630&fit=crop"
-                alt="7 Organizing Tips for a Clutter-Free Home"
-                class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
-                loading="lazy"
-              />
-            </a>
+              Syiar
+            </span>
+            <span class="text-sm text-gray-500 dark:text-gray-400">
+              Maret (Menyesuaikan)
+            </span>
+          </div>
 
-            <div class="flex flex-col flex-grow p-6">
-              <div class="flex items-center gap-3">
-                <span
-                  class="inline-flex items-center rounded-full bg-primary-100 px-2.5 py-0.5 text-xs font-medium text-primary-700 dark:bg-primary-900/50 dark:text-primary-300"
-                >
-                  Mentoring
-                </span>
-                <span class="text-sm text-gray-500 dark:text-gray-400">
-                  November 22, 2025
-                </span>
-              </div>
-
-              <h3
-                class="mt-3 text-lg font-bold text-gray-900 transition-colors group-hover:text-primary-600 dark:text-white dark:group-hover:text-primary-400"
-              >
-                7 Organizing Tips for a Clutter-Free Home
-              </h3>
-
-              <p
-                class="mt-2 mb-6 line-clamp-2 text-sm text-gray-600 dark:text-gray-400"
-              >
-                Simple decluttering strategies that professional organizers
-                swear by. Transform your space with these practical methods.
-              </p>
-
-              <button
-                id="openModalBtn"
-                class="mt-auto group/btn flex w-full items-center justify-center gap-2 px-8 py-3 border border-gray-200 rounded-2xl text-slate-800 font-semibold text-lg transition-all duration-300 ease-in-out hover:bg-black hover:text-white hover:border-black dark:text-white dark:border-gray-700 dark:hover:bg-white dark:hover:text-black"
-              >
-                <span>Detail Kegiatan</span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="2"
-                  stroke="currentColor"
-                  class="w-5 h-5 transition-transform duration-300 group-hover/btn:translate-x-1"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
-                </svg>
-              </button>
-            </div>
-          </article>
-          <article
-            data-category="tips"
-            class="group flex flex-col h-full overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-gray-200 transition-all hover:shadow-lg dark:bg-gray-900 dark:ring-gray-800"
+          <h3
+            class="mt-3 text-lg font-bold text-gray-900 transition-colors group-hover:text-primary-600 dark:text-white dark:group-hover:text-primary-400"
           >
-            <a
-              href="organizing-tips-for-a-clutter-free-home/index.html"
-              class="block aspect-[3/2] overflow-hidden shrink-0"
+            Sedekah Takjil
+          </h3>
+
+          <p
+            class="mt-2 mb-6 line-clamp-2 text-sm text-gray-600 dark:text-gray-400"
+          >
+            Bersodaqoh dalam menyalurkan sedekah kepada orang-orang ketika bulan
+            puasa
+          </p>
+
+          <button
+            class="openModalBtn mt-auto group/btn flex w-full items-center justify-center gap-2 rounded-2xl border border-gray-200 px-8 py-3 text-lg font-semibold text-slate-800 transition-all duration-300 hover:-translate-y-1 hover:bg-black hover:text-white hover:shadow-xl"
+            data-title="Sedekah Takjil"
+            data-date="Maret (Menyesuaikan)"
+            data-sasaran="Seluruh warga Polinema PSDKU diKabupaten Lumajang"
+            data-description="Bersodaqoh dalam menyalurkan sedekah ta’jil kepada orang” ketika bulan puasa."
+            data-image="https://images.unsplash.com/photo-1527515545081-5db817172677?w=1200&h=630&fit=crop"
+          >
+            <span>Detail Kegiatan</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              class="w-5 h-5 transition-transform duration-300 group-hover/btn:translate-x-1"
             >
-              <img
-                src="https://images.unsplash.com/photo-1527515545081-5db817172677?w=1200&h=630&fit=crop"
-                alt="7 Organizing Tips for a Clutter-Free Home"
-                class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
-                loading="lazy"
-              />
-            </a>
-
-            <div class="flex flex-col flex-grow p-6">
-              <div class="flex items-center gap-3">
-                <span
-                  class="inline-flex items-center rounded-full bg-primary-100 px-2.5 py-0.5 text-xs font-medium text-primary-700 dark:bg-primary-900/50 dark:text-primary-300"
-                >
-                  Humas
-                </span>
-                <span class="text-sm text-gray-500 dark:text-gray-400">
-                  November 22, 2025
-                </span>
-              </div>
-
-              <h3
-                class="mt-3 text-lg font-bold text-gray-900 transition-colors group-hover:text-primary-600 dark:text-white dark:group-hover:text-primary-400"
-              >
-                7 Organizing Tips for a Clutter-Free Home
-              </h3>
-
-              <p
-                class="mt-2 mb-6 line-clamp-2 text-sm text-gray-600 dark:text-gray-400"
-              >
-                Simple decluttering strategies that professional organizers
-                swear by. Transform your space with these practical methods.
-              </p>
-
-              <button
-                id="openModalBtn"
-                class="mt-auto group/btn flex w-full items-center justify-center gap-2 px-8 py-3 border border-gray-200 rounded-2xl text-slate-800 font-semibold text-lg transition-all duration-300 ease-in-out hover:bg-black hover:text-white hover:border-black dark:text-white dark:border-gray-700 dark:hover:bg-white dark:hover:text-black"
-              >
-                <span>Detail Kegiatan</span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="2"
-                  stroke="currentColor"
-                  class="w-5 h-5 transition-transform duration-300 group-hover/btn:translate-x-1"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
-                </svg>
-              </button>
-            </div>
-          </article>
-          <article
-            data-category="guide"
-            class="group flex flex-col h-full overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-gray-200 transition-all hover:shadow-lg dark:bg-gray-900 dark:ring-gray-800"
-          >
-            <a
-              href="organizing-tips-for-a-clutter-free-home/index.html"
-              class="block aspect-[3/2] overflow-hidden shrink-0"
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+            </svg>
+          </button>
+        </div>
+      </article>
+      <article
+        data-category="guide"
+        class="group flex flex-col h-full overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-gray-200 transition-all hover:shadow-lg dark:bg-gray-900 dark:ring-gray-800"
+      >
+        <a
+          href="organizing-tips-for-a-clutter-free-home/index.html"
+          class="block aspect-[3/2] overflow-hidden shrink-0"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1527515545081-5db817172677?w=1200&h=630&fit=crop"
+            alt="7 Organizing Tips for a Clutter-Free Home"
+            class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+            loading="lazy"
+          />
+        </a>
+        <div class="flex flex-col flex-grow p-6">
+          <div class="flex items-center gap-3">
+            <span
+              class="inline-flex items-center rounded-full bg-primary-100 px-2.5 py-0.5 text-xs font-medium text-primary-700 dark:bg-primary-900/50 dark:text-primary-300"
             >
-              <img
-                src="https://images.unsplash.com/photo-1527515545081-5db817172677?w=1200&h=630&fit=crop"
-                alt="7 Organizing Tips for a Clutter-Free Home"
-                class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
-                loading="lazy"
-              />
-            </a>
+              Syiar
+            </span>
+            <span class="text-sm text-gray-500 dark:text-gray-400">
+              Maret (Menyesuaikan)
+            </span>
+          </div>
 
-            <div class="flex flex-col flex-grow p-6">
-              <div class="flex items-center gap-3">
-                <span
-                  class="inline-flex items-center rounded-full bg-primary-100 px-2.5 py-0.5 text-xs font-medium text-primary-700 dark:bg-primary-900/50 dark:text-primary-300"
-                >
-                  Syiar
-                </span>
-                <span class="text-sm text-gray-500 dark:text-gray-400">
-                  November 22, 2025
-                </span>
-              </div>
-
-              <h3
-                class="mt-3 text-lg font-bold text-gray-900 transition-colors group-hover:text-primary-600 dark:text-white dark:group-hover:text-primary-400"
-              >
-                7 Organizing Tips for a Clutter-Free Home
-              </h3>
-
-              <p
-                class="mt-2 mb-6 line-clamp-2 text-sm text-gray-600 dark:text-gray-400"
-              >
-                Simple decluttering strategies that professional organizers
-                swear by. Transform your space with these practical methods.
-              </p>
-
-              <button
-                id="openModalBtn"
-                class="mt-auto group/btn flex w-full items-center justify-center gap-2 px-8 py-3 border border-gray-200 rounded-2xl text-slate-800 font-semibold text-lg transition-all duration-300 ease-in-out hover:bg-black hover:text-white hover:border-black dark:text-white dark:border-gray-700 dark:hover:bg-white dark:hover:text-black"
-              >
-                <span>Detail Kegiatan</span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="2"
-                  stroke="currentColor"
-                  class="w-5 h-5 transition-transform duration-300 group-hover/btn:translate-x-1"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
-                </svg>
-              </button>
-            </div>
-          </article>
-          <article
-            data-category="guide"
-            class="group overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-gray-200 transition-all hover:shadow-lg dark:bg-gray-900 dark:ring-gray-800"
+          <h3
+            class="mt-3 text-lg font-bold text-gray-900 transition-colors group-hover:text-primary-600 dark:text-white dark:group-hover:text-primary-400"
           >
-            <a href="spring-cleaning-checklist/index.html" class="block">
-              <div class="aspect-[3/2] overflow-hidden">
-                <img
-                  src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&h=500&fit=crop"
-                  alt="The Ultimate Spring Cleaning Checklist for Every Room"
-                  class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
-                  loading="lazy"
-                />
-              </div>
-              <div class="p-6">
-                <div class="flex items-center gap-3">
-                  <span
-                    class="inline-flex items-center rounded-full bg-primary-100 px-2.5 py-0.5 text-xs font-medium text-primary-700 dark:bg-primary-900/50 dark:text-primary-300"
-                  >
-                    Syiar
-                  </span>
-                  <span class="text-sm text-gray-500 dark:text-gray-400">
-                    January 15, 2026
-                  </span>
-                </div>
-                <h3
-                  class="mt-3 text-lg font-bold text-gray-900 transition-colors group-hover:text-primary-600 dark:text-white dark:group-hover:text-primary-400"
-                >
-                  The Ultimate Spring Cleaning Checklist for Every Room
-                </h3>
-                <p
-                  class="mt-2 line-clamp-2 text-sm text-gray-600 dark:text-gray-400"
-                >
-                  A comprehensive room-by-room guide to deep cleaning your home
-                  this spring. From kitchen to bathroom, we cover every detail.
-                </p>
-                <button
-                id="openModalBtn"
-                class="mt-8 group/btn flex w-full items-center justify-center gap-2 px-8 py-3 border border-gray-200 rounded-2xl text-slate-800 font-semibold text-lg transition-all duration-300 ease-in-out hover:bg-black hover:text-white hover:border-black dark:text-white dark:border-gray-700 dark:hover:bg-white dark:hover:text-black"
-              >
-                <span>Detail Kegiatan</span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="2"
-                  stroke="currentColor"
-                  class="w-5 h-5 transition-transform duration-300 group-hover/btn:translate-x-1"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
-                </svg>
-              </button>
-              </div>
-            </a>
-          </article>
-          <article
-            data-category="guide"
-            class="group overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-gray-200 transition-all hover:shadow-lg dark:bg-gray-900 dark:ring-gray-800"
+            Buka Bersama
+          </h3>
+
+          <p
+            class="mt-2 mb-6 line-clamp-2 text-sm text-gray-600 dark:text-gray-400"
           >
-            <a href="how-often-should-you-deep-clean/index.html" class="block">
-              <div class="aspect-[3/2] overflow-hidden">
-                <img
-                  src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?w=800&h=500&fit=crop"
-                  alt="How Often Should You Deep Clean Your Home?"
-                  class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
-                  loading="lazy"
-                />
-              </div>
-              <div class="p-6">
-                <div class="flex items-center gap-3">
-                  <span
-                    class="inline-flex items-center rounded-full bg-primary-100 px-2.5 py-0.5 text-xs font-medium text-primary-700 dark:bg-primary-900/50 dark:text-primary-300"
-                  >
-                    Syiar
-                  </span>
-                  <span class="text-sm text-gray-500 dark:text-gray-400">
-                    December 10, 2025
-                  </span>
-                </div>
-                <h3
-                  class="mt-3 text-lg font-bold text-gray-900 transition-colors group-hover:text-primary-600 dark:text-white dark:group-hover:text-primary-400"
-                >
-                  The Ultimate Spring Cleaning Checklist for Every Room
-                </h3>
-                <p
-                  class="mt-2 line-clamp-2 text-sm text-gray-600 dark:text-gray-400"
-                >
-                  A practical guide to deep cleaning frequency for every room.
-                  Learn the ideal schedule based on your household size and
-                  lifestyle.
-                </p>
-                <button
-                id="openModalBtn"
-                class="mt-8 group/btn flex w-full items-center justify-center gap-2 px-8 py-3 border border-gray-200 rounded-2xl text-slate-800 font-semibold text-lg transition-all duration-300 ease-in-out hover:bg-black hover:text-white hover:border-black dark:text-white dark:border-gray-700 dark:hover:bg-white dark:hover:text-black"
-              >
-                <span>Detail Kegiatan</span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="2"
-                  stroke="currentColor"
-                  class="w-5 h-5 transition-transform duration-300 group-hover/btn:translate-x-1"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
-                </svg>
-              </button>
-              </div>
-            </a>
-          </article>
-          <article
-            data-category="lifestyle"
-            class="group flex flex-col h-full overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-gray-200 transition-all hover:shadow-lg dark:bg-gray-900 dark:ring-gray-800"
+            Menjalin kebersamaan dan kekeluargaan dalam bingkai ramadhan
+          </p>
+
+          <button
+            class="openModalBtn mt-auto group/btn flex w-full items-center justify-center gap-2 rounded-2xl border border-gray-200 px-8 py-3 text-lg font-semibold text-slate-800 transition-all duration-300 hover:-translate-y-1 hover:bg-black hover:text-white hover:shadow-xl"
+            data-title="Buka Bersama"
+            data-date="Maret (Menyesuaikan)"
+            data-sasaran="Anggota Rispol"
+            data-description="Menjalin kebersamaan dan kekeluargaan dalam bingkai ramadhan."
+            data-image="https://images.unsplash.com/photo-1527515545081-5db817172677?w=1200&h=630&fit=crop"
           >
-            <a
-              href="organizing-tips-for-a-clutter-free-home/index.html"
-              class="block aspect-[3/2] overflow-hidden shrink-0"
+            <span>Detail Kegiatan</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              class="w-5 h-5 transition-transform duration-300 group-hover/btn:translate-x-1"
             >
-              <img
-                src="https://images.unsplash.com/photo-1527515545081-5db817172677?w=1200&h=630&fit=crop"
-                alt="7 Organizing Tips for a Clutter-Free Home"
-                class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
-                loading="lazy"
-              />
-            </a>
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+            </svg>
+          </button>
+        </div>
+      </article>
+      <article
+        data-category="guide"
+        class="group flex flex-col h-full overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-gray-200 transition-all hover:shadow-lg dark:bg-gray-900 dark:ring-gray-800"
+      >
+        <a
+          href="organizing-tips-for-a-clutter-free-home/index.html"
+          class="block aspect-[3/2] overflow-hidden shrink-0"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1527515545081-5db817172677?w=1200&h=630&fit=crop"
+            alt="7 Organizing Tips for a Clutter-Free Home"
+            class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+            loading="lazy"
+          />
+        </a>
+        <div class="flex flex-col flex-grow p-6">
+          <div class="flex items-center gap-3">
+            <span
+              class="inline-flex items-center rounded-full bg-primary-100 px-2.5 py-0.5 text-xs font-medium text-primary-700 dark:bg-primary-900/50 dark:text-primary-300"
+            >
+              Syiar
+            </span>
+            <span class="text-sm text-gray-500 dark:text-gray-400">
+              Setiap hari Jumat
+            </span>
+          </div>
 
-            <div class="flex flex-col flex-grow p-6">
-              <div class="flex items-center gap-3">
-                <span
-                  class="inline-flex items-center rounded-full bg-primary-100 px-2.5 py-0.5 text-xs font-medium text-primary-700 dark:bg-primary-900/50 dark:text-primary-300"
-                >
-                  Mentoring
-                </span>
-                <span class="text-sm text-gray-500 dark:text-gray-400">
-                  November 22, 2025
-                </span>
-              </div>
+          <h3
+            class="mt-3 text-lg font-bold text-gray-900 transition-colors group-hover:text-primary-600 dark:text-white dark:group-hover:text-primary-400"
+          >
+            Kajian Jumat
+          </h3>
 
-              <h3
-                class="mt-3 text-lg font-bold text-gray-900 transition-colors group-hover:text-primary-600 dark:text-white dark:group-hover:text-primary-400"
-              >
-                7 Organizing Tips for a Clutter-Free Home
-              </h3>
+          <p
+            class="mt-2 mb-6 line-clamp-2 text-sm text-gray-600 dark:text-gray-400"
+          >
+            Memberikan dakwah keislaman pada hari jumat
+          </p>
 
-              <p
-                class="mt-2 mb-6 line-clamp-2 text-sm text-gray-600 dark:text-gray-400"
-              >
-                Simple decluttering strategies that professional organizers
-                swear by. Transform your space with these practical methods.
-              </p>
+          <button
+            class="openModalBtn mt-auto group/btn flex w-full items-center justify-center gap-2 rounded-2xl border border-gray-200 px-8 py-3 text-lg font-semibold text-slate-800 transition-all duration-300 hover:-translate-y-1 hover:bg-black hover:text-white hover:shadow-xl"
+            data-title="Kajian Jumat"
+            data-date="Setiap Hari Jumat"
+            data-sasaran="Mahasiswa Polinema"
+            data-description="Memberikan dakwah keislaman pada hari jumat."
+            data-image="https://images.unsplash.com/photo-1527515545081-5db817172677?w=1200&h=630&fit=crop"
+          >
+            <span>Detail Kegiatan</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              class="w-5 h-5 transition-transform duration-300 group-hover/btn:translate-x-1"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+            </svg>
+          </button>
+        </div>
+      </article>
+      <article
+        data-category="guide"
+        class="group flex flex-col h-full overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-gray-200 transition-all hover:shadow-lg dark:bg-gray-900 dark:ring-gray-800"
+      >
+        <a
+          href="organizing-tips-for-a-clutter-free-home/index.html"
+          class="block aspect-[3/2] overflow-hidden shrink-0"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1527515545081-5db817172677?w=1200&h=630&fit=crop"
+            alt="7 Organizing Tips for a Clutter-Free Home"
+            class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+            loading="lazy"
+          />
+        </a>
+        <div class="flex flex-col flex-grow p-6">
+          <div class="flex items-center gap-3">
+            <span
+              class="inline-flex items-center rounded-full bg-primary-100 px-2.5 py-0.5 text-xs font-medium text-primary-700 dark:bg-primary-900/50 dark:text-primary-300"
+            >
+              Syiar
+            </span>
+            <span class="text-sm text-gray-500 dark:text-gray-400">
+              2 Minggu Sekali
+            </span>
+          </div>
 
-              <button
-                id="openModalBtn"
-                class="mt-auto group/btn flex w-full items-center justify-center gap-2 px-8 py-3 border border-gray-200 rounded-2xl text-slate-800 font-semibold text-lg transition-all duration-300 ease-in-out hover:bg-black hover:text-white hover:border-black dark:text-white dark:border-gray-700 dark:hover:bg-white dark:hover:text-black"
-              >
-                <span>Detail Kegiatan</span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="2"
-                  stroke="currentColor"
-                  class="w-5 h-5 transition-transform duration-300 group-hover/btn:translate-x-1"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
-                </svg>
-              </button>
-            </div>
-          </article>
+          <h3
+            class="mt-3 text-lg font-bold text-gray-900 transition-colors group-hover:text-primary-600 dark:text-white dark:group-hover:text-primary-400"
+          >
+            Rutinan Banjari
+          </h3>
+
+          <p
+            class="mt-2 mb-6 line-clamp-2 text-sm text-gray-600 dark:text-gray-400"
+          >
+            Mempererat ukhuwah dan menumbuhkan kecintaan sholawat kepada baginda
+            nabi muhammad SAW sebagai bentuk syiar
+          </p>
+
+          <button
+            class="openModalBtn mt-auto group/btn flex w-full items-center justify-center gap-2 rounded-2xl border border-gray-200 px-8 py-3 text-lg font-semibold text-slate-800 transition-all duration-300 hover:-translate-y-1 hover:bg-black hover:text-white hover:shadow-xl"
+            data-title="Rutinan Banjari"
+            data-date="2 Minggu Sekali"
+            data-sasaran="Anggota banjari Dan Mahasiswa yang mengikuti."
+            data-description="Mempererat ukhuwah dan menumbuhkan kecintaan sholawat kepada baginda besar Nabi Muhammad SAW sebagai bentuk syi’ar serta Kegiatan latina dan pembinaan seni hadrah yang dilaksanakan secara berkali sebagai sarana pengembangan bakat serta peningkatan kualitas penampilan anggota."
+            data-image="https://images.unsplash.com/photo-1527515545081-5db817172677?w=1200&h=630&fit=crop"
+          >
+            <span>Detail Kegiatan</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              class="w-5 h-5 transition-transform duration-300 group-hover/btn:translate-x-1"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+            </svg>
+          </button>
+        </div>
+      </article>
+      <article
+        data-category="guide"
+        class="group flex flex-col h-full overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-gray-200 transition-all hover:shadow-lg dark:bg-gray-900 dark:ring-gray-800"
+      >
+        <a
+          href="organizing-tips-for-a-clutter-free-home/index.html"
+          class="block aspect-[3/2] overflow-hidden shrink-0"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1527515545081-5db817172677?w=1200&h=630&fit=crop"
+            alt="7 Organizing Tips for a Clutter-Free Home"
+            class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+            loading="lazy"
+          />
+        </a>
+        <div class="flex flex-col flex-grow p-6">
+          <div class="flex items-center gap-3">
+            <span
+              class="inline-flex items-center rounded-full bg-primary-100 px-2.5 py-0.5 text-xs font-medium text-primary-700 dark:bg-primary-900/50 dark:text-primary-300"
+            >
+              Syiar
+            </span>
+            <span class="text-sm text-gray-500 dark:text-gray-400">
+              Juni (Menyesuaikan)
+            </span>
+          </div>
+
+          <h3
+            class="mt-3 text-lg font-bold text-gray-900 transition-colors group-hover:text-primary-600 dark:text-white dark:group-hover:text-primary-400"
+          >
+            Care Children Islamic
+          </h3>
+
+          <p
+            class="mt-2 mb-6 line-clamp-2 text-sm text-gray-600 dark:text-gray-400"
+          >
+            Program Kerja yang berbentuk bakti sosial yang berfokus pada
+            kepedulian anak-anak
+          </p>
+
+          <button
+            class="openModalBtn mt-auto group/btn flex w-full items-center justify-center gap-2 rounded-2xl border border-gray-200 px-8 py-3 text-lg font-semibold text-slate-800 transition-all duration-300 hover:-translate-y-1 hover:bg-black hover:text-white hover:shadow-xl"
+            data-title="Care Children Islamic"
+            data-date="Juni (Menyesuaikan)"
+            data-sasaran="Anak Yatim Piatu yang membutuhkan Bisa ke panti asuhan dll."
+            data-description="Program kerja yang berbentuk bakti sosial yang berfokus pada kepedulian anak anak, khusus nya anak yatim yang membutuhkan melalui pendekatan edukatif dan islami."
+            data-image="https://images.unsplash.com/photo-1527515545081-5db817172677?w=1200&h=630&fit=crop"
+          >
+            <span>Detail Kegiatan</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              class="w-5 h-5 transition-transform duration-300 group-hover/btn:translate-x-1"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+            </svg>
+          </button>
+        </div>
+      </article>
+      <article
+        data-category="guide"
+        class="group flex flex-col h-full overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-gray-200 transition-all hover:shadow-lg dark:bg-gray-900 dark:ring-gray-800"
+      >
+        <a
+          href="organizing-tips-for-a-clutter-free-home/index.html"
+          class="block aspect-[3/2] overflow-hidden shrink-0"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1527515545081-5db817172677?w=1200&h=630&fit=crop"
+            alt="7 Organizing Tips for a Clutter-Free Home"
+            class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+            loading="lazy"
+          />
+        </a>
+        <div class="flex flex-col flex-grow p-6">
+          <div class="flex items-center gap-3">
+            <span
+              class="inline-flex items-center rounded-full bg-primary-100 px-2.5 py-0.5 text-xs font-medium text-primary-700 dark:bg-primary-900/50 dark:text-primary-300"
+            >
+              Syiar
+            </span>
+            <span class="text-sm text-gray-500 dark:text-gray-400">
+              (Menyesuaikan)
+            </span>
+          </div>
+
+          <h3
+            class="mt-3 text-lg font-bold text-gray-900 transition-colors group-hover:text-primary-600 dark:text-white dark:group-hover:text-primary-400"
+          >
+            Eksekusi PHBI
+          </h3>
+
+          <p
+            class="mt-2 mb-6 line-clamp-2 text-sm text-gray-600 dark:text-gray-400"
+          >
+            Sebagai pengggerak dan memperingati hari besar islam
+          </p>
+
+          <button
+            class="openModalBtn mt-auto group/btn flex w-full items-center justify-center gap-2 rounded-2xl border border-gray-200 px-8 py-3 text-lg font-semibold text-slate-800 transition-all duration-300 hover:-translate-y-1 hover:bg-black hover:text-white hover:shadow-xl"
+            data-title="Eksekusi PHBI"
+            data-date="(Menyesuaikan)"
+            data-sasaran="Seluruh warga Polinema PSDKU diKabupaten Lumajang."
+            data-description="Sebagai penggerak dan memperingati hari besar islam."
+            data-image="https://images.unsplash.com/photo-1527515545081-5db817172677?w=1200&h=630&fit=crop"
+          >
+            <span>Detail Kegiatan</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              class="w-5 h-5 transition-transform duration-300 group-hover/btn:translate-x-1"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+            </svg>
+          </button>
+        </div>
+      </article>
+      <article
+        data-category="lifestyle"
+        class="group flex flex-col h-full overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-gray-200 transition-all hover:shadow-lg dark:bg-gray-900 dark:ring-gray-800"
+      >
+        <a
+          href="organizing-tips-for-a-clutter-free-home/index.html"
+          class="block aspect-[3/2] overflow-hidden shrink-0"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1527515545081-5db817172677?w=1200&h=630&fit=crop"
+            alt="7 Organizing Tips for a Clutter-Free Home"
+            class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+            loading="lazy"
+          />
+        </a>
+
+        <div class="flex flex-col flex-grow p-6">
+          <div class="flex items-center gap-3">
+            <span
+              class="inline-flex items-center rounded-full bg-primary-100 px-2.5 py-0.5 text-xs font-medium text-primary-700 dark:bg-primary-900/50 dark:text-primary-300"
+            >
+              Mentoring
+            </span>
+            <span class="text-sm text-gray-500 dark:text-gray-400">
+              (Menyesuaikan)
+            </span>
+          </div>
+
+          <h3
+            class="mt-3 text-lg font-bold text-gray-900 transition-colors group-hover:text-primary-600 dark:text-white dark:group-hover:text-primary-400"
+          >
+            Mentoring Keagamaan
+          </h3>
+
+          <p
+            class="mt-2 mb-6 line-clamp-2 text-sm text-gray-600 dark:text-gray-400"
+          >
+            Sebagai sarana belajar agama bagi mahasiswa baru untuk meningkatkan
+            keimanan dan ketaqwaan
+          </p>
+
+          <button
+            class="openModalBtn mt-auto group/btn flex w-full items-center justify-center gap-2 rounded-2xl border border-gray-200 px-8 py-3 text-lg font-semibold text-slate-800 transition-all duration-300 hover:-translate-y-1 hover:bg-black hover:text-white hover:shadow-xl"
+            data-title="Mentoring Keagamaan"
+            data-date="(Menyesuaikan)"
+            data-sasaran="Mahasiswa dan Mahasiswi"
+            data-description="Sebagai sarana belajar agama bagi mahasiswa baru untuk meningkatkan keimanan dan ketaqwaan dan nantinya dapat diterapkan dikehidupan kampus dan sehari-hari serta sebagai syarat kelulusan mahasiswa"
+            data-image="https://images.unsplash.com/photo-1527515545081-5db817172677?w=1200&h=630&fit=crop"
+          >
+            <span>Detail Kegiatan</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              class="w-5 h-5 transition-transform duration-300 group-hover/btn:translate-x-1"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+            </svg>
+          </button>
+        </div>
+      </article>
+      <article
+        data-category="lifestyle"
+        class="group flex flex-col h-full overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-gray-200 transition-all hover:shadow-lg dark:bg-gray-900 dark:ring-gray-800"
+      >
+        <a
+          href="organizing-tips-for-a-clutter-free-home/index.html"
+          class="block aspect-[3/2] overflow-hidden shrink-0"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1527515545081-5db817172677?w=1200&h=630&fit=crop"
+            alt="7 Organizing Tips for a Clutter-Free Home"
+            class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+            loading="lazy"
+          />
+        </a>
+
+        <div class="flex flex-col flex-grow p-6">
+          <div class="flex items-center gap-3">
+            <span
+              class="inline-flex items-center rounded-full bg-primary-100 px-2.5 py-0.5 text-xs font-medium text-primary-700 dark:bg-primary-900/50 dark:text-primary-300"
+            >
+              Mentoring
+            </span>
+            <span class="text-sm text-gray-500 dark:text-gray-400">
+              (Menyesuaikan)
+            </span>
+          </div>
+
+          <h3
+            class="mt-3 text-lg font-bold text-gray-900 transition-colors group-hover:text-primary-600 dark:text-white dark:group-hover:text-primary-400"
+          >
+            Rekap Mentoring
+          </h3>
+
+          <p
+            class="mt-2 mb-6 line-clamp-2 text-sm text-gray-600 dark:text-gray-400"
+          >
+            Melakukan perekapan tugsa tugas mentoring untuk untuk dimasukkan
+            dalam data
+          </p>
+
+          <button
+            class="openModalBtn mt-auto group/btn flex w-full items-center justify-center gap-2 rounded-2xl border border-gray-200 px-8 py-3 text-lg font-semibold text-slate-800 transition-all duration-300 hover:-translate-y-1 hover:bg-black hover:text-white hover:shadow-xl"
+            data-title="Rekap Mentoring"
+            data-date="(Menyesuaikan)"
+            data-sasaran="Semua tugas Mahasiswa selesai dan input data selesai"
+            data-description="Program kerja untuk mengembangkan kreativitas mahasiswa dalam dakwah digital melalui fotografi dan videografi islami."
+            data-image="https://images.unsplash.com/photo-1527515545081-5db817172677?w=1200&h=630&fit=crop"
+          >
+            <span>Detail Kegiatan</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              class="w-5 h-5 transition-transform duration-300 group-hover/btn:translate-x-1"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+            </svg>
+          </button>
+        </div>
+      </article>
+      <article
+        data-category="lifestyle"
+        class="group flex flex-col h-full overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-gray-200 transition-all hover:shadow-lg dark:bg-gray-900 dark:ring-gray-800"
+      >
+        <a
+          href="organizing-tips-for-a-clutter-free-home/index.html"
+          class="block aspect-[3/2] overflow-hidden shrink-0"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1527515545081-5db817172677?w=1200&h=630&fit=crop"
+            alt="7 Organizing Tips for a Clutter-Free Home"
+            class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+            loading="lazy"
+          />
+        </a>
+
+        <div class="flex flex-col flex-grow p-6">
+          <div class="flex items-center gap-3">
+            <span
+              class="inline-flex items-center rounded-full bg-primary-100 px-2.5 py-0.5 text-xs font-medium text-primary-700 dark:bg-primary-900/50 dark:text-primary-300"
+            >
+              Mentoring
+            </span>
+            <span class="text-sm text-gray-500 dark:text-gray-400">
+              (Menyesuaikan)
+            </span>
+          </div>
+
+          <h3
+            class="mt-3 text-lg font-bold text-gray-900 transition-colors group-hover:text-primary-600 dark:text-white dark:group-hover:text-primary-400"
+          >
+            Mentor Islami
+          </h3>
+
+          <p
+            class="mt-2 mb-6 line-clamp-2 text-sm text-gray-600 dark:text-gray-400"
+          >
+            Melakukan pembinaan mahasiswa dalam pemahaman dan penerapan alquran
+            dalam kehidupan kampus sehari-hari
+          </p>
+
+          <button
+            class="openModalBtn mt-auto group/btn flex w-full items-center justify-center gap-2 rounded-2xl border border-gray-200 px-8 py-3 text-lg font-semibold text-slate-800 transition-all duration-300 hover:-translate-y-1 hover:bg-black hover:text-white hover:shadow-xl"
+            data-title="Mentor Islami"
+            data-date="(Menyesuaikan)"
+            data-sasaran="Mahasiswa Polinema"
+            data-description="Program kerja untuk mengembangkan kreativitas mahasiswa dalam dakwah digital melalui fotografi dan videografi islami."
+            data-image="https://images.unsplash.com/photo-1527515545081-5db817172677?w=1200&h=630&fit=crop"
+          >
+            <span>Detail Kegiatan</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              class="w-5 h-5 transition-transform duration-300 group-hover/btn:translate-x-1"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+            </svg>
+          </button>
+        </div>
+      </article>
+    </div>
+  </main>
+  <!-- Modal -->
+  <div
+    id="modal"
+    class="fixed inset-0 z-50 hidden items-center justify-center bg-black/60 p-4"
+  >
+    <div
+      class="relative max-h-[90vh] w-full max-w-4xl overflow-y-auto rounded-3xl bg-white shadow-2xl"
+    >
+      <!-- tombol close atas -->
+      <button
+        id="closeModalBtn"
+        class="absolute right-5 top-5 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-white/90 text-2xl font-bold text-slate-700 shadow-lg transition hover:bg-red-500 hover:text-white"
+      >
+      </button>
+
+      <!-- Gambar -->
+      <div class="relative h-[300px] overflow-hidden">
+        <img id="modalImage" src="" class="h-full w-full object-cover" />
+
+        <div class="absolute inset-0 bg-black/40"></div>
+
+        <h2
+          id="modalTitle"
+          class="absolute bottom-6 left-6 text-4xl font-bold text-white"
+        >
+        </h2>
+      </div>
+
+      <!-- Isi -->
+      <div class="p-8">
+        <div class="grid gap-4 sm:grid-cols-2">
+          <div class="rounded-2xl bg-yellow-50 p-5">
+            <p class="text-sm text-orange-500">Tanggal</p>
+
+            <h3 id="modalDate" class="mt-2 text-xl font-bold text-slate-800">
+            </h3>
+          </div>
+
+          <div class="rounded-2xl bg-blue-50 p-5">
+            <p class="text-sm text-blue-500">Sasaran</p>
+
+            <h3 id="modalSasaran" class="mt-2 text-xl font-bold text-slate-800">
+            </h3>
+          </div>
+        </div>
+
+        <div class="mt-8">
+          <h3 class="text-3xl font-bold text-slate-800">Deskripsi Kegiatan</h3>
+
+          <p
+            id="modalDescription"
+            class="mt-4 text-lg leading-relaxed text-gray-600"
+          >
+          </p>
+        </div>
+
+        <div class="mt-10 flex gap-4">
+          <button
+            id="closeModalBtn2"
+            class="w-full rounded-2xl bg-gray-200 py-4 font-bold"
+          >
+            Tutup
+          </button>
+
+          <button
+            class="w-full rounded-2xl bg-primary-600 py-4 font-bold text-white"
+          >
+            Bagikan Kegiatan
+          </button>
         </div>
       </div>
-    </section>
-  </main>
+    </div>
+  </div>
+  <script>
+    const modal = document.getElementById("modal")!;
+
+    const openButtons = document.querySelectorAll(".openModalBtn");
+
+    const closeBtn = document.getElementById("closeModalBtn")!;
+
+    const closeBtn2 = document.getElementById("closeModalBtn2")!;
+
+    // isi modal
+    const modalTitle = document.getElementById("modalTitle")!;
+
+    const modalDate = document.getElementById("modalDate")!;
+
+    const modalSasaran = document.getElementById("modalSasaran")!;
+
+    const modalDescription = document.getElementById("modalDescription")!;
+
+    const modalImage = document.getElementById(
+      "modalImage",
+    ) as HTMLImageElement;
+
+    // buka modal
+    openButtons.forEach((button) => {
+      const btn = button as HTMLButtonElement;
+
+      button.addEventListener("click", () => {
+        const title = btn.dataset.title;
+
+        const date = btn.dataset.date;
+
+        const sasaran = btn.dataset.sasaran;
+
+        const description = btn.dataset.description;
+
+        const image = btn.dataset.image;
+
+        // isi data modal
+        modalTitle.textContent = title || "";
+
+        modalDate.textContent = date || "";
+
+        modalSasaran.textContent = sasaran || "";
+
+        modalDescription.textContent = description || "";
+
+        modalImage.src = image || "";
+
+        // tampilkan modal
+        modal.classList.remove("hidden");
+
+        modal.classList.add("flex");
+      });
+    });
+
+    // tombol close atas
+    closeBtn.addEventListener("click", () => {
+      modal.classList.add("hidden");
+
+      modal.classList.remove("flex");
+    });
+
+    // tombol close bawah
+    closeBtn2.addEventListener("click", () => {
+      modal.classList.add("hidden");
+
+      modal.classList.remove("flex");
+    });
+
+    // klik background untuk close
+    modal.addEventListener("click", (e) => {
+      if (e.target === modal) {
+        modal.classList.add("hidden");
+
+        modal.classList.remove("flex");
+      }
+    });
+  </script>
 </BaseLayout>
