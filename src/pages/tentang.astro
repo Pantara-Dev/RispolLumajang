@@ -1,237 +1,236 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro"
+import BaseLayout from "../layouts/BaseLayout.astro";
 import struktur_kepengurusan_rispol from "../assets/img/dokumentasi/struktur_kepengurusan0.webp";
+import ketua_umum from "../assets/img/struktur_kepengurusan/ketua_umum.webp";
+import wakil_ketua from "../assets/img/struktur_kepengurusan/wakil_ketua.webp";
+import sekretaris from "../assets/img/struktur_kepengurusan/sekretaris.webp";
+import bendahara1 from "../assets/img/struktur_kepengurusan/bendahara1.webp";
+import bendahara2 from "../assets/img/struktur_kepengurusan/bendahara2.webp";
 ---
 
 <BaseLayout>
-    <main id="main-content">
-        <section class="bg-primary-600 py-16 lg:py-24 dark:bg-primary-900">
-          <div class="container mx-auto px-4 text-center lg:px-8">
-            <h1 class="text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
-              Tentang RISPOL Lumajang
-            </h1>
-            <p class="mx-auto mt-4 max-w-2xl text-lg text-primary-100">
-              Kami hadir untuk mempererat ukhuwah dan meningkatkan pemahaman agama di lingkungan Politeknik Negeri Malang PSDKU Lumajang
-            </p>
-            <nav
-              class="mt-6 flex items-center justify-center gap-2 text-sm text-primary-200"
-              aria-label="Breadcrumb"
+  <main id="main-content">
+    <section class="bg-primary-600 py-16 lg:py-24 dark:bg-primary-900">
+      <div class="container mx-auto px-4 text-center lg:px-8">
+        <h1 class="text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
+          Tentang RISPOL Lumajang
+        </h1>
+        <p class="mx-auto mt-4 max-w-2xl text-lg text-primary-100">
+          Kami hadir untuk mempererat ukhuwah dan meningkatkan pemahaman agama
+          di lingkungan Politeknik Negeri Malang PSDKU Lumajang
+        </p>
+        <nav
+          class="mt-6 flex items-center justify-center gap-2 text-sm text-primary-200"
+          aria-label="Breadcrumb"
+        >
+          <a href="/" class="transition-colors hover:text-white"> Beranda </a>
+          <span>/</span>
+          <span class="text-white">Tentang Kami</span>
+        </nav>
+      </div>
+    </section>
+    <section class="py-20 lg:py-28">
+      <div class="container mx-auto px-4 lg:px-8">
+        <div class="grid items-center gap-12 lg:grid-cols-2">
+          <div>
+            <div
+              class="mb-4 inline-flex items-center rounded-full bg-primary-100 px-3 py-1 text-sm font-medium text-primary-700 dark:bg-primary-900/50 dark:text-primary-300"
             >
-              <a
-                href="/"
-                class="transition-colors hover:text-white"
-              >
-                Beranda
-              </a>
-              <span>/</span> <span class="text-white">Tentang Kami</span>
-            </nav>
-          </div>
-        </section>
-        <section class="py-20 lg:py-28">
-          <div class="container mx-auto px-4 lg:px-8">
-            <div class="grid items-center gap-12 lg:grid-cols-2">
-              <div>
-                <div class="mb-4 inline-flex items-center rounded-full bg-primary-100 px-3 py-1 text-sm font-medium text-primary-700 dark:bg-primary-900/50 dark:text-primary-300">
-                  Profil Kami
-                </div>
-                <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl dark:text-white">
-                  Mengenal RISPOL Lumajang Lebih Dekat
-                </h2>
-                <p class="mt-4 text-lg font-medium italic text-primary-600 dark:text-primary-400">
-                  RISPOL (Remaja Islam Politeknik Negeri Malang) Lumajang adalah sebuah himpunan mahasiswa yang berdedikasi untuk mengembangkan potensi keislaman, kepemimpinan, dan sosial di lingkungan kampus Politeknik Negeri Malang PSDKU Lumajang. Sejak didirikan pada tahun 20XX, RISPOL telah menjadi wadah bagi mahasiswa untuk menyalurkan bakat, meningkatkan pemahaman agama, dan berkontribusi positif dalam masyarakat kampus.
-                </p>
-                <p class="mt-4 text-gray-600 dark:text-gray-400"></p>
-                <p class="mt-4 text-gray-600 dark:text-gray-400"></p>
-              </div>
-              <div class="overflow-hidden rounded-2xl">
-                <img
-                  src={struktur_kepengurusan_rispol.src}
-                  alt="About SparkleClean"
-                  class="h-full w-full object-cover"
-                  loading="lazy"
-                />
-              </div>
+              Profil Kami
             </div>
-          </div>
-        </section>
-        <section class="bg-gray-50 py-20 lg:py-28 dark:bg-gray-900">
-          <div class="container mx-auto px-4 lg:px-8">
-            <div class="mx-auto max-w-3xl text-center">
-              <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl dark:text-white">
-                Prinsip Dasar Kami
-              </h2>
-              <p class="mt-4 text-lg text-gray-600 dark:text-gray-400">
-                Nilai-nilai yang menjadi landasan setiap langkah dan program kerja RISPOL.
-              </p>
-            </div>
-            <div class="mt-16 grid gap-8 sm:grid-cols-3">
-              <div class="rounded-2xl bg-white p-8 shadow-sm dark:bg-gray-800">
-                <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-primary-100 text-primary-600 dark:bg-primary-900/50 dark:text-primary-400">
-                  <!-- <svg
-                    class="h-6 w-6"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z"
-                    ></path>
-                  </svg> -->
-                </div>
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                  Ukhuwah
-                </h3>
-                <p class="mt-2 text-gray-600 dark:text-gray-400">
-                  Mengutamakan rasa persaudaraan, kepedulian, dan kebersamaan dalam setiap aktivitas organisasi.
-                </p>
-              </div>
-              <div class="rounded-2xl bg-white p-8 shadow-sm dark:bg-gray-800">
-                <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-primary-100 text-primary-600 dark:bg-primary-900/50 dark:text-primary-400">
-                  <!-- <svg
-                    class="h-6 w-6"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z"
-                    ></path>
-                  </svg> -->
-                </div>
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                  Amanah
-                </h3>
-                <p class="mt-2 text-gray-600 dark:text-gray-400">
-                  Berkomitmen penuh untuk bertanggung jawab dan transparan dalam mengelola kegiatan maupun dana umat.
-                </p>
-                </p>
-              </div>
-              <div class="rounded-2xl bg-white p-8 shadow-sm dark:bg-gray-800">
-                <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-primary-100 text-primary-600 dark:bg-primary-900/50 dark:text-primary-400">
-                  <!-- <svg
-                    class="h-6 w-6"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z"
-                    ></path>
-                  </svg> -->
-                </div>
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                  Syiar
-                </h3>
-                <p class="mt-2 text-gray-600 dark:text-gray-400">
-                  Menjadi roda penggerak dakwah kreatif yang merangkul dan membawa manfaat bagi lingkungan kampus.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="py-20 lg:py-28">
-          <div class="container mx-auto px-4 lg:px-8">
-            <div class="mx-auto max-w-3xl text-center">
-              <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl dark:text-white">
-                Struktur UKM RISPOL Lumajang
-              </h2>
-              <p class="mt-4 text-lg text-gray-600 dark:text-gray-400">
-                Orang-orang dibalik RISPOL Polinema PSDKU Lumajang
-              </p>
-            </div>
-            <div class="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-              <div class="text-center">
-                <div class="mx-auto h-40 w-40 overflow-hidden rounded-full">
-                  <img
-                    src=""
-                    alt=""
-                    class="h-full w-full object-cover"
-                    loading="lazy"
-                  />
-                </div>
-                <h3 class="mt-4 text-lg font-semibold text-gray-900 dark:text-white">
-                  A
-                </h3>
-                <p class="text-sm text-gray-600 dark:text-gray-400">
-                  Ketua Himpunan
-                </p>
-              </div>
-              <div class="text-center">
-                <div class="mx-auto h-40 w-40 overflow-hidden rounded-full">
-                  <img
-                    src=""
-                    alt=""
-                    class="h-full w-full object-cover"
-                    loading="lazy"
-                  />
-                </div>
-                <h3 class="mt-4 text-lg font-semibold text-gray-900 dark:text-white">
-                  B
-                </h3>
-                <p class="text-sm text-gray-600 dark:text-gray-400">
-                  Wakil Ketua Himpunan
-                </p>
-              </div>
-              <div class="text-center">
-                <div class="mx-auto h-40 w-40 overflow-hidden rounded-full">
-                  <img
-                    src=""
-                    alt=""
-                    class="h-full w-full object-cover"
-                    loading="lazy"
-                  />
-                </div>
-                <h3 class="mt-4 text-lg font-semibold text-gray-900 dark:text-white">
-                  C
-                </h3>
-                <p class="text-sm text-gray-600 dark:text-gray-400">
-                  Sekretaris
-                </p>
-              </div>
-              <div class="text-center">
-                <div class="mx-auto h-40 w-40 overflow-hidden rounded-full">
-                  <img
-                    src=""
-                    alt=""
-                    class="h-full w-full object-cover"
-                    loading="lazy"
-                  />
-                </div>
-                <h3 class="mt-4 text-lg font-semibold text-gray-900 dark:text-white">
-                  D
-                </h3>
-                <p class="text-sm text-gray-600 dark:text-gray-400">
-                  Bendahara
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- <section class="bg-primary-600 py-16 lg:py-24 dark:bg-primary-900">
-          <div class="container mx-auto px-4 text-center lg:px-8">
-            <h2 class="text-3xl font-bold text-white sm:text-4xl">
-              Ready for a Cleaner Home?
+            <h2
+              class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl dark:text-white"
+            >
+              Mengenal RISPOL Lumajang Lebih Dekat
             </h2>
-            <p class="mx-auto mt-4 max-w-2xl text-lg text-primary-100">
-              Experience the SparkleClean difference. Book your first cleaning
-              today.
-            </p>
-            <a
-              href="../index.html#quote"
-              class="mt-8 inline-flex items-center justify-center rounded-lg bg-white px-6 py-3 text-sm font-medium text-primary-600 shadow-lg transition-all hover:bg-gray-100"
+            <p
+              class="mt-4 text-lg font-medium italic text-primary-600 dark:text-primary-400"
             >
-              Get Free Quote
-            </a>
+              RISPOL (Remaja Islam Politeknik Negeri Malang) Lumajang adalah
+              sebuah himpunan mahasiswa yang berdedikasi untuk mengembangkan
+              potensi keislaman, kepemimpinan, dan sosial di lingkungan kampus
+              Politeknik Negeri Malang PSDKU Lumajang. Sejak didirikan pada
+              tahun 20XX, RISPOL telah menjadi wadah bagi mahasiswa untuk
+              menyalurkan bakat, meningkatkan pemahaman agama, dan berkontribusi
+              positif dalam masyarakat kampus.
+            </p>
+            <p class="mt-4 text-gray-600 dark:text-gray-400"></p>
           </div>
-        </section> -->
-      </main>
+          <div class="overflow-hidden rounded-2xl">
+            <img
+              src={struktur_kepengurusan_rispol.src}
+              alt="About SparkleClean"
+              class="h-full w-full object-cover"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-gray-50 py-20 lg:py-28 dark:bg-gray-900">
+      <div class="container mx-auto px-4 lg:px-8">
+        <div class="mx-auto max-w-3xl text-center">
+          <h2
+            class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl dark:text-white"
+          >
+            Prinsip Dasar Kami
+          </h2>
+          <p class="mt-4 text-lg text-gray-600 dark:text-gray-400">
+            Nilai-nilai yang menjadi landasan setiap langkah dan program kerja
+            RISPOL.
+          </p>
+        </div>
+        <div class="mt-16 grid gap-8 sm:grid-cols-3">
+          <div
+            class="h-full rounded-2xl bg-white p-8 shadow-sm dark:bg-gray-800"
+          >
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+              Ukhuwah
+            </h3>
+            <p class="mt-2 text-gray-600 dark:text-gray-400">
+              Mengutamakan rasa persaudaraan, kepedulian, dan kebersamaan dalam
+              setiap aktivitas organisasi.
+            </p>
+          </div>
+          <div
+            class="h-full rounded-2xl bg-white p-8 shadow-sm dark:bg-gray-800"
+          >
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+              Amanah
+            </h3>
+            <p class="mt-2 text-gray-600 dark:text-gray-400">
+              Berkomitmen penuh untuk bertanggung jawab dan transparan dalam
+              mengelola kegiatan maupun dana umat.
+            </p>
+          </div>
+        </div>
+        <div class="h-full rounded-2xl bg-white p-8 shadow-sm dark:bg-gray-800">
+          <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+            Syiar
+          </h3>
+          <p class="mt-2 text-gray-600 dark:text-gray-400">
+            Menjadi roda penggerak dakwah kreatif yang merangkul dan membawa
+            manfaat bagi lingkungan kampus.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <section class="py-20 lg:py-28">
+    <div class="mt-16 flex flex-col gap-12">
+      <div class="flex justify-center">
+        <div class="w-full max-w-xs text-center">
+          <div
+            class="mx-auto h-48 w-48 overflow-hidden rounded-full ring-4 ring-primary-100 dark:ring-primary-900/50"
+          >
+            <img
+              src={ketua_umum.src}
+              alt="Ketua Himpunan"
+              class="h-full w-full object-cover bg-gray-200 dark:bg-gray-800"
+              loading="lazy"
+            />
+          </div>
+          <h3 class="mt-5 text-xl font-bold text-gray-900 dark:text-white">
+            Nama Ketua
+          </h3>
+          <p class="text-sm font-medium text-primary-600 dark:text-primary-400">
+            Ketua Himpunan
+          </p>
+        </div>
+      </div>
+
+      <div class="flex justify-center">
+        <div class="w-full max-w-xs text-center">
+          <div
+            class="mx-auto h-40 w-40 overflow-hidden rounded-full ring-4 ring-primary-50 dark:ring-gray-800"
+          >
+            <img
+              src={wakil_ketua.src}
+              alt="Wakil Ketua Himpunan"
+              class="h-full w-full object-cover bg-gray-200 dark:bg-gray-800"
+              loading="lazy"
+            />
+          </div>
+          <h3 class="mt-4 text-lg font-semibold text-gray-900 dark:text-white">
+            Nama Wakil Ketua
+          </h3>
+          <p class="text-sm font-medium text-primary-600 dark:text-primary-400">
+            Wakil Ketua Himpunan
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 pt-4 border-t border-gray-100 dark:border-gray-800"
+      >
+        <div class="text-center">
+          <div class="mx-auto h-36 w-36 overflow-hidden rounded-full">
+            <img
+              src={sekretaris.src}
+              alt="Sekretaris Umum 1"
+              class="h-full w-full object-cover bg-gray-200 dark:bg-gray-800"
+              loading="lazy"
+            />
+          </div>
+          <h3 class="mt-4 text-lg font-semibold text-gray-900 dark:text-white">
+            Nama Sekum 1
+          </h3>
+          <p class="text-sm text-gray-600 dark:text-gray-400">
+            Sekretaris Umum 1
+          </p>
+        </div>
+
+        <div class="text-center">
+          <div class="mx-auto h-36 w-36 overflow-hidden rounded-full">
+            <img
+              src=""
+              alt="Sekretaris Umum 2"
+              class="h-full w-full object-cover bg-gray-200 dark:bg-gray-800"
+              loading="lazy"
+            />
+          </div>
+          <h3 class="mt-4 text-lg font-semibold text-gray-900 dark:text-white">
+            Nama Sekum 2
+          </h3>
+          <p class="text-sm text-gray-600 dark:text-gray-400">
+            Sekretaris Umum 2
+          </p>
+        </div>
+
+        <div class="text-center">
+          <div class="mx-auto h-36 w-36 overflow-hidden rounded-full">
+            <img
+              src={bendahara1.src}
+              alt="Bendahara Umum 1"
+              class="h-full w-full object-cover bg-gray-200 dark:bg-gray-800"
+              loading="lazy"
+            />
+          </div>
+          <h3 class="mt-4 text-lg font-semibold text-gray-900 dark:text-white">
+            Nama Bendum 1
+          </h3>
+          <p class="text-sm text-gray-600 dark:text-gray-400">
+            Bendahara Umum 1
+          </p>
+        </div>
+
+        <div class="text-center">
+          <div class="mx-auto h-36 w-36 overflow-hidden rounded-full">
+            <img
+              src={bendahara2.src}
+              alt="Bendahara Umum 2"
+              class="h-full w-full object-cover bg-gray-200 dark:bg-gray-800"
+              loading="lazy"
+            />
+          </div>
+          <h3 class="mt-4 text-lg font-semibold text-gray-900 dark:text-white">
+            Nama Bendum 2
+          </h3>
+          <p class="text-sm text-gray-600 dark:text-gray-400">
+            Bendahara Umum 2
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 </BaseLayout>
