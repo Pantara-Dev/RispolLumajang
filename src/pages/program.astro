@@ -20,17 +20,11 @@ import BaseLayout from "../layouts/BaseLayout.astro";
             Program Kerja & Agenda
           </h1>
           <p class="mt-4 text-lg text-primary-100">
-<<<<<<< HEAD
             Temukan berbagai program kerja dan agenda kegiatan yang kami
             jalankan untuk mendukung pengembangan diri anggota dan kontribusi
             positif bagi masyarakat. Dari kajian rutin hingga kegiatan sosial,
             kami berkomitmen untuk memberikan pengalaman yang bermanfaat dan
-            bermakna bagi seluruh anggota RISPOL Polinema Lumajang.
-=======
-            Rispol menghadirkan berbagai Program Kerja yang berfokus pada
-            Keagamaan, Pendidikan, Kebersihan, Rutinan, Penugasan untuk
-            perubahan mahasiswa yang lebih baik.
->>>>>>> 68cd934 (Perubahan program kerja astro)
+            bermakna bagi seluruh anggota RISPOL Lumajang.
           </p>
           <nav
             class="mt-6 flex items-center justify-center gap-2 text-sm text-primary-200"
@@ -40,11 +34,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
               Beranda
             </a>
             <span>/</span>
-<<<<<<< HEAD
             <span class="text-white">Program Kerja</span>
-=======
-            <span class="text-white">Tentang Kami</span>
->>>>>>> 68cd934 (Perubahan program kerja astro)
           </nav>
         </div>
       </div>
@@ -100,17 +90,16 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       </button>
     </div>
     <div class="mx-auto grid max-w-7xl gap-8 sm:grid-cols-2 lg:grid-cols-3">
+      <!-- Tampilan konten program kerja, belum menampilkan pop-up detail kegiatan-->
       <article
         data-category="tips"
         class="group flex flex-col h-full overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-gray-200 transition-all hover:shadow-lg dark:bg-gray-900 dark:ring-gray-800"
       >
-        <a
-          href="organizing-tips-for-a-clutter-free-home/index.html"
-          class="block aspect-[3/2] overflow-hidden shrink-0"
-        >
+        <!-- Foto kegiatan yang jika di-klik akan membuka laman kegiatan (sementara pakai /, nanti lompat ke beranda) -->
+        <a href="/" class="block aspect-[3/2] overflow-hidden shrink-0">
           <img
-            src="https://images.unsplash.com/photo-1527515545081-5db817172677?w=1200&h=630&fit=crop"
-            alt="7 Organizing Tips for a Clutter-Free Home"
+            src="https://placehold.co/400"
+            alt="Foto Kegiatan"
             class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
             loading="lazy"
           />
@@ -140,13 +129,14 @@ import BaseLayout from "../layouts/BaseLayout.astro";
             Wadah Pengembangan bakat dan Implementasi ukhuwah islamiyah
           </p>
 
+          <!-- Tampilan pop-up konten ketika tombol "Detail Kegiatan" diklik -->
           <button
             class="openModalBtn mt-auto group/btn flex w-full items-center justify-center gap-2 rounded-2xl border border-gray-200 px-8 py-3 text-lg font-semibold text-slate-800 transition-all duration-300 hover:-translate-y-1 hover:bg-black hover:text-white hover:shadow-xl"
             data-title="Lomba Fotografi dan Videografi Konten Islami"
             data-date="(Menyesuaikan)"
             data-sasaran="SMA/SMK/MA Sederajat"
             data-description="Di tengah pesatnya perkembangan dunia digital, Lomba Fotografi dan Videografi Konten Islami hadir sebagai platform kreatif yang dirancang khusus bagi para mahasiswa. Ajang ini menjadi wadah strategis untuk mengembangkan bakat dan mengasah kreativitas visual mahasiswa dalam menghasilkan konten yang edukatif dan inspiratif."
-            data-image="https://images.unsplash.com/photo-1527515545081-5db817172677?w=1200"
+            data-image="https://placehold.co/400"
           >
             <span>Detail Kegiatan</span>
             <svg
@@ -1160,7 +1150,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         </h2>
       </div>
 
-      <!-- Isi -->
+      <!-- Isi pop-up konten program kerja -->
       <div class="p-8">
         <div class="grid gap-4 sm:grid-cols-2">
           <div class="rounded-2xl bg-yellow-50 p-5">
