@@ -96,7 +96,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
             class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
             loading="lazy"
           />
-        </a>
+        </button>
 
         <div class="flex flex-col flex-grow p-6">
           <div class="flex items-center gap-3">
@@ -129,6 +129,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
             data-sasaran="SMA/SMK/MA Sederajat"
             data-description="Di tengah pesatnya perkembangan dunia digital, Lomba Fotografi dan Videografi Konten Islami hadir sebagai platform kreatif yang dirancang khusus bagi para mahasiswa. Ajang ini menjadi wadah strategis untuk mengembangkan bakat dan mengasah kreativitas visual mahasiswa dalam menghasilkan konten yang edukatif dan inspiratif."
             data-image="https://placehold.co/1200x630"
+            data-link="https://youtu.be/dQw4w9WgXcQ"
           >
             <span>Detail Kegiatan</span>
             <svg
@@ -158,7 +159,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
             class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
             loading="lazy"
           />
-        </a>
+        </button>
 
         <div class="flex flex-col flex-grow p-6">
           <div class="flex items-center gap-3">
@@ -220,7 +221,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
             class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
             loading="lazy"
           />
-        </a>
+        </button>
 
         <div class="flex flex-col flex-grow p-6">
           <div class="flex items-center gap-3">
@@ -283,7 +284,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
             class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
             loading="lazy"
           />
-        </a>
+        </button>
 
         <div class="flex flex-col flex-grow p-6">
           <div class="flex items-center gap-3">
@@ -465,7 +466,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
             class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
             loading="lazy"
           />
-        </a>
+        </button>
         <div class="flex flex-col flex-grow p-6">
           <div class="flex items-center gap-3">
             <span
@@ -529,7 +530,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
             class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
             loading="lazy"
           />
-        </a>
+        </button>
         <div class="flex flex-col flex-grow p-6">
           <div class="flex items-center gap-3">
             <span
@@ -591,7 +592,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
             class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
             loading="lazy"
           />
-        </a>
+        </button>
         <div class="flex flex-col flex-grow p-6">
           <div class="flex items-center gap-3">
             <span
@@ -652,7 +653,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
             class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
             loading="lazy"
           />
-        </a>
+        </button>
         <div class="flex flex-col flex-grow p-6">
           <div class="flex items-center gap-3">
             <span
@@ -713,7 +714,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
             class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
             loading="lazy"
           />
-        </a>
+        </button>
         <div class="flex flex-col flex-grow p-6">
           <div class="flex items-center gap-3">
             <span
@@ -778,7 +779,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
             class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
             loading="lazy"
           />
-        </a>
+        </button>
         <div class="flex flex-col flex-grow p-6">
           <div class="flex items-center gap-3">
             <span
@@ -841,7 +842,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
             class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
             loading="lazy"
           />
-        </a>
+        </button>
         <div class="flex flex-col flex-grow p-6">
           <div class="flex items-center gap-3">
             <span
@@ -902,7 +903,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
             class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
             loading="lazy"
           />
-        </a>
+        </button>
 
         <div class="flex flex-col flex-grow p-6">
           <div class="flex items-center gap-3">
@@ -966,7 +967,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
             class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
             loading="lazy"
           />
-        </a>
+        </button>
 
         <div class="flex flex-col flex-grow p-6">
           <div class="flex items-center gap-3">
@@ -1030,7 +1031,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
             class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
             loading="lazy"
           />
-        </a>
+        </button>
 
         <div class="flex flex-col flex-grow p-6">
           <div class="flex items-center gap-3">
@@ -1148,12 +1149,37 @@ import BaseLayout from "../layouts/BaseLayout.astro";
             Tutup
           </button>
 
-          <button
-            class="w-full rounded-2xl bg-primary-600 py-4 font-bold text-white"
+          <a
+            id="detailLink"
+            href="#"
+            class="flex w-full items-center justify-center rounded-2xl bg-primary-600 py-4 font-bold text-white"
           >
-            Bagikan Kegiatan
-          </button>
+            Lihat Selengkapnya
+          </a>
         </div>
+      </div>
+    </div>
+  </div>
+  <!-- VIDEO MODAL -->
+  <div
+    id="videoModal"
+    class="fixed inset-0 z-50 hidden items-center justify-center bg-black/80 p-4"
+  >
+    <div class="relative w-full max-w-4xl">
+      <button
+        id="closeVideoBtn"
+        class="absolute -top-12 right-0 text-4xl text-white"
+      >
+        ×
+      </button>
+
+      <div class="aspect-video overflow-hidden rounded-2xl">
+        <iframe
+          id="videoFrame"
+          class="h-full w-full"
+          src=""
+          title="Video"
+          allowfullscreen></iframe>
       </div>
     </div>
   </div>
@@ -1179,6 +1205,10 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       "modalImage",
     ) as HTMLImageElement;
 
+    const detailLink = document.getElementById(
+      "detailLink",
+    ) as HTMLAnchorElement;
+
     // buka modal
     openButtons.forEach((button) => {
       const btn = button as HTMLButtonElement;
@@ -1194,6 +1224,8 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
         const image = btn.dataset.image;
 
+        const link = btn.dataset.link;
+
         // isi data modal
         modalTitle.textContent = title || "";
 
@@ -1204,6 +1236,8 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         modalDescription.textContent = description || "";
 
         modalImage.src = image || "";
+
+        detailLink.href = link || "#";
 
         // tampilkan modal
         modal.classList.remove("hidden");
@@ -1233,6 +1267,41 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
         modal.classList.remove("flex");
       }
+    });
+
+    // VIDEO MODAL
+    const videoModal = document.getElementById("videoModal")!;
+
+    const videoFrame = document.getElementById(
+      "videoFrame",
+    ) as HTMLIFrameElement;
+
+    const closeVideoBtn = document.getElementById("closeVideoBtn")!;
+
+    const videoButtons = document.querySelectorAll(".openVideoBtn");
+
+    // buka video
+    videoButtons.forEach((button) => {
+      const btn = button as HTMLButtonElement;
+
+      button.addEventListener("click", () => {
+        const video = btn.dataset.video;
+
+        videoFrame.src = video || "";
+
+        videoModal.classList.remove("hidden");
+
+        videoModal.classList.add("flex");
+      });
+    });
+
+    // close video
+    closeVideoBtn.addEventListener("click", () => {
+      videoModal.classList.add("hidden");
+
+      videoModal.classList.remove("flex");
+
+      videoFrame.src = "";
     });
   </script>
 </BaseLayout>
