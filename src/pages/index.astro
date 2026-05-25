@@ -8,320 +8,645 @@ import dokumentasi4 from "../assets/img/dokumentasi/pol4.jpeg";
 
 <!doctype html>
 <BaseLayout>
-   <main id="main-content">
-      <section
-        id="hero"
-        class="relative overflow-hidden bg-gradient-to-b from-primary-50 to-white dark:from-gray-900 dark:to-gray-950"
-      >
-        <div class="absolute inset-0 -z-10 overflow-hidden" aria-hidden="true">
-          <div
-            class="animate-hero-float absolute -top-40 left-1/2 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-primary-200/50 blur-3xl dark:bg-primary-900/30"
-            data-parallax="0.15"
-          ></div>
-          <div
-            class="animate-hero-float-reverse absolute right-0 top-0 h-[400px] w-[400px] rounded-full bg-accent-200/30 blur-3xl dark:bg-accent-900/20"
-            data-parallax="-0.1"
-          ></div>
+  <main id="main-content">
+    <section
+      id="hero"
+      class="relative overflow-hidden bg-gradient-to-b from-primary-50 to-white dark:from-gray-900 dark:to-gray-950"
+    >
+      <div class="absolute inset-0 -z-10 overflow-hidden" aria-hidden="true">
+        <div
+          class="animate-hero-float absolute -top-40 left-1/2 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-primary-200/50 blur-3xl dark:bg-primary-900/30"
+          data-parallax="0.15"
+        >
         </div>
-        <!-- Padding tetap dipadatkan -->
-        <div class="container mx-auto px-4 py-16 lg:px-8 lg:py-20">
-          <div class="grid items-center gap-8 lg:grid-cols-2 lg:gap-12">
-            <!-- Left Side: Content -->
-            <div>
-              <!-- Tipografi dikembalikan ke ukuran semula -->
-              <h1
-                class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl dark:text-white"
-                data-animate="fade-in-up"
-                data-delay="100"
+        <div
+          class="animate-hero-float-reverse absolute right-0 top-0 h-[400px] w-[400px] rounded-full bg-accent-200/30 blur-3xl dark:bg-accent-900/20"
+          data-parallax="-0.1"
+        >
+        </div>
+      </div>
+      <!-- Padding tetap dipadatkan -->
+      <div class="container mx-auto px-4 py-16 lg:px-8 lg:py-20">
+        <div class="grid items-center gap-8 lg:grid-cols-2 lg:gap-12">
+          <!-- Left Side: Content -->
+          <div>
+            <!-- Tipografi dikembalikan ke ukuran semula -->
+            <h1
+              class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl dark:text-white"
+              data-animate="fade-in-up"
+              data-delay="100"
+            >
+              RISPOL Lumajang, <br />
+              <span
+                class="text-gradient"
+                data-typewriter='["Membangun Karakter", "Mempererat Ukhuwah", "Menebar Manfaat"]'
               >
-                RISPOL PSDKU Lumajang, <br />
-                <span
-                  class="text-gradient"
-                  data-typewriter='["Membangun Karakter", "Mempererat Ukhuwah", "Menebar Manfaat"]'
-                  > Organisasi Mahasiswa Islam</span
-                >
-              </h1>
-              <p
-                class="mt-4 max-w-xl text-lg text-gray-600 dark:text-gray-400"
-                data-animate="fade-in-up"
-                data-delay="200"
+                UKM Kerohanian Islam</span
               >
-                 Rohani Islam Polinema PSDKU Lumajang adalah wadah pembinaan dan pengembangan karakter mahasiswa muslim melalui kegiatan islami, edukatif, dan kolaboratif berlandaskan Al-Qur'an dan As-Sunnah.
-              </p>
-              <div
-                class="mt-6 flex flex-col items-start gap-4 sm:flex-row"
-                data-animate="fade-in-up"
-                data-delay="300"
-              >
-                <a
-                  href="/program"
-                  class="inline-flex items-center justify-center gap-2 rounded-lg bg-primary-600 px-6 py-3 text-base font-medium text-white shadow-lg shadow-primary-600/25 transition-all hover:bg-primary-700 hover:shadow-xl hover:shadow-primary-600/30"
-                >
-                  Jelajahi Program Kami
-                  <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-                  </svg>
-                </a>
-              </div>
-            </div>
-            
-            <div
-              class="relative mx-auto w-full max-w-lg lg:max-w-none group"
+            </h1>
+            <p
+              class="mt-4 max-w-xl text-lg text-gray-600 dark:text-gray-400"
               data-animate="fade-in-up"
               data-delay="200"
             >
-              <div class="absolute -bottom-6 -right-6 -z-10 h-32 w-32 rounded-lg bg-[radial-gradient(#cbd5e1_3px,transparent_3px)] [background-size:16px_16px] dark:bg-[radial-gradient(#374151_3px,transparent_3px)]"></div>
-              
-              <div class="relative overflow-hidden rounded-3xl border-8 border-white bg-white shadow-2xl transition-all duration-500 ease-out group-hover:-translate-y-2 group-hover:-rotate-2 group-hover:shadow-3xl dark:border-gray-800 dark:bg-gray-800">
-                
-                <img
-                  src={dokumentasi1.src}
-                  alt="Kegiatan Ukhuwah RISPOL"
-                  class="h-auto w-full object-cover aspect-[4/3] sm:aspect-[4/4] lg:aspect-[4/4]"
-                  loading="lazy"
-                />
+              RISPOL (Kerohanian Islam Politeknik Negeri Malang) PSDKU Lumajang
+              adalah wadah pembinaan dan pengembangan karakter mahasiswa muslim
+              melalui kegiatan islami, edukatif, dan kolaboratif berlandaskan
+              Al-Qur'an dan As-Sunnah.
+            </p>
+            <div
+              class="mt-6 flex flex-col items-start gap-4 sm:flex-row"
+              data-animate="fade-in-up"
+              data-delay="300"
+            >
+              <a
+                href="/program"
+                class="inline-flex items-center justify-center gap-2 rounded-lg bg-primary-600 px-6 py-3 text-base font-medium text-white shadow-lg shadow-primary-600/25 transition-all hover:bg-primary-700 hover:shadow-xl hover:shadow-primary-600/30"
+              >
+                Jelajahi Program Kami
+                <svg
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
 
-                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+          <div
+            class="relative mx-auto w-full max-w-lg lg:max-w-none group"
+            data-animate="fade-in-up"
+            data-delay="200"
+          >
+            <div
+              class="absolute -bottom-6 -right-6 -z-10 h-32 w-32 rounded-lg bg-[radial-gradient(#cbd5e1_3px,transparent_3px)] [background-size:16px_16px] dark:bg-[radial-gradient(#374151_3px,transparent_3px)]"
+            >
+            </div>
 
-                <div class="absolute bottom-0 left-0 w-full p-6 sm:p-8">
-                  <h3 class="text-xl font-bold text-white sm:text-2xl">
-                    Ukhuwah Islamiyah
-                  </h3>
-                  <p class="mt-2 text-sm text-gray-200 sm:text-base">
-                    Bersama menebar manfaat di kampus.
-                  </p>
-                </div>
+            <div
+              class="relative overflow-hidden rounded-3xl border-8 border-white bg-white shadow-2xl transition-all duration-500 ease-out group-hover:-translate-y-2 group-hover:-rotate-2 group-hover:shadow-3xl dark:border-gray-800 dark:bg-gray-800"
+            >
+              <img
+                src={dokumentasi1.src}
+                alt="Kegiatan Ukhuwah RISPOL"
+                class="h-auto w-full object-cover aspect-[4/3] sm:aspect-[4/4] lg:aspect-[4/4]"
+                loading="lazy"
+              />
+
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"
+              >
+              </div>
+
+              <div class="absolute bottom-0 left-0 w-full p-6 sm:p-8">
+                <h3 class="text-xl font-bold text-white sm:text-2xl">
+                  Ukhuwah Islamiyah
+                </h3>
+                <p class="mt-2 text-sm text-gray-200 sm:text-base">
+                  Bersama menebar manfaat di kampus.
+                </p>
               </div>
             </div>
           </div>
         </div>
-      </section>
-
-      <!-- SVG Separator -->
-      <div class="relative -mt-1 text-gray-50 dark:text-gray-900">
-        <svg viewBox="0 0 1440 80" fill="none" class="w-full" preserveAspectRatio="none">
-          <path d="M0 40C240 80 480 0 720 40C960 80 1200 0 1440 40V80H0V40Z" fill="currentColor"></path>
-        </svg>
       </div>
+    </section>
 
-      <!-- Stats Section -->
-      <section class="border-y border-gray-200 bg-gray-50 py-10 lg:py-12 dark:border-gray-800 dark:bg-gray-900">
-        <div class="container mx-auto px-4 lg:px-8">
-          <div class="grid grid-cols-2 gap-6 sm:grid-cols-4">
-            <div class="text-center" data-animate="fade-in-up" data-delay="0">
-              <div class="text-4xl font-bold text-primary-600 lg:text-5xl dark:text-primary-400">
-                <span data-counter="16">0</span>
-              </div>
-              <div class="mt-2 text-sm font-medium text-gray-600 dark:text-gray-400">Anggota Aktif</div>
+    <!-- SVG Separator -->
+    <div class="relative -mt-1 text-gray-50 dark:text-gray-900">
+      <svg
+        viewBox="0 0 1440 80"
+        fill="none"
+        class="w-full"
+        preserveAspectRatio="none"
+      >
+        <path
+          d="M0 40C240 80 480 0 720 40C960 80 1200 0 1440 40V80H0V40Z"
+          fill="currentColor"></path>
+      </svg>
+    </div>
+
+    <!-- Stats Section -->
+    <section
+      class="border-y border-gray-200 bg-gray-50 py-10 lg:py-12 dark:border-gray-800 dark:bg-gray-900"
+    >
+      <div class="container mx-auto px-4 lg:px-8">
+        <div class="grid grid-cols-2 gap-6 sm:grid-cols-4">
+          <div class="text-center" data-animate="fade-in-up" data-delay="0">
+            <div
+              class="text-4xl font-bold text-primary-600 lg:text-5xl dark:text-primary-400"
+            >
+              <span data-counter="16">0</span>
             </div>
-            <div class="text-center" data-animate="fade-in-up" data-delay="100">
-              <div class="text-4xl font-bold text-primary-600 lg:text-5xl dark:text-primary-400">
-                <span data-counter="7">0</span>
-              </div>
-              <div class="mt-2 text-sm font-medium text-gray-600 dark:text-gray-400">Program Kerja</div>
+            <div
+              class="mt-2 text-sm font-medium text-gray-600 dark:text-gray-400"
+            >
+              Anggota Aktif
             </div>
-            <div class="text-center" data-animate="fade-in-up" data-delay="200">
-              <div class="text-4xl font-bold text-primary-600 lg:text-5xl dark:text-primary-400">
-                <span data-counter="4">0</span>
-              </div>
-              <div class="mt-2 text-sm font-medium text-gray-600 dark:text-gray-400">Program Studi</div>
+          </div>
+          <div class="text-center" data-animate="fade-in-up" data-delay="100">
+            <div
+              class="text-4xl font-bold text-primary-600 lg:text-5xl dark:text-primary-400"
+            >
+              <span data-counter="7">0</span>
             </div>
-            <div class="text-center" data-animate="fade-in-up" data-delay="300">
-              <div class="text-4xl font-bold text-primary-600 lg:text-5xl dark:text-primary-400">
-                <span data-counter="0">0</span>
-              </div>
-              <div class="mt-2 text-sm font-medium text-gray-600 dark:text-gray-400">Jaringan Alumni</div>
+            <div
+              class="mt-2 text-sm font-medium text-gray-600 dark:text-gray-400"
+            >
+              Program Kerja
+            </div>
+          </div>
+          <div class="text-center" data-animate="fade-in-up" data-delay="200">
+            <div
+              class="text-4xl font-bold text-primary-600 lg:text-5xl dark:text-primary-400"
+            >
+              <span data-counter="4">0</span>
+            </div>
+            <div
+              class="mt-2 text-sm font-medium text-gray-600 dark:text-gray-400"
+            >
+              Program Studi
+            </div>
+          </div>
+          <div class="text-center" data-animate="fade-in-up" data-delay="300">
+            <div
+              class="text-4xl font-bold text-primary-600 lg:text-5xl dark:text-primary-400"
+            >
+              <span data-counter="0">0</span>
+            </div>
+            <div
+              class="mt-2 text-sm font-medium text-gray-600 dark:text-gray-400"
+            >
+              Jaringan Alumni
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Divisions Section -->
-      <section id="divisi" class="bg-gray-50 py-12 lg:py-16 dark:bg-gray-900">
-        <div class="container mx-auto px-4 lg:px-8">
-          <div class="mx-auto max-w-3xl text-center">
-            <div class="mb-4 inline-flex items-center rounded-full bg-primary-100 px-3 py-1 text-sm font-medium text-primary-700 dark:bg-primary-900/50 dark:text-primary-300" data-animate="fade-in-up">
-              Struktur Kepengurusan
+    <!-- Divisions Section -->
+    <section id="divisi" class="bg-gray-50 py-12 lg:py-16 dark:bg-gray-900">
+      <div class="container mx-auto px-4 lg:px-8">
+        <div class="mx-auto max-w-3xl text-center">
+          <div
+            class="mb-4 inline-flex items-center rounded-full bg-primary-100 px-3 py-1 text-sm font-medium text-primary-700 dark:bg-primary-900/50 dark:text-primary-300"
+            data-animate="fade-in-up"
+          >
+            Divisi
+          </div>
+          <h2
+            class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl dark:text-white"
+            data-animate="fade-in-up"
+            data-delay="100"
+          >
+            Divisi dan Tugas Pokok RISPOL
+          </h2>
+          <p
+            class="mt-4 text-lg text-gray-600 dark:text-gray-400"
+            data-animate="fade-in-up"
+            data-delay="200"
+          >
+            Terdiri dari beberapa divisi yang fokus pada bidang dakwah, hubungan
+            masyarakat, dan pembinaan anggota untuk mewujudkan visi misi
+            organisasi.
+          </p>
+        </div>
+
+        <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div
+            class="group relative rounded-2xl bg-white p-8 shadow-sm transition-all hover:shadow-lg dark:bg-gray-800"
+            data-animate="fade-in-up"
+            data-delay="100"
+          >
+            <div
+              class="mb-5 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-primary-100 text-primary-600 transition-colors group-hover:bg-primary-600 group-hover:text-white dark:bg-primary-900/50 dark:text-primary-400"
+            >
+              <svg
+                class="h-7 w-7"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                ><path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"
+                ></path></svg
+              >
             </div>
-            <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl dark:text-white" data-animate="fade-in-up" data-delay="100">
-              Divisi Organisasi RISPOL
-            </h2>
-            <p class="mt-4 text-lg text-gray-600 dark:text-gray-400" data-animate="fade-in-up" data-delay="200">
-              Penggerak roda organisasi yang berfokus pada berbagai aspek pengembangan keislaman dan keterampilan mahasiswa.
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+              Syiar
+            </h3>
+            <p class="mt-3 text-gray-600 dark:text-gray-400">
+              Mengelola kegiatan dakwah kampus seperti kajian rutin, peringatan
+              hari besar Islam (PHBI), dan syiar kreatif berbasis masjid.
             </p>
           </div>
-          
-          <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            <div class="group relative rounded-2xl bg-white p-8 shadow-sm transition-all hover:shadow-lg dark:bg-gray-800" data-animate="fade-in-up" data-delay="100">
-              <div class="mb-5 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-primary-100 text-primary-600 transition-colors group-hover:bg-primary-600 group-hover:text-white dark:bg-primary-900/50 dark:text-primary-400">
-                <svg class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z" /></svg>
-              </div>
-              <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Syiar</h3>
-              <p class="mt-3 text-gray-600 dark:text-gray-400">
-                Mengelola kegiatan dakwah kampus seperti kajian rutin, peringatan hari besar Islam (PHBI), dan syiar kreatif berbasis masjid.
-              </p>
-            </div>
 
-            <div class="group relative rounded-2xl bg-white p-8 shadow-sm transition-all hover:shadow-lg dark:bg-gray-800" data-animate="fade-in-up" data-delay="150">
-              <div class="mb-5 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-primary-100 text-primary-600 transition-colors group-hover:bg-primary-600 group-hover:text-white dark:bg-primary-900/50 dark:text-primary-400">
-                <svg class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" /></svg>
-              </div>
-              <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Hubungan Masyarakat</h3>
-              <p class="mt-3 text-gray-600 dark:text-gray-400">
-                Menjalin relasi strategis dengan pihak birokrasi kampus, organisasi mahasiswa lain, dan lembaga dakwah kampus eksternal.
-              </p>
+          <div
+            class="group relative rounded-2xl bg-white p-8 shadow-sm transition-all hover:shadow-lg dark:bg-gray-800"
+            data-animate="fade-in-up"
+            data-delay="150"
+          >
+            <div
+              class="mb-5 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-primary-100 text-primary-600 transition-colors group-hover:bg-primary-600 group-hover:text-white dark:bg-primary-900/50 dark:text-primary-400"
+            >
+              <svg
+                class="h-7 w-7"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                ><path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"
+                ></path></svg
+              >
             </div>
-
-            <div class="group relative rounded-2xl bg-white p-8 shadow-sm transition-all hover:shadow-lg dark:bg-gray-800" data-animate="fade-in-up" data-delay="200">
-              <div class="mb-5 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-primary-100 text-primary-600 transition-colors group-hover:bg-primary-600 group-hover:text-white dark:bg-primary-900/50 dark:text-primary-400">
-                <svg class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
-              </div>
-              <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Mentoring</h3>
-              <p class="mt-3 text-gray-600 dark:text-gray-400">
-                Mengelola sistem pembinaan karakter mahasiswa dan pemahaman keislaman anggota secara intensif. 
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      
-      <!-- Galeri Section -->
-      <section id="galeri" class="bg-white py-12 lg:py-16 dark:bg-gray-950">
-        <div class="container mx-auto px-4 lg:px-8">
-          <div class="mx-auto max-w-3xl text-center">
-            <div class="mb-4 inline-flex items-center rounded-full bg-primary-100 px-3 py-1 text-sm font-medium text-primary-700 dark:bg-primary-900/50 dark:text-primary-300" data-animate="fade-in-up">
-              Dokumentasi
-            </div>
-            <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl dark:text-white" data-animate="fade-in-up" data-delay="100">
-              Galeri Kegiatan RISPOL
-            </h2>
-            <p class="mt-4 text-lg text-gray-600 dark:text-gray-400" data-animate="fade-in-up" data-delay="200">
-              Jejak langkah dan momen kebersamaan dalam membangun peradaban islami di kampus.
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+              Hubungan Masyarakat
+            </h3>
+            <p class="mt-3 text-gray-600 dark:text-gray-400">
+              Menjalin relasi strategis dengan pihak birokrasi kampus,
+              organisasi mahasiswa lain, dan lembaga dakwah kampus eksternal.
             </p>
           </div>
-          <div class="mx-auto mt-10 grid max-w-6xl gap-4 sm:grid-cols-2 lg:grid-cols-3" data-animate="fade-in-up" data-delay="300">
-            <div class="group relative aspect-square overflow-hidden rounded-2xl bg-gray-100 dark:bg-gray-800">
-              <img src={dokumentasi2.src} alt="Kajian Akbar" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
-              <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
-              <div class="absolute bottom-0 left-0 p-6 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                <h3 class="text-lg font-bold text-white">Kajian Akbar Semester</h3>
-              </div>
-            </div>
-            <div class="group relative aspect-square overflow-hidden rounded-2xl bg-gray-100 dark:bg-gray-800">
-              <img src={dokumentasi3.src} alt="Bakti Sosial" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
-              <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
-              <div class="absolute bottom-0 left-0 p-6 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                <h3 class="text-lg font-bold text-white">Bakti Sosial Ramadhan</h3>
-              </div>
-            </div>
-            <div class="group relative aspect-square overflow-hidden rounded-2xl bg-gray-100 dark:bg-gray-800">
-              <img src={dokumentasi4.src} alt="LDK" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
-              <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
-              <div class="absolute bottom-0 left-0 p-6 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                <h3 class="text-lg font-bold text-white">Latihan Dasar Kepemimpinan</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      <!-- CTA Section -->
-      <section class="relative overflow-hidden bg-gradient-to-br from-primary-600 to-primary-800 py-16 lg:py-20">
-        <div class="absolute inset-0 z-0 overflow-hidden" aria-hidden="true">
-          <div class="absolute -right-20 -top-20 h-64 w-64 rounded-full bg-white/10 blur-3xl"></div>
-          <div class="absolute -bottom-20 -left-20 h-64 w-64 rounded-full bg-white/10 blur-3xl"></div>
-        </div>
-        <div class="container relative z-10 mx-auto px-4 lg:px-8">
-          <div class="mx-auto max-w-3xl text-center">
-            <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl" data-animate="fade-in-up">
-              Siap Menjadi Bagian dari Perubahan?
-            </h2>
-            <p class="mx-auto mt-6 max-w-xl text-lg text-primary-100" data-animate="fade-in-up" data-delay="100">
-              Mari bergabung bersama keluarga besar RISPOL PSDKU Lumajang. Kembangkan potensimu, perkuat ukhuwah, dan raih prestasi berlandaskan iman.
-            </p>
-            <div class="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row" data-animate="fade-in-up" data-delay="200">
-              <a href="#daftar" class="inline-flex items-center justify-center gap-2 rounded-lg bg-white px-8 py-4 text-base font-medium text-primary-700 shadow-lg transition-all hover:bg-gray-100 hover:shadow-xl">
-                Daftar Sekarang
-                <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-              </a>
-              <a href="https://wa.me/6281234567890" target="_blank" class="inline-flex items-center justify-center gap-2 rounded-lg border-2 border-white/30 px-8 py-4 text-base font-medium text-white transition-all hover:border-white hover:bg-white/10">
-                <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
-                Hubungi Admin
-              </a>
+          <div
+            class="group relative rounded-2xl bg-white p-8 shadow-sm transition-all hover:shadow-lg dark:bg-gray-800"
+            data-animate="fade-in-up"
+            data-delay="200"
+          >
+            <div
+              class="mb-5 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-primary-100 text-primary-600 transition-colors group-hover:bg-primary-600 group-hover:text-white dark:bg-primary-900/50 dark:text-primary-400"
+            >
+              <svg
+                class="h-7 w-7"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                ><path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                ></path></svg
+              >
             </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- FAQ Section -->
-      <section id="faq" class="bg-white py-12 lg:py-16 dark:bg-gray-950">
-        <div class="container mx-auto px-4 lg:px-8">
-          <div class="mx-auto max-w-3xl text-center">
-            <div class="mb-4 inline-flex items-center rounded-full bg-primary-100 px-3 py-1 text-sm font-medium text-primary-700 dark:bg-primary-900/50 dark:text-primary-300" data-animate="fade-in-up">
-              Bantuan
-            </div>
-            <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl dark:text-white" data-animate="fade-in-up" data-delay="100">
-              Pertanyaan yang Sering Diajukan
-            </h2>
-            <p class="mt-4 text-lg text-gray-600 dark:text-gray-400" data-animate="fade-in-up" data-delay="200">
-              Informasi seputar pendaftaran, keanggotaan, dan kegiatan operasional RISPOL.
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+              Mentoring
+            </h3>
+            <p class="mt-3 text-gray-600 dark:text-gray-400">
+              Membina anggota melalui program mentoring, pembinaan karakter,
+              dan pengembangan potensi diri berbasis nilai-nilai Islam.
             </p>
           </div>
-          
-          <div class="mx-auto mt-10 max-w-3xl">
-            <div class="divide-y divide-gray-200 dark:divide-gray-800">
-              
-              <div class="py-6" data-animate="fade-in-up" data-delay="100">
-                <button type="button" data-faq-toggle class="flex w-full items-center justify-between text-left">
-                  <span class="text-lg font-semibold text-gray-900 dark:text-white">
-                    Siapa saja yang bisa bergabung dengan RISPOL Polinema Lumajang?
-                  </span>
-                  <span class="ml-4 flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-gray-100 text-gray-600 transition-transform duration-200 dark:bg-gray-800 dark:text-gray-400" data-faq-icon>
-                    <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12M6 12h12"></path></svg>
-                  </span>
-                </button>
-                <div class="overflow-hidden transition-all duration-300" style="max-height: 0px; opacity: 0">
-                  <p class="pt-4 text-gray-600 dark:text-gray-400">
-                    RISPOL terbuka untuk seluruh mahasiswa Polinema PSDKU Lumajang yang memiliki minat dan komitmen untuk belajar agama serta berkontribusi dalam kegiatan organisasi. Kami menyambut baik mahasiswa dari berbagai latar belakang jurusan dan tingkat pendidikan, asalkan memiliki niat yang tulus untuk aktif dalam kegiatan organisasi.
-                  </p>
-                </div>
-              </div>
+        </div>
+      </div>
+    </section>
 
-              <div class="py-6" data-animate="fade-in-up" data-delay="150">
-                <button type="button" data-faq-toggle class="flex w-full items-center justify-between text-left">
-                  <span class="text-lg font-semibold text-gray-900 dark:text-white">
-                    Kapan biasanya penerimaan anggota baru dilaksanakan?
-                  </span>
-                  <span class="ml-4 flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-gray-100 text-gray-600 transition-transform duration-200 dark:bg-gray-800 dark:text-gray-400" data-faq-icon>
-                    <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12M6 12h12"></path></svg>
-                  </span>
-                </button>
-                <div class="overflow-hidden transition-all duration-300" style="max-height: 0px; opacity: 0">
-                  <p class="pt-4 text-gray-600 dark:text-gray-400">
-                    Penerimaan anggota dan pengurus biasanya dilaksanakan pada awal semester ganjil setelah kegiatan Pengenalan Kehidupan Kampus. Namun, kami juga membuka kesempatan bergabung di luar periode tersebut bagi mahasiswa yang memiliki motivasi tinggi untuk berkontribusi dalam organisasi.
-                  </p>
-                </div>
-              </div>
-
-              <div class="py-6" data-animate="fade-in-up" data-delay="200">
-                <button type="button" data-faq-toggle class="flex w-full items-center justify-between text-left">
-                  <span class="text-lg font-semibold text-gray-900 dark:text-white">
-                    Apakah ada persyaratan khusus untuk menjadi anggota RISPOL?
-                  </span>
-                  <span class="ml-4 flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-gray-100 text-gray-600 transition-transform duration-200 dark:bg-gray-800 dark:text-gray-400" data-faq-icon>
-                    <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12M6 12h12"></path></svg>
-                  </span>
-                </button>
-                <div class="overflow-hidden transition-all duration-300" style="max-height: 0px; opacity: 0">
-                  <p class="pt-4 text-gray-600 dark:text-gray-400">
-                    Syarat utama adalah kemauan untuk belajar agama dan berorganisasi. Tidak diwajibkan memiliki hafalan Al-Qur'an tertentu atau lulusan pesantren. Kami percaya bahwa setiap mahasiswa memiliki potensi untuk berkembang dan berkontribusi, asalkan memiliki niat yang tulus dan komitmen untuk aktif dalam kegiatan organisasi.
-                  </p>
-                </div>
-              </div>
-
+    <!-- Galeri Section -->
+    <section id="galeri" class="bg-white py-12 lg:py-16 dark:bg-gray-950">
+      <div class="container mx-auto px-4 lg:px-8">
+        <div class="mx-auto max-w-3xl text-center">
+          <div
+            class="mb-4 inline-flex items-center rounded-full bg-primary-100 px-3 py-1 text-sm font-medium text-primary-700 dark:bg-primary-900/50 dark:text-primary-300"
+            data-animate="fade-in-up"
+          >
+            Dokumentasi
+          </div>
+          <h2
+            class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl dark:text-white"
+            data-animate="fade-in-up"
+            data-delay="100"
+          >
+            Jejak Kegiatan dan Momen Kebersamaan
+          </h2>
+          <p
+            class="mt-4 text-lg text-gray-600 dark:text-gray-400"
+            data-animate="fade-in-up"
+            data-delay="200"
+          >
+            Dokumentasi kegiatan RISPOL yang mencerminkan semangat kebersamaan,
+            keaktifan, dan kontribusi positif di lingkungan kampus.
+          </p>
+        </div>
+        <div
+          class="mx-auto mt-10 grid max-w-6xl gap-4 sm:grid-cols-2 lg:grid-cols-3"
+          data-animate="fade-in-up"
+          data-delay="300"
+        >
+          <div
+            class="group relative aspect-square overflow-hidden rounded-2xl bg-gray-100 dark:bg-gray-800"
+          >
+            <img
+              src={dokumentasi2.src}
+              alt="Kajian Akbar"
+              class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+              loading="lazy"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+            >
+            </div>
+            <div
+              class="absolute bottom-0 left-0 p-6 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+            >
+              <h3 class="text-lg font-bold text-white">
+                Kajian Akbar Semester
+              </h3>
+            </div>
+          </div>
+          <div
+            class="group relative aspect-square overflow-hidden rounded-2xl bg-gray-100 dark:bg-gray-800"
+          >
+            <img
+              src={dokumentasi3.src}
+              alt="Bakti Sosial"
+              class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+              loading="lazy"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+            >
+            </div>
+            <div
+              class="absolute bottom-0 left-0 p-6 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+            >
+              <h3 class="text-lg font-bold text-white">
+                Bakti Sosial Ramadhan
+              </h3>
+            </div>
+          </div>
+          <div
+            class="group relative aspect-square overflow-hidden rounded-2xl bg-gray-100 dark:bg-gray-800"
+          >
+            <img
+              src={dokumentasi4.src}
+              alt="LDK"
+              class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+              loading="lazy"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+            >
+            </div>
+            <div
+              class="absolute bottom-0 left-0 p-6 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+            >
+              <h3 class="text-lg font-bold text-white">
+                Latihan Dasar Kepemimpinan
+              </h3>
             </div>
           </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section
+      class="relative overflow-hidden bg-gradient-to-br from-primary-600 to-primary-800 py-16 lg:py-20"
+    >
+      <div class="absolute inset-0 z-0 overflow-hidden" aria-hidden="true">
+        <div
+          class="absolute -right-20 -top-20 h-64 w-64 rounded-full bg-white/10 blur-3xl"
+        >
+        </div>
+        <div
+          class="absolute -bottom-20 -left-20 h-64 w-64 rounded-full bg-white/10 blur-3xl"
+        >
+        </div>
+      </div>
+      <div class="container relative z-10 mx-auto px-4 lg:px-8">
+        <div class="mx-auto max-w-3xl text-center">
+          <h2
+            class="text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl"
+            data-animate="fade-in-up"
+          >
+            Siap Menjadi Bagian dari Perubahan?
+          </h2>
+          <p
+            class="mx-auto mt-6 max-w-xl text-lg text-primary-100"
+            data-animate="fade-in-up"
+            data-delay="100"
+          >
+            Bergabunglah dengan RISPOL PSDKU Lumajang dan jadilah bagian dari
+            komunitas yang aktif, inspiratif, dan berdampak positif di kampus.
+            Bersama kita bangun peradaban islami yang kokoh di tengah tantangan.
+          </p>
+          <div
+            class="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row"
+            data-animate="fade-in-up"
+            data-delay="200"
+          >
+            <a
+              href="#daftar"
+              class="inline-flex items-center justify-center gap-2 rounded-lg bg-white px-8 py-4 text-base font-medium text-primary-700 shadow-lg transition-all hover:bg-gray-100 hover:shadow-xl"
+            >
+              Daftar Sekarang
+              <svg
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                ><path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg
+              >
+            </a>
+            <a
+              href="https://wa.me/6281234567890"
+              target="_blank"
+              class="inline-flex items-center justify-center gap-2 rounded-lg border-2 border-white/30 px-8 py-4 text-base font-medium text-white transition-all hover:border-white hover:bg-white/10"
+            >
+              <svg
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                ><path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
+                ></path></svg
+              >
+              Hubungi Admin
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="bg-white py-12 lg:py-16 dark:bg-gray-950">
+      <div class="container mx-auto px-4 lg:px-8">
+        <div class="mx-auto max-w-3xl text-center">
+          <div
+            class="mb-4 inline-flex items-center rounded-full bg-primary-100 px-3 py-1 text-sm font-medium text-primary-700 dark:bg-primary-900/50 dark:text-primary-300"
+            data-animate="fade-in-up"
+          >
+            Bantuan
+          </div>
+          <h2
+            class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl dark:text-white"
+            data-animate="fade-in-up"
+            data-delay="100"
+          >
+            Pertanyaan yang Sering Diajukan
+          </h2>
+          <p
+            class="mt-4 text-lg text-gray-600 dark:text-gray-400"
+            data-animate="fade-in-up"
+            data-delay="200"
+          >
+            Informasi seputar pendaftaran, keanggotaan, dan kegiatan operasional
+            RISPOL.
+          </p>
+        </div>
+
+        <div class="mx-auto mt-10 max-w-3xl">
+          <div class="divide-y divide-gray-200 dark:divide-gray-800">
+            <div class="py-6" data-animate="fade-in-up" data-delay="100">
+              <button
+                type="button"
+                data-faq-toggle
+                class="flex w-full items-center justify-between text-left"
+              >
+                <span
+                  class="text-lg font-semibold text-gray-900 dark:text-white"
+                >
+                  Siapa saja yang bisa bergabung dengan UKM RISPOL Lumajang?
+                </span>
+                <span
+                  class="ml-4 flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-gray-100 text-gray-600 transition-transform duration-200 dark:bg-gray-800 dark:text-gray-400"
+                  data-faq-icon
+                >
+                  <svg
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    ><path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 6v12M6 12h12"></path></svg
+                  >
+                </span>
+              </button>
+              <div
+                class="overflow-hidden transition-all duration-300"
+                style="max-height: 0px; opacity: 0"
+              >
+                <p class="pt-4 text-gray-600 dark:text-gray-400">
+                  RISPOL terbuka untuk seluruh mahasiswa Polinema PSDKU Lumajang
+                  yang memiliki minat dan komitmen untuk belajar agama serta
+                  berkontribusi dalam kegiatan organisasi. Kami menyambut baik
+                  mahasiswa dari berbagai latar belakang jurusan dan tingkat
+                  pendidikan, asalkan memiliki niat yang tulus untuk aktif dalam
+                  kegiatan organisasi.
+                </p>
+              </div>
+            </div>
+
+            <div class="py-6" data-animate="fade-in-up" data-delay="150">
+              <button
+                type="button"
+                data-faq-toggle
+                class="flex w-full items-center justify-between text-left"
+              >
+                <span
+                  class="text-lg font-semibold text-gray-900 dark:text-white"
+                >
+                  Kapan biasanya penerimaan anggota baru dilaksanakan?
+                </span>
+                <span
+                  class="ml-4 flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-gray-100 text-gray-600 transition-transform duration-200 dark:bg-gray-800 dark:text-gray-400"
+                  data-faq-icon
+                >
+                  <svg
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    ><path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 6v12M6 12h12"></path></svg
+                  >
+                </span>
+              </button>
+              <div
+                class="overflow-hidden transition-all duration-300"
+                style="max-height: 0px; opacity: 0"
+              >
+                <p class="pt-4 text-gray-600 dark:text-gray-400">
+                  Penerimaan anggota dan pengurus biasanya dilaksanakan pada
+                  awal semester ganjil setelah kegiatan Pengenalan Kehidupan
+                  Kampus. Namun, kami juga membuka kesempatan bergabung di luar
+                  periode tersebut bagi mahasiswa yang memiliki motivasi tinggi
+                  untuk berkontribusi dalam organisasi.
+                </p>
+              </div>
+            </div>
+
+            <div class="py-6" data-animate="fade-in-up" data-delay="200">
+              <button
+                type="button"
+                data-faq-toggle
+                class="flex w-full items-center justify-between text-left"
+              >
+                <span
+                  class="text-lg font-semibold text-gray-900 dark:text-white"
+                >
+                  Apakah ada persyaratan khusus untuk menjadi anggota RISPOL?
+                </span>
+                <span
+                  class="ml-4 flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-gray-100 text-gray-600 transition-transform duration-200 dark:bg-gray-800 dark:text-gray-400"
+                  data-faq-icon
+                >
+                  <svg
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    ><path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 6v12M6 12h12"></path></svg
+                  >
+                </span>
+              </button>
+              <div
+                class="overflow-hidden transition-all duration-300"
+                style="max-height: 0px; opacity: 0"
+              >
+                <p class="pt-4 text-gray-600 dark:text-gray-400">
+                  Syarat utama adalah kemauan untuk belajar agama dan
+                  berorganisasi. Tidak diwajibkan memiliki hafalan Al-Qur'an
+                  tertentu atau lulusan pesantren. Kami percaya bahwa setiap
+                  mahasiswa memiliki potensi untuk berkembang dan berkontribusi,
+                  asalkan memiliki niat yang tulus dan komitmen untuk aktif
+                  dalam kegiatan organisasi.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 </BaseLayout>
