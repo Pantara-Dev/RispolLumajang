@@ -9,15 +9,20 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     >
       <div class="container mx-auto px-4 lg:px-8">
         <div class="mx-auto max-w-3xl text-center">
+          <span
+            class="inline-flex items-center rounded-full bg-white/20 px-4 py-1.5 text-sm font-medium text-white"
+          >
+            Program Kerja
+          </span>
           <h1
             class="mt-6 text-4xl font-bold tracking-tight text-white sm:text-5xl"
           >
             Program Kerja & Agenda
           </h1>
           <p class="mt-4 text-lg text-primary-100">
-            UKM RISPOL Lumajang menghadirkan berbagai Program Kerja yang
-            berfokus pada Keagamaan, Pendidikan, Kebersihan, Rutinan, Penugasan
-            untuk perubahan mahasiswa yang lebih baik.
+            Rispol menghadirkan berbagai Program Kerja yang berfokus pada
+            Keagamaan, Pendidikan, Kebersihan, Rutinan, Penugasan untuk
+            perubahan mahasiswa yang lebih baik.
           </p>
           <nav
             class="mt-6 flex items-center justify-center gap-2 text-sm text-primary-200"
@@ -27,7 +32,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
               Beranda
             </a>
             <span>/</span>
-            <span class="text-white">Program Kerja</span>
+            <span class="text-white">Tentang Kami</span>
           </nav>
         </div>
       </div>
@@ -82,21 +87,22 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         Mentoring
       </button>
     </div>
-    <div
-      class="mx-auto grid max-w-7xl gap-8 sm:grid-cols-2 lg:grid-cols-3 px-4 sm:px-6 lg:px-8"
-    >
+    <div class="mx-auto grid max-w-7xl gap-8 sm:grid-cols-2 lg:grid-cols-3">
       <article
         data-category="tips"
         class="group flex flex-col h-full overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-gray-200 transition-all hover:shadow-lg dark:bg-gray-900 dark:ring-gray-800"
       >
-        <a href="/" class="block aspect-[3/2] overflow-hidden shrink-0">
+        <button
+          class="openVideoBtn block aspect-[3/2] overflow-hidden shrink-0 w-full"
+          data-video="https://www.youtube.com/embed/dQw4w9WgXcQ"
+        >
           <img
             src="https://placehold.co/1200x630"
-            alt="Lomba Fotografi dan Videografi Konten Islami"
+            alt="7 Organizing Tips for a Clutter-Free Home"
             class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
             loading="lazy"
           />
-        </a>
+        </button>
 
         <div class="flex flex-col flex-grow p-6">
           <div class="flex items-center gap-3">
@@ -129,6 +135,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
             data-sasaran="SMA/SMK/MA Sederajat"
             data-description="Di tengah pesatnya perkembangan dunia digital, Lomba Fotografi dan Videografi Konten Islami hadir sebagai platform kreatif yang dirancang khusus bagi para mahasiswa. Ajang ini menjadi wadah strategis untuk mengembangkan bakat dan mengasah kreativitas visual mahasiswa dalam menghasilkan konten yang edukatif dan inspiratif."
             data-image="https://placehold.co/1200x630"
+            data-link="https://youtu.be/dQw4w9WgXcQ"
           >
             <span>Detail Kegiatan</span>
             <svg
@@ -151,14 +158,17 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         data-category="tips"
         class="group flex flex-col h-full overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-gray-200 transition-all hover:shadow-lg dark:bg-gray-900 dark:ring-gray-800"
       >
-        <a href="/" class="block aspect-[3/2] overflow-hidden shrink-0">
+        <button
+          class="openVideoBtn block aspect-[3/2] overflow-hidden shrink-0 w-full"
+          data-video="https://www.youtube.com/embed/dQw4w9WgXcQ"
+        >
           <img
             src="https://placehold.co/1200x630"
-            alt="Lomba Fotografi dan Videografi Konten Islami"
+            alt="7 Organizing Tips for a Clutter-Free Home"
             class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
             loading="lazy"
           />
-        </a>
+        </button>
 
         <div class="flex flex-col flex-grow p-6">
           <div class="flex items-center gap-3">
@@ -191,6 +201,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
             data-sasaran="Mahasiswa Polinema"
             data-description="Program kerja ini bertujuan untuk mengelola dan mendistribusikan informasi seputar kegiatan secara sistematis lewat media sosial."
             data-image="https://placehold.co/1200x630"
+            data-link="https://youtu.be/dQw4w9WgXcQ"
           >
             <span>Detail Kegiatan</span>
             <svg
@@ -213,14 +224,17 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         data-category="tips"
         class="group flex flex-col h-full overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-gray-200 transition-all hover:shadow-lg dark:bg-gray-900 dark:ring-gray-800"
       >
-        <a href="/" class="block aspect-[3/2] overflow-hidden shrink-0">
+        <button
+          class="openVideoBtn block aspect-[3/2] overflow-hidden shrink-0 w-full"
+          data-video="https://www.youtube.com/embed/dQw4w9WgXcQ"
+        >
           <img
             src="https://placehold.co/1200x630"
-            alt="Manajemen konten dakwah dan sehari-hari"
+            alt="7 Organizing Tips for a Clutter-Free Home"
             class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
             loading="lazy"
           />
-        </a>
+        </button>
 
         <div class="flex flex-col flex-grow p-6">
           <div class="flex items-center gap-3">
@@ -237,7 +251,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
           <h3
             class="mt-3 text-lg font-bold text-gray-900 transition-colors group-hover:text-primary-600 dark:text-white dark:group-hover:text-primary-400"
           >
-            Manajemen Konten Dakwah dan Kegiatan Sehari-hari
+            Manajemen Konten dakwah dan sehari-hari
           </h3>
 
           <p
@@ -249,11 +263,12 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
           <button
             class="openModalBtn mt-auto group/btn flex w-full items-center justify-center gap-2 rounded-2xl border border-gray-200 px-8 py-3 text-lg font-semibold text-slate-800 transition-all duration-300 hover:-translate-y-1 hover:bg-black hover:text-white hover:shadow-xl"
-            data-title="Manajemen Konten Dakwah dan Kegiatan Sehari-hari"
+            data-title="Manajemen Konten dakwah dan sehari-hari"
             data-date="(Menyesuaikan)"
             data-sasaran="Mahasiswa Polinema"
             data-description="Melakukan manajemen dan pembuatan konten dakwah yang dapat memberikan informasi dan edukasi islami kepada para mahasiswa dan mahasiswi Polinema PSDKU diKabupaten Lumajang."
             data-image="https://placehold.co/1200x630"
+            data-link="https://youtu.be/dQw4w9WgXcQ"
           >
             <span>Detail Kegiatan</span>
             <svg
@@ -276,14 +291,17 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         data-category="tips"
         class="group flex flex-col h-full overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-gray-200 transition-all hover:shadow-lg dark:bg-gray-900 dark:ring-gray-800"
       >
-        <a href="/" class="block aspect-[3/2] overflow-hidden shrink-0">
+        <button
+          class="openVideoBtn block aspect-[3/2] overflow-hidden shrink-0 w-full"
+          data-video="https://www.youtube.com/embed/dQw4w9WgXcQ"
+        >
           <img
             src="https://placehold.co/1200x630"
-            alt="Podcast RISPOL"
+            alt="7 Organizing Tips for a Clutter-Free Home"
             class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
             loading="lazy"
           />
-        </a>
+        </button>
 
         <div class="flex flex-col flex-grow p-6">
           <div class="flex items-center gap-3">
@@ -316,6 +334,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
             data-sasaran="Mahasiswa Polinema"
             data-description="Menciptakan wadah komunikasi dan diskusi melalui visualisasi dan mendatangkan narasumber mengenai hal” keislaman."
             data-image="https://placehold.co/1200x630"
+            data-link="https://youtu.be/dQw4w9WgXcQ"
           >
             <span>Detail Kegiatan</span>
             <svg
@@ -338,16 +357,17 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         data-category="guide"
         class="group flex h-full flex-col overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-gray-200 transition-all hover:shadow-lg dark:bg-gray-900 dark:ring-gray-800"
       >
-        <a href="/" class="block">
-          <div class="aspect-[3/2] overflow-hidden">
-            <img
-              src="https://placehold.co/1200x630"
-              alt="Festival Al-Banjari Polinema"
-              class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
-              loading="lazy"
-            />
-          </div>
-        </a>
+        <button
+          class="openVideoBtn block aspect-[3/2] overflow-hidden shrink-0 w-full"
+          data-video="https://www.youtube.com/embed/dQw4w9WgXcQ"
+        >
+          <img
+            src="https://placehold.co/1200x630"
+            alt="7 Organizing Tips for a Clutter-Free Home"
+            class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+            loading="lazy"
+          />
+        </button>
         <div class="flex flex-grow flex-col p-6">
           <div class="flex items-center gap-3">
             <span
@@ -362,7 +382,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
           <h3
             class="mt-3 text-lg font-bold text-gray-900 transition-colors group-hover:text-primary-600 dark:text-white dark:group-hover:text-primary-400"
           >
-            Festival Al-Banjari Polinema
+            Festival Al-banjari Polinema
           </h3>
           <p class="mt-2 line-clamp-2 text-sm text-gray-600 dark:text-gray-400">
             Hadir sebagai bentuk apresiasi terhadap seni religius, Festival
@@ -376,6 +396,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
             data-sasaran="SMA/SMK/MA Sederajat"
             data-description="Hadir sebagai bentuk apresiasi terhadap seni religius, Festival Al-banjari Polinema sukses menjadi instrumen untuk mempromosikan kampus sekaligus menjadi wadah syi’ar yang menyejukkan."
             data-image="https://placehold.co/1200x630"
+            data-link="https://youtu.be/dQw4w9WgXcQ"
           >
             <span>Detail Kegiatan</span>
             <svg
@@ -398,16 +419,17 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         data-category="guide"
         class="group flex h-full flex-col overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-gray-200 transition-all hover:shadow-lg dark:bg-gray-900 dark:ring-gray-800"
       >
-        <a href="/" class="block">
-          <div class="aspect-[3/2] overflow-hidden">
-            <img
-              src="https://placehold.co/1200x630"
-              alt="Pekan Dzulhijjah"
-              class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
-              loading="lazy"
-            />
-          </div>
-        </a>
+        <button
+          class="openVideoBtn block aspect-[3/2] overflow-hidden shrink-0 w-full"
+          data-video="https://www.youtube.com/embed/dQw4w9WgXcQ"
+        >
+          <img
+            src="https://placehold.co/1200x630"
+            alt="7 Organizing Tips for a Clutter-Free Home"
+            class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+            loading="lazy"
+          />
+        </button>
         <div class="flex flex-grow flex-col p-6">
           <div class="flex items-center gap-3">
             <span
@@ -425,17 +447,17 @@ import BaseLayout from "../layouts/BaseLayout.astro";
             Pekan Dzulhijjah
           </h3>
           <p class="mt-2 line-clamp-2 text-sm text-gray-600 dark:text-gray-400">
-            Pertemuan berkala pengurus untuk mengevaluasi kegiatan, menyampaikan
-            informasi, dan memastikan program kerja berjalan sesuai dengan
-            rencana.
+            Pertemuan berkala pengurus untuk mengevaluasi kegiatan menyampaikan
+            informasi
           </p>
           <button
             class="openModalBtn mt-auto group/btn flex w-full items-center justify-center gap-2 rounded-2xl border border-gray-200 px-8 py-3 text-lg font-semibold text-slate-800 transition-all duration-300 hover:-translate-y-1 hover:bg-black hover:text-white hover:shadow-xl"
             data-title="Pekan Dzulhijjah"
             data-date="Mei (menyesuaikan)"
-            data-sasaran="Seluruh warga kampus Polinema PSDKU Lumajang."
+            data-sasaran="Seluruh warga kampus Polinema PSDKU diKabupaten Lumajang."
             data-description="Pertemuan berkala pengurus untuk mengevaluasi kegiatan, menyampaikan informasi, dan memastikan program kerja berjalan sesuai dengan rencana."
             data-image="https://placehold.co/1200x630"
+            data-link="https://youtu.be/dQw4w9WgXcQ"
           >
             <span>Detail Kegiatan</span>
             <svg
@@ -458,14 +480,17 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         data-category="guide"
         class="group flex flex-col h-full overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-gray-200 transition-all hover:shadow-lg dark:bg-gray-900 dark:ring-gray-800"
       >
-        <a href="/" class="block aspect-[3/2] overflow-hidden shrink-0">
+        <button
+          class="openVideoBtn block aspect-[3/2] overflow-hidden shrink-0 w-full"
+          data-video="https://www.youtube.com/embed/dQw4w9WgXcQ"
+        >
           <img
             src="https://placehold.co/1200x630"
-            alt="Pengajian RISPOL"
+            alt="7 Organizing Tips for a Clutter-Free Home"
             class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
             loading="lazy"
           />
-        </a>
+        </button>
         <div class="flex flex-col flex-grow p-6">
           <div class="flex items-center gap-3">
             <span
@@ -487,19 +512,18 @@ import BaseLayout from "../layouts/BaseLayout.astro";
           <p
             class="mt-2 mb-6 line-clamp-2 text-sm text-gray-600 dark:text-gray-400"
           >
-            Membiasakan diri dalam kegiatan islami sehingga memiliki dampak dan
-            kebiasaan positif kedepannya dan Sebagai bentuk istiqomah kita
-            sebagai muslim dan muslima dalam terus menggaungkan Ukhuwah
-            Islamiyah.
+            Meningkatkan keimanan dan ketaqwaan mahasiswa dan membiasakan diri
+            dalam kegiatan islami
           </p>
 
           <button
             class="openModalBtn mt-auto group/btn flex w-full items-center justify-center gap-2 rounded-2xl border border-gray-200 px-8 py-3 text-lg font-semibold text-slate-800 transition-all duration-300 hover:-translate-y-1 hover:bg-black hover:text-white hover:shadow-xl"
             data-title="Pengajian RISPOL"
-            data-date="Sebulan Sekali"
+            data-date="1 Bulan Sekali"
             data-sasaran="Anggota RISPOL"
             data-description="Membiasakan diri dalam kegiatan islami sehingga memiliki dampak dan kebiasaan positif kedepannya dan Sebagai bentuk istiqomah kita sebagai muslim dan muslima dalam terus menggaungkan Ukhuwah Islamiyah."
             data-image="https://placehold.co/1200x630"
+            data-link="https://youtu.be/dQw4w9WgXcQ"
           >
             <span>Detail Kegiatan</span>
             <svg
@@ -522,14 +546,17 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         data-category="guide"
         class="group flex flex-col h-full overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-gray-200 transition-all hover:shadow-lg dark:bg-gray-900 dark:ring-gray-800"
       >
-        <a href="/" class="block aspect-[3/2] overflow-hidden shrink-0">
+        <button
+          class="openVideoBtn block aspect-[3/2] overflow-hidden shrink-0 w-full"
+          data-video="https://www.youtube.com/embed/dQw4w9WgXcQ"
+        >
           <img
             src="https://placehold.co/1200x630"
-            alt="Sedekah Takjil"
+            alt="7 Organizing Tips for a Clutter-Free Home"
             class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
             loading="lazy"
           />
-        </a>
+        </button>
         <div class="flex flex-col flex-grow p-6">
           <div class="flex items-center gap-3">
             <span
@@ -551,17 +578,18 @@ import BaseLayout from "../layouts/BaseLayout.astro";
           <p
             class="mt-2 mb-6 line-clamp-2 text-sm text-gray-600 dark:text-gray-400"
           >
-            Bersodaqoh dalam menyalurkan sedekah ta’jil kepada orang” ketika
-            bulan puasa
+            Bersodaqoh dalam menyalurkan sedekah kepada orang-orang ketika bulan
+            puasa
           </p>
 
           <button
             class="openModalBtn mt-auto group/btn flex w-full items-center justify-center gap-2 rounded-2xl border border-gray-200 px-8 py-3 text-lg font-semibold text-slate-800 transition-all duration-300 hover:-translate-y-1 hover:bg-black hover:text-white hover:shadow-xl"
             data-title="Sedekah Takjil"
             data-date="Maret (Menyesuaikan)"
-            data-sasaran="Seluruh warga Polinema PSDKU Lumajang"
+            data-sasaran="Seluruh warga Polinema PSDKU diKabupaten Lumajang"
             data-description="Bersodaqoh dalam menyalurkan sedekah ta’jil kepada orang” ketika bulan puasa."
             data-image="https://placehold.co/1200x630"
+            data-link="https://youtu.be/dQw4w9WgXcQ"
           >
             <span>Detail Kegiatan</span>
             <svg
@@ -584,14 +612,17 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         data-category="guide"
         class="group flex flex-col h-full overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-gray-200 transition-all hover:shadow-lg dark:bg-gray-900 dark:ring-gray-800"
       >
-        <a href="/" class="block aspect-[3/2] overflow-hidden shrink-0">
+        <button
+          class="openVideoBtn block aspect-[3/2] overflow-hidden shrink-0 w-full"
+          data-video="https://www.youtube.com/embed/dQw4w9WgXcQ"
+        >
           <img
             src="https://placehold.co/1200x630"
-            alt="Buka Bersama"
+            alt="7 Organizing Tips for a Clutter-Free Home"
             class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
             loading="lazy"
           />
-        </a>
+        </button>
         <div class="flex flex-col flex-grow p-6">
           <div class="flex items-center gap-3">
             <span
@@ -620,9 +651,10 @@ import BaseLayout from "../layouts/BaseLayout.astro";
             class="openModalBtn mt-auto group/btn flex w-full items-center justify-center gap-2 rounded-2xl border border-gray-200 px-8 py-3 text-lg font-semibold text-slate-800 transition-all duration-300 hover:-translate-y-1 hover:bg-black hover:text-white hover:shadow-xl"
             data-title="Buka Bersama"
             data-date="Maret (Menyesuaikan)"
-            data-sasaran="Anggota RISPOL"
+            data-sasaran="Anggota Rispol"
             data-description="Menjalin kebersamaan dan kekeluargaan dalam bingkai ramadhan."
             data-image="https://placehold.co/1200x630"
+            data-link="https://youtu.be/dQw4w9WgXcQ"
           >
             <span>Detail Kegiatan</span>
             <svg
@@ -645,14 +677,17 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         data-category="guide"
         class="group flex flex-col h-full overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-gray-200 transition-all hover:shadow-lg dark:bg-gray-900 dark:ring-gray-800"
       >
-        <a href="/" class="block aspect-[3/2] overflow-hidden shrink-0">
+        <button
+          class="openVideoBtn block aspect-[3/2] overflow-hidden shrink-0 w-full"
+          data-video="https://www.youtube.com/embed/dQw4w9WgXcQ"
+        >
           <img
             src="https://placehold.co/1200x630"
-            alt="Kajian Jumat"
+            alt="7 Organizing Tips for a Clutter-Free Home"
             class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
             loading="lazy"
           />
-        </a>
+        </button>
         <div class="flex flex-col flex-grow p-6">
           <div class="flex items-center gap-3">
             <span
@@ -661,7 +696,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
               Syiar
             </span>
             <span class="text-sm text-gray-500 dark:text-gray-400">
-              Setiap Hari Jumat
+              Setiap hari Jumat
             </span>
           </div>
 
@@ -674,7 +709,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
           <p
             class="mt-2 mb-6 line-clamp-2 text-sm text-gray-600 dark:text-gray-400"
           >
-            Memberikan dakwah keislaman pada hari jumat.
+            Memberikan dakwah keislaman pada hari jumat
           </p>
 
           <button
@@ -684,6 +719,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
             data-sasaran="Mahasiswa Polinema"
             data-description="Memberikan dakwah keislaman pada hari jumat."
             data-image="https://placehold.co/1200x630"
+            data-link="https://youtu.be/dQw4w9WgXcQ"
           >
             <span>Detail Kegiatan</span>
             <svg
@@ -706,14 +742,17 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         data-category="guide"
         class="group flex flex-col h-full overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-gray-200 transition-all hover:shadow-lg dark:bg-gray-900 dark:ring-gray-800"
       >
-        <a href="/" class="block aspect-[3/2] overflow-hidden shrink-0">
+        <button
+          class="openVideoBtn block aspect-[3/2] overflow-hidden shrink-0 w-full"
+          data-video="https://www.youtube.com/embed/dQw4w9WgXcQ"
+        >
           <img
             src="https://placehold.co/1200x630"
-            alt="Rutinan Banjari"
+            alt="7 Organizing Tips for a Clutter-Free Home"
             class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
             loading="lazy"
           />
-        </a>
+        </button>
         <div class="flex flex-col flex-grow p-6">
           <div class="flex items-center gap-3">
             <span
@@ -736,19 +775,17 @@ import BaseLayout from "../layouts/BaseLayout.astro";
             class="mt-2 mb-6 line-clamp-2 text-sm text-gray-600 dark:text-gray-400"
           >
             Mempererat ukhuwah dan menumbuhkan kecintaan sholawat kepada baginda
-            besar Nabi Muhammad SAW sebagai bentuk syi’ar serta Kegiatan latina
-            dan pembinaan seni hadrah yang dilaksanakan secara berkali sebagai
-            sarana pengembangan bakat serta peningkatan kualitas penampilan
-            anggota.
+            nabi muhammad SAW sebagai bentuk syiar
           </p>
 
           <button
             class="openModalBtn mt-auto group/btn flex w-full items-center justify-center gap-2 rounded-2xl border border-gray-200 px-8 py-3 text-lg font-semibold text-slate-800 transition-all duration-300 hover:-translate-y-1 hover:bg-black hover:text-white hover:shadow-xl"
             data-title="Rutinan Banjari"
             data-date="2 Minggu Sekali"
-            data-sasaran="Anggota banjari Dan Mahasiswa yang mengikuti kegiatan banjari"
+            data-sasaran="Anggota banjari Dan Mahasiswa yang mengikuti."
             data-description="Mempererat ukhuwah dan menumbuhkan kecintaan sholawat kepada baginda besar Nabi Muhammad SAW sebagai bentuk syi’ar serta Kegiatan latina dan pembinaan seni hadrah yang dilaksanakan secara berkali sebagai sarana pengembangan bakat serta peningkatan kualitas penampilan anggota."
             data-image="https://placehold.co/1200x630"
+            data-link="https://youtu.be/dQw4w9WgXcQ"
           >
             <span>Detail Kegiatan</span>
             <svg
@@ -771,14 +808,17 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         data-category="guide"
         class="group flex flex-col h-full overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-gray-200 transition-all hover:shadow-lg dark:bg-gray-900 dark:ring-gray-800"
       >
-        <a href="/" class="block aspect-[3/2] overflow-hidden shrink-0">
+        <button
+          class="openVideoBtn block aspect-[3/2] overflow-hidden shrink-0 w-full"
+          data-video="https://www.youtube.com/embed/dQw4w9WgXcQ"
+        >
           <img
             src="https://placehold.co/1200x630"
-            alt="Care Children Islamic"
+            alt="7 Organizing Tips for a Clutter-Free Home"
             class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
             loading="lazy"
           />
-        </a>
+        </button>
         <div class="flex flex-col flex-grow p-6">
           <div class="flex items-center gap-3">
             <span
@@ -800,18 +840,18 @@ import BaseLayout from "../layouts/BaseLayout.astro";
           <p
             class="mt-2 mb-6 line-clamp-2 text-sm text-gray-600 dark:text-gray-400"
           >
-            Program kerja yang berbentuk bakti sosial yang berfokus pada
-            kepedulian anak anak, khusus nya anak yatim yang membutuhkan melalui
-            pendekatan edukatif dan islami.
+            Program Kerja yang berbentuk bakti sosial yang berfokus pada
+            kepedulian anak-anak
           </p>
 
           <button
             class="openModalBtn mt-auto group/btn flex w-full items-center justify-center gap-2 rounded-2xl border border-gray-200 px-8 py-3 text-lg font-semibold text-slate-800 transition-all duration-300 hover:-translate-y-1 hover:bg-black hover:text-white hover:shadow-xl"
             data-title="Care Children Islamic"
             data-date="Juni (Menyesuaikan)"
-            data-sasaran="Anak Yatim dan Masyarakat Sekitar"
+            data-sasaran="Anak Yatim Piatu yang membutuhkan Bisa ke panti asuhan dll."
             data-description="Program kerja yang berbentuk bakti sosial yang berfokus pada kepedulian anak anak, khusus nya anak yatim yang membutuhkan melalui pendekatan edukatif dan islami."
             data-image="https://placehold.co/1200x630"
+            data-link="https://youtu.be/dQw4w9WgXcQ"
           >
             <span>Detail Kegiatan</span>
             <svg
@@ -834,14 +874,17 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         data-category="guide"
         class="group flex flex-col h-full overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-gray-200 transition-all hover:shadow-lg dark:bg-gray-900 dark:ring-gray-800"
       >
-        <a href="/" class="block aspect-[3/2] overflow-hidden shrink-0">
+        <button
+          class="openVideoBtn block aspect-[3/2] overflow-hidden shrink-0 w-full"
+          data-video="https://www.youtube.com/embed/dQw4w9WgXcQ"
+        >
           <img
             src="https://placehold.co/1200x630"
-            alt="Eksekusi PHBI"
+            alt="7 Organizing Tips for a Clutter-Free Home"
             class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
             loading="lazy"
           />
-        </a>
+        </button>
         <div class="flex flex-col flex-grow p-6">
           <div class="flex items-center gap-3">
             <span
@@ -863,16 +906,17 @@ import BaseLayout from "../layouts/BaseLayout.astro";
           <p
             class="mt-2 mb-6 line-clamp-2 text-sm text-gray-600 dark:text-gray-400"
           >
-            Sebagai penggerak dan memperingati hari besar islam.
+            Sebagai pengggerak dan memperingati hari besar islam
           </p>
 
           <button
             class="openModalBtn mt-auto group/btn flex w-full items-center justify-center gap-2 rounded-2xl border border-gray-200 px-8 py-3 text-lg font-semibold text-slate-800 transition-all duration-300 hover:-translate-y-1 hover:bg-black hover:text-white hover:shadow-xl"
             data-title="Eksekusi PHBI"
             data-date="(Menyesuaikan)"
-            data-sasaran="Seluruh warga kampus Polinema PSDKU Lumajang."
+            data-sasaran="Seluruh warga Polinema PSDKU diKabupaten Lumajang."
             data-description="Sebagai penggerak dan memperingati hari besar islam."
             data-image="https://placehold.co/1200x630"
+            data-link="https://youtu.be/dQw4w9WgXcQ"
           >
             <span>Detail Kegiatan</span>
             <svg
@@ -895,14 +939,17 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         data-category="lifestyle"
         class="group flex flex-col h-full overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-gray-200 transition-all hover:shadow-lg dark:bg-gray-900 dark:ring-gray-800"
       >
-        <a href="/" class="block aspect-[3/2] overflow-hidden shrink-0">
+        <button
+          class="openVideoBtn block aspect-[3/2] overflow-hidden shrink-0 w-full"
+          data-video="https://www.youtube.com/embed/dQw4w9WgXcQ"
+        >
           <img
             src="https://placehold.co/1200x630"
-            alt="Mentoring Keagamaan"
+            alt="7 Organizing Tips for a Clutter-Free Home"
             class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
             loading="lazy"
           />
-        </a>
+        </button>
 
         <div class="flex flex-col flex-grow p-6">
           <div class="flex items-center gap-3">
@@ -926,8 +973,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
             class="mt-2 mb-6 line-clamp-2 text-sm text-gray-600 dark:text-gray-400"
           >
             Sebagai sarana belajar agama bagi mahasiswa baru untuk meningkatkan
-            keimanan dan ketaqwaan dan nantinya dapat diterapkan dikehidupan
-            kampus dan sehari-hari serta sebagai syarat kelulusan mahasiswa.
+            keimanan dan ketaqwaan
           </p>
 
           <button
@@ -937,6 +983,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
             data-sasaran="Mahasiswa dan Mahasiswi"
             data-description="Sebagai sarana belajar agama bagi mahasiswa baru untuk meningkatkan keimanan dan ketaqwaan dan nantinya dapat diterapkan dikehidupan kampus dan sehari-hari serta sebagai syarat kelulusan mahasiswa"
             data-image="https://placehold.co/1200x630"
+            data-link="https://youtu.be/dQw4w9WgXcQ"
           >
             <span>Detail Kegiatan</span>
             <svg
@@ -959,14 +1006,17 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         data-category="lifestyle"
         class="group flex flex-col h-full overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-gray-200 transition-all hover:shadow-lg dark:bg-gray-900 dark:ring-gray-800"
       >
-        <a href="/" class="block aspect-[3/2] overflow-hidden shrink-0">
+        <button
+          class="openVideoBtn block aspect-[3/2] overflow-hidden shrink-0 w-full"
+          data-video="https://www.youtube.com/embed/dQw4w9WgXcQ"
+        >
           <img
             src="https://placehold.co/1200x630"
-            alt="Rekap Mentoring"
+            alt="7 Organizing Tips for a Clutter-Free Home"
             class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
             loading="lazy"
           />
-        </a>
+        </button>
 
         <div class="flex flex-col flex-grow p-6">
           <div class="flex items-center gap-3">
@@ -989,18 +1039,18 @@ import BaseLayout from "../layouts/BaseLayout.astro";
           <p
             class="mt-2 mb-6 line-clamp-2 text-sm text-gray-600 dark:text-gray-400"
           >
-            Sebagai bentuk evaluasi dan dokumentasi hasil mentoring keagamaan
-            yang telah dilakukan, sehingga dapat menjadi referensi untuk
-            pengembangan program mentoring keagamaan di masa depan.
+            Melakukan perekapan tugas-tugas mentoring untuk untuk dimasukkan
+            dalam data
           </p>
 
           <button
             class="openModalBtn mt-auto group/btn flex w-full items-center justify-center gap-2 rounded-2xl border border-gray-200 px-8 py-3 text-lg font-semibold text-slate-800 transition-all duration-300 hover:-translate-y-1 hover:bg-black hover:text-white hover:shadow-xl"
             data-title="Rekap Mentoring"
             data-date="(Menyesuaikan)"
-            data-sasaran="Mahasiswa dan Mahasiswi"
+            data-sasaran="Semua tugas Mahasiswa selesai dan input data selesai"
             data-description="Program kerja untuk mengembangkan kreativitas mahasiswa dalam dakwah digital melalui fotografi dan videografi islami."
             data-image="https://placehold.co/1200x630"
+            data-link="https://youtu.be/dQw4w9WgXcQ"
           >
             <span>Detail Kegiatan</span>
             <svg
@@ -1023,14 +1073,20 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         data-category="lifestyle"
         class="group flex flex-col h-full overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-gray-200 transition-all hover:shadow-lg dark:bg-gray-900 dark:ring-gray-800"
       >
-        <a href="/" class="block aspect-[3/2] overflow-hidden shrink-0">
+        <button
+          class="openVideoBtn block aspect-[3/2] overflow-hidden shrink-0 w-full"
+          data-video="https://www.youtube.com/embed/dQw4w9WgXcQ"
+        >
           <img
             src="https://placehold.co/1200x630"
-            alt="Mentor Islami"
+            alt="7 Organizing Tips for a Clutter-Free Home"
             class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
             loading="lazy"
           />
-        </a>
+
+        </button>
+
+
         <div class="flex flex-col flex-grow p-6">
           <div class="flex items-center gap-3">
             <span
@@ -1052,8 +1108,8 @@ import BaseLayout from "../layouts/BaseLayout.astro";
           <p
             class="mt-2 mb-6 line-clamp-2 text-sm text-gray-600 dark:text-gray-400"
           >
-            Program kerja untuk mengembangkan kreativitas mahasiswa dalam dakwah
-            digital melalui fotografi dan videografi islami.
+            Melakukan pembinaan mahasiswa dalam pemahaman dan penerapan alquran
+            dalam kehidupan kampus sehari-hari
           </p>
 
           <button
@@ -1063,6 +1119,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
             data-sasaran="Mahasiswa Polinema"
             data-description="Program kerja untuk mengembangkan kreativitas mahasiswa dalam dakwah digital melalui fotografi dan videografi islami."
             data-image="https://placehold.co/1200x630"
+            data-link="https://youtu.be/dQw4w9WgXcQ"
           >
             <span>Detail Kegiatan</span>
             <svg
@@ -1147,12 +1204,37 @@ import BaseLayout from "../layouts/BaseLayout.astro";
             Tutup
           </button>
 
-          <button
-            class="w-full rounded-2xl bg-primary-600 py-4 font-bold text-white"
+          <a
+            id="detailLink"
+            href="#"
+            class="flex w-full items-center justify-center rounded-2xl bg-primary-600 py-4 font-bold text-white"
           >
-            Bagikan Kegiatan
-          </button>
+            Lihat Selengkapnya
+          </a>
         </div>
+      </div>
+    </div>
+  </div>
+  <!-- VIDEO MODAL -->
+  <div
+    id="videoModal"
+    class="fixed inset-0 z-50 hidden items-center justify-center bg-black/80 p-4"
+  >
+    <div class="relative w-full max-w-4xl">
+      <button
+        id="closeVideoBtn"
+        class="absolute -top-12 right-0 text-4xl text-white"
+      >
+        x
+      </button>
+
+      <div class="aspect-video overflow-hidden rounded-2xl">
+        <iframe
+          id="videoFrame"
+          class="h-full w-full"
+          src=""
+          title="Video"
+          allowfullscreen></iframe>
       </div>
     </div>
   </div>
@@ -1178,6 +1260,10 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       "modalImage",
     ) as HTMLImageElement;
 
+    const detailLink = document.getElementById(
+      "detailLink",
+    ) as HTMLAnchorElement;
+
     // buka modal
     openButtons.forEach((button) => {
       const btn = button as HTMLButtonElement;
@@ -1193,6 +1279,8 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
         const image = btn.dataset.image;
 
+        const link = btn.dataset.link;
+
         // isi data modal
         modalTitle.textContent = title || "";
 
@@ -1203,6 +1291,8 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         modalDescription.textContent = description || "";
 
         modalImage.src = image || "";
+
+        detailLink.href = link || "#";
 
         // tampilkan modal
         modal.classList.remove("hidden");
@@ -1232,6 +1322,41 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
         modal.classList.remove("flex");
       }
+    });
+
+    // VIDEO MODAL
+    const videoModal = document.getElementById("videoModal")!;
+
+    const videoFrame = document.getElementById(
+      "videoFrame",
+    ) as HTMLIFrameElement;
+
+    const closeVideoBtn = document.getElementById("closeVideoBtn")!;
+
+    const videoButtons = document.querySelectorAll(".openVideoBtn");
+
+    // buka video
+    videoButtons.forEach((button) => {
+      const btn = button as HTMLButtonElement;
+
+      button.addEventListener("click", () => {
+        const video = btn.dataset.video;
+
+        videoFrame.src = video || "";
+
+        videoModal.classList.remove("hidden");
+
+        videoModal.classList.add("flex");
+      });
+    });
+
+    // close video
+    closeVideoBtn.addEventListener("click", () => {
+      videoModal.classList.add("hidden");
+
+      videoModal.classList.remove("flex");
+
+      videoFrame.src = "";
     });
   </script>
 </BaseLayout>
