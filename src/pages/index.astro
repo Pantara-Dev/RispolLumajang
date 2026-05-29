@@ -81,7 +81,7 @@ import dokumentasi4 from "../assets/img/dokumentasi/pol4.jpeg";
           </div>
 
           <div
-            class="relative mx-auto w-full max-w-lg lg:max-w-none group"
+            class="relative mx-auto w-full max-w-lg md:mt-0 lg:max-w-none group"
             data-animate="fade-in-up"
             data-delay="200"
           >
@@ -314,7 +314,7 @@ import dokumentasi4 from "../assets/img/dokumentasi/pol4.jpeg";
     </section>
 
     <!-- Galeri Section -->
-    <section id="galeri" class="bg-white py-12 lg:py-16 dark:bg-gray-950">
+   <section id="galeri" class="bg-white py-12 lg:py-16 dark:bg-gray-950">
       <div class="container mx-auto px-4 lg:px-8">
         <div class="mx-auto max-w-3xl text-center">
           <div
@@ -339,74 +339,60 @@ import dokumentasi4 from "../assets/img/dokumentasi/pol4.jpeg";
             keaktifan, dan kontribusi positif di lingkungan kampus.
           </p>
         </div>
+        
         <div
           class="mx-auto mt-10 grid max-w-6xl gap-4 sm:grid-cols-2 lg:grid-cols-3"
           data-animate="fade-in-up"
           data-delay="300"
         >
-          <div
-            class="group relative aspect-square overflow-hidden rounded-2xl bg-gray-100 dark:bg-gray-800"
-          >
+          <div class="group relative aspect-video sm:aspect-square overflow-hidden rounded-2xl bg-gray-100 dark:bg-gray-800">
             <img
               src={dokumentasi2.src}
               alt="Kajian Akbar"
               class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
               loading="lazy"
             />
-            <div
-              class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"
-            >
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-100 transition-opacity duration-300 md:opacity-0 md:group-hover:opacity-100">
             </div>
-            <div
-              class="absolute bottom-0 left-0 p-6 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
-            >
-              <h3 class="text-lg font-bold text-white">
+            <div class="absolute bottom-0 left-0 p-5 opacity-100 transition-opacity duration-300 md:opacity-0 md:group-hover:opacity-100">
+              <h3 class="text-base font-bold text-white sm:text-lg">
                 Kajian Akbar Semester
               </h3>
             </div>
           </div>
-          <div
-            class="group relative aspect-square overflow-hidden rounded-2xl bg-gray-100 dark:bg-gray-800"
-          >
+
+          <div class="group relative aspect-video sm:aspect-square overflow-hidden rounded-2xl bg-gray-100 dark:bg-gray-800">
             <img
               src={dokumentasi3.src}
               alt="Bakti Sosial"
               class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
               loading="lazy"
             />
-            <div
-              class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"
-            >
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-100 transition-opacity duration-300 md:opacity-0 md:group-hover:opacity-100">
             </div>
-            <div
-              class="absolute bottom-0 left-0 p-6 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
-            >
-              <h3 class="text-lg font-bold text-white">
+            <div class="absolute bottom-0 left-0 p-5 opacity-100 transition-opacity duration-300 md:opacity-0 md:group-hover:opacity-100">
+              <h3 class="text-base font-bold text-white sm:text-lg">
                 Bakti Sosial Ramadhan
               </h3>
             </div>
           </div>
-          <div
-            class="group relative aspect-square overflow-hidden rounded-2xl bg-gray-100 dark:bg-gray-800"
-          >
+
+          <div class="group relative aspect-video sm:aspect-square overflow-hidden rounded-2xl bg-gray-100 dark:bg-gray-800">
             <img
               src={dokumentasi4.src}
               alt="LDK"
               class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
               loading="lazy"
             />
-            <div
-              class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"
-            >
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-100 transition-opacity duration-300 md:opacity-0 md:group-hover:opacity-100">
             </div>
-            <div
-              class="absolute bottom-0 left-0 p-6 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
-            >
-              <h3 class="text-lg font-bold text-white">
-                Latihan Dasar Kepemimpinan
+            <div class="absolute bottom-0 left-0 p-5 opacity-100 transition-opacity duration-300 md:opacity-0 md:group-hover:opacity-100">
+              <h3 class="text-base font-bold text-white sm:text-lg">
+                Pengajian RISPOL
               </h3>
             </div>
           </div>
+          
         </div>
       </div>
     </section>
@@ -448,10 +434,10 @@ import dokumentasi4 from "../assets/img/dokumentasi/pol4.jpeg";
             data-delay="200"
           >
             <a
-              href="#daftar"
+              href="/program"
               class="inline-flex items-center justify-center gap-2 rounded-lg bg-white px-8 py-4 text-base font-medium text-primary-700 shadow-lg transition-all hover:bg-gray-100 hover:shadow-xl"
             >
-              Daftar Sekarang
+              Jelajahi Program Kerja
               <svg
                 class="h-5 w-5"
                 fill="none"
@@ -465,7 +451,7 @@ import dokumentasi4 from "../assets/img/dokumentasi/pol4.jpeg";
               >
             </a>
             <a
-              href="https://wa.me/6281234567890"
+              href="https://wa.me/6281459101209"
               target="_blank"
               class="inline-flex items-center justify-center gap-2 rounded-lg border-2 border-white/30 px-8 py-4 text-base font-medium text-white transition-all hover:border-white hover:bg-white/10"
             >
