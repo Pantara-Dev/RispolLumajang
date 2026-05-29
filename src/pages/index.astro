@@ -10,114 +10,102 @@ import dokumentasi4 from "../assets/img/dokumentasi/pol4.jpeg";
 <BaseLayout>
   <main id="main-content">
     <section
-      id="hero"
-      class="relative overflow-hidden bg-gradient-to-b from-primary-50 to-white dark:from-gray-900 dark:to-gray-950"
+  id="hero"
+  class="relative overflow-hidden bg-gradient-to-b from-primary-50 to-white dark:from-gray-900 dark:to-gray-950"
+>
+  <div class="absolute inset-0 -z-10 overflow-hidden" aria-hidden="true">
+    <div
+      class="animate-hero-float absolute -top-40 left-1/2 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-primary-200/50 blur-3xl dark:bg-primary-900/30"
+      data-parallax="0.15"
     >
-      <div class="absolute inset-0 -z-10 overflow-hidden" aria-hidden="true">
-        <div
-          class="animate-hero-float absolute -top-40 left-1/2 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-primary-200/50 blur-3xl dark:bg-primary-900/30"
-          data-parallax="0.15"
+    </div>
+    <div
+      class="animate-hero-float-reverse absolute right-0 top-0 h-[400px] w-[400px] rounded-full bg-accent-200/30 blur-3xl dark:bg-accent-900/20"
+      data-parallax="-0.1"
+    >
+    </div>
+  </div>
+  
+  <div class="container mx-auto px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
+    <div class="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
+      
+      <div>
+        <h1
+          class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl lg:text-5xl xl:text-6xl dark:text-white"
+          data-animate="fade-in-up"
+          data-delay="100"
         >
-        </div>
-        <div
-          class="animate-hero-float-reverse absolute right-0 top-0 h-[400px] w-[400px] rounded-full bg-accent-200/30 blur-3xl dark:bg-accent-900/20"
-          data-parallax="-0.1"
-        >
-        </div>
-      </div>
-      <!-- Padding tetap dipadatkan -->
-      <div class="container mx-auto px-4 py-16 lg:px-8 lg:py-20">
-        <div class="grid items-center gap-8 lg:grid-cols-2 lg:gap-12">
-          <!-- Left Side: Content -->
-          <div>
-            <!-- Tipografi dikembalikan ke ukuran semula -->
-            <h1
-              class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl dark:text-white"
-              data-animate="fade-in-up"
-              data-delay="100"
-            >
-              RISPOL Lumajang, <br />
-              <span
-                class="text-gradient"
-                data-typewriter='["Membangun Karakter", "Mempererat Ukhuwah", "Menebar Manfaat"]'
-              >
-                UKM Kerohanian Islam</span
-              >
-            </h1>
-            <p
-              class="mt-4 max-w-xl text-lg text-gray-600 dark:text-gray-400"
-              data-animate="fade-in-up"
-              data-delay="200"
-            >
-              RISPOL (Kerohanian Islam Politeknik Negeri Malang) PSDKU Lumajang
-              adalah wadah pembinaan dan pengembangan karakter mahasiswa muslim
-              melalui kegiatan islami, edukatif, dan kolaboratif berlandaskan
-              Al-Qur'an dan As-Sunnah.
-            </p>
-            <div
-              class="mt-6 flex flex-col items-start gap-4 sm:flex-row"
-              data-animate="fade-in-up"
-              data-delay="300"
-            >
-              <a
-                href="/program"
-                class="inline-flex items-center justify-center gap-2 rounded-lg bg-primary-600 px-6 py-3 text-base font-medium text-white shadow-lg shadow-primary-600/25 transition-all hover:bg-primary-700 hover:shadow-xl hover:shadow-primary-600/30"
-              >
-                Jelajahi Program Kami
-                <svg
-                  class="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-                </svg>
-              </a>
-            </div>
-          </div>
-
-          <div
-            class="relative mx-auto w-full max-w-lg md:mt-0 lg:max-w-none group"
-            data-animate="fade-in-up"
-            data-delay="200"
+          RISPOL Lumajang, <br />
+          <span
+            class="text-gradient"
+            data-typewriter='["Membangun Karakter", "Mempererat Ukhuwah", "Menebar Manfaat"]'
           >
-            <div
-              class="absolute -bottom-6 -right-6 -z-10 h-32 w-32 rounded-lg bg-[radial-gradient(#cbd5e1_3px,transparent_3px)] [background-size:16px_16px] dark:bg-[radial-gradient(#374151_3px,transparent_3px)]"
-            >
-            </div>
+            UKM Kerohanian Islam</span
+          >
+        </h1>
+        
+        <p
+          class="mt-4 max-w-xl text-base text-gray-600 md:text-lg dark:text-gray-400"
+          data-animate="fade-in-up"
+          data-delay="200"
+        >
+          RISPOL (Kerohanian Islam Politeknik Negeri Malang) PSDKU Lumajang
+          adalah wadah pembinaan dan pengembangan karakter mahasiswa muslim
+          melalui kegiatan islami, edukatif, dan kolaboratif berlandaskan
+          Al-Qur'an dan As-Sunnah.
+        </p>
+        
+        <div
+          class="mt-8 flex flex-col items-start gap-4 sm:flex-row"
+          data-animate="fade-in-up"
+          data-delay="300"
+        >
+          <a
+            href="/program"
+            class="inline-flex items-center justify-center gap-2 rounded-lg bg-primary-600 px-6 py-3 text-sm font-medium text-white shadow-lg shadow-primary-600/25 transition-all hover:bg-primary-700 hover:shadow-xl hover:shadow-primary-600/30 sm:text-base"
+          >
+            Jelajahi Program Kami
+            <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
 
-            <div
-              class="relative overflow-hidden rounded-3xl border-8 border-white bg-white shadow-2xl transition-all duration-500 ease-out group-hover:-translate-y-2 group-hover:-rotate-2 group-hover:shadow-3xl dark:border-gray-800 dark:bg-gray-800"
-            >
-              <img
-                src={dokumentasi1.src}
-                alt="Kegiatan Ukhuwah RISPOL"
-                class="h-auto w-full object-cover aspect-[4/3] sm:aspect-[4/4] lg:aspect-[4/4]"
-                loading="lazy"
-              />
+      <div
+        class="relative mx-auto w-full max-w-lg lg:max-w-none group"
+        data-animate="fade-in-up"
+        data-delay="200"
+      >
+        <div class="absolute -bottom-6 -right-6 -z-10 h-32 w-32 rounded-lg bg-[radial-gradient(#cbd5e1_3px,transparent_3px)] [background-size:16px_16px] dark:bg-[radial-gradient(#374151_3px,transparent_3px)]">
+        </div>
 
-              <div
-                class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"
-              >
-              </div>
+        <div class="relative overflow-hidden rounded-3xl border-8 border-white bg-white shadow-2xl transition-all duration-500 ease-out group-hover:-translate-y-2 group-hover:-rotate-2 group-hover:shadow-3xl dark:border-gray-800 dark:bg-gray-800">
+          
+          <img
+            src={dokumentasi1.src}
+            alt="Kegiatan Ukhuwah RISPOL"
+            class="h-auto w-full object-cover aspect-video sm:aspect-square lg:aspect-[4/3]"
+            loading="lazy"
+          />
 
-              <div class="absolute bottom-0 left-0 w-full p-6 sm:p-8">
-                <h3 class="text-xl font-bold text-white sm:text-2xl">
-                  Ukhuwah Islamiyah
-                </h3>
-                <p class="mt-2 text-sm text-gray-200 sm:text-base">
-                  Bersama menebar manfaat di kampus.
-                </p>
-              </div>
-            </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent">
+          </div>
+
+          <div class="absolute bottom-0 left-0 w-full p-5 sm:p-8">
+            <h3 class="text-lg font-bold text-white sm:text-2xl">
+              Ukhuwah Islamiyah
+            </h3>
+            <p class="mt-1 text-sm text-gray-200 sm:mt-2 sm:text-base">
+              Bersama menebar manfaat di kampus.
+            </p>
           </div>
         </div>
       </div>
-    </section>
+      
+    </div>
+  </div>
+</section>
 
     <!-- SVG Separator -->
     <div class="relative -mt-1 text-gray-50 dark:text-gray-900">
