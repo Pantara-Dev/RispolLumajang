@@ -74,7 +74,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       </button>
     </div>
     <div
-      class="mx-auto grid max-w-7xl gap-8 sm:grid-cols-2 lg:grid-cols-3 px-4 sm:px-6 lg:px-8"
+      class="mx-auto grid pb-9 max-w-7xl gap-8 sm:grid-cols-2 lg:grid-cols-3 px-4 sm:px-6 lg:px-8"
     >
       <article
         data-category="tips"
@@ -1128,94 +1128,84 @@ import BaseLayout from "../layouts/BaseLayout.astro";
   </main>
   <!-- Modal -->
   <div
-    id="modal"
-    class="fixed inset-0 z-50 hidden items-center justify-center bg-black/60 p-4"
+  id="modal"
+  class="fixed inset-0 z-50 hidden items-center justify-center bg-black/60 p-4 backdrop-blur-sm"
+>
+  <div
+    class="relative max-h-[90vh] w-full max-w-4xl overflow-y-auto rounded-2xl bg-white shadow-2xl dark:bg-gray-900"
   >
-    <div
-      class="relative max-h-[90vh] w-full max-w-4xl overflow-y-auto rounded-3xl bg-white shadow-2xl"
+    <button
+      id="closeModalBtn"
+      class="absolute right-4 top-4 z-10 flex h-8 w-8 items-center justify-center rounded-full bg-white/90 text-xl font-bold text-slate-700 shadow-sm transition hover:bg-red-500 hover:text-white sm:right-5 sm:top-5 sm:h-9 sm:w-9 sm:text-2xl dark:bg-gray-800/90 dark:text-gray-200"
     >
-      <!-- tombol close atas -->
-      <button
-        id="closeModalBtn"
-        class="absolute right-5 top-5 z-10 flex h-9 w-9 items-center justify-center rounded-full bg-white/90 text-2xl font-bold text-slate-700 shadow-lg transition hover:bg-red-500 hover:text-white"
+      &times;
+    </button>
+
+    <div class="relative h-48 w-full overflow-hidden sm:h-64 lg:h-[300px]">
+      <img id="modalImage" src="" class="h-full w-full object-cover" />
+      <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+      <h2
+        id="modalTitle"
+        class="absolute bottom-4 left-4 right-4 text-xl font-bold text-white sm:bottom-6 sm:left-6 sm:text-3xl lg:text-4xl"
       >
-        &times;
-      </button>
+      </h2>
+    </div>
 
-      <!-- Gambar -->
-      <div class="relative h-[300px] overflow-hidden">
-        <img id="modalImage" src="" class="h-full w-full object-cover" />
+    <div class="p-5 sm:p-8">
+      
+      <div class="grid gap-3 sm:grid-cols-2 sm:gap-4">
+        <div class="rounded-xl bg-yellow-50 p-4 dark:bg-yellow-900/20">
+          <p class="text-xs font-medium text-orange-600 dark:text-orange-400 sm:text-sm">Tanggal</p>
+          <h3 id="modalDate" class="mt-1 text-base font-bold text-slate-800 dark:text-gray-100 sm:mt-2 sm:text-xl">
+          </h3>
+        </div>
 
-        <div class="absolute inset-0 bg-black/40"></div>
+        <div class="rounded-xl bg-blue-50 p-4 dark:bg-blue-900/20">
+          <p class="text-xs font-medium text-blue-600 dark:text-blue-400 sm:text-sm">Sasaran</p>
+          <h3 id="modalSasaran" class="mt-1 text-base font-bold text-slate-800 dark:text-gray-100 sm:mt-2 sm:text-xl">
+          </h3>
+        </div>
+      </div>
 
-        <h2
-          id="modalTitle"
-          class="absolute bottom-6 left-6 text-4xl font-bold text-white"
+      <div class="mt-6 sm:mt-8">
+        <h3 class="text-lg font-bold text-slate-800 dark:text-white sm:text-2xl">Deskripsi Kegiatan</h3>
+        <p
+          id="modalDescription"
+          class="mt-2 text-sm leading-relaxed text-gray-600 dark:text-gray-400 sm:mt-4 sm:text-base"
         >
-        </h2>
+        </p>
       </div>
 
-      <!-- Isi -->
-      <div class="p-8">
-        <div class="grid gap-4 sm:grid-cols-2">
-          <div class="rounded-2xl bg-yellow-50 p-5">
-            <p class="text-sm text-orange-500">Tanggal</p>
+      <div class="mt-8 flex flex-col-reverse gap-3 sm:mt-10 sm:flex-row sm:gap-4">
+        <button
+          id="closeModalBtn2"
+          class="w-full rounded-xl bg-gray-100 py-3 text-sm font-bold text-gray-700 transition-all duration-300 hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700 sm:py-4 sm:text-base"
+        >
+          Tutup
+        </button>
 
-            <h3 id="modalDate" class="mt-2 text-xl font-bold text-slate-800">
-            </h3>
-          </div>
-
-          <div class="rounded-2xl bg-blue-50 p-5">
-            <p class="text-sm text-blue-500">Sasaran</p>
-
-            <h3 id="modalSasaran" class="mt-2 text-xl font-bold text-slate-800">
-            </h3>
-          </div>
-        </div>
-
-        <div class="mt-8">
-          <h3 class="text-3xl font-bold text-slate-800">Deskripsi Kegiatan</h3>
-
-          <p
-            id="modalDescription"
-            class="mt-4 text-lg leading-relaxed text-gray-600"
+        <a
+          id="detailLink"
+          href="#"
+          class="group flex w-full items-center justify-center gap-2 rounded-xl bg-primary-600 py-3 text-sm font-bold text-white transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-primary-600/30 sm:py-4 sm:text-base"
+        >
+          <span>Lihat Selengkapnya</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            class="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1 sm:h-5 sm:w-5"
           >
-          </p>
-        </div>
-
-        <div class="mt-10 flex gap-4">
-          <button
-            id="closeModalBtn2"
-            class="w-full rounded-2xl bg-gray-200 py-4 font-bold transition-all duration-300 hover:-translate-y-1 hover:bg-gray-300 hover:shadow-lg"
-          >
-            Tutup
-          </button>
-
-          <a
-            id="detailLink"
-            href="#"
-            class="group flex w-full items-center justify-center gap-2 rounded-2xl bg-primary-600 py-4 font-bold text-white transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
-          >
-            <span>Lihat Selengkapnya</span>
-
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="2"
-              stroke="currentColor"
-              class="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
-            </svg>
-          </a>
-        </div>
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+          </svg>
+        </a>
       </div>
+      
     </div>
   </div>
+</div>
   <!-- VIDEO MODAL -->
   <div
     id="videoModal"
